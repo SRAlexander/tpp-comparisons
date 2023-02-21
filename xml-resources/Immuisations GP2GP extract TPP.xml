@@ -1,0 +1,2049 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<custom_transport>
+    <sender>
+        <accredited_system_id>DUMMY</accredited_system_id>
+    </sender>
+    <receiver>
+        <organisation_code>DUMMY</organisation_code>
+    </receiver>
+    <payload>
+        <RCMR_IN030000UK06 xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ..\Schemas\RCMR_IN030000UK06.xsd">
+            <id root="5EFB1942-A0C1-11ED-808B-AC162D1F16F0"/>
+            <creationTime value="20230130171310"/>
+            <versionCode code="V3NPfIT3.1.10"/>
+            <interactionId root="2.16.840.1.113883.2.1.3.2.4.12" extension="RCMR_IN030000UK06"/>
+            <processingCode code="P"/>
+            <processingModeCode code="T"/>
+            <acceptAckCode code="NE"/>
+            <communicationFunctionRcv typeCode="RCV">
+                <device classCode="DEV" determinerCode="INSTANCE">
+                    <id root="1.2.826.0.1285.0.2.0.107" extension="321321321321"/>
+                </device>
+            </communicationFunctionRcv>
+            <communicationFunctionSnd typeCode="SND">
+                <device classCode="DEV" determinerCode="INSTANCE">
+                    <id root="1.2.826.0.1285.0.2.0.107" extension="123123123123"/>
+                </device>
+            </communicationFunctionSnd>
+            <ControlActEvent classCode="CACT" moodCode="EVN">
+                <author1 typeCode="AUT">
+                    <AgentSystemSDS classCode="AGNT">
+                        <agentSystemSDS classCode="DEV" determinerCode="INSTANCE">
+                            <id root="1.2.826.0.1285.0.2.0.107" extension="SYSTMONEASID"/>
+                        </agentSystemSDS>
+                    </AgentSystemSDS>
+                </author1>
+                <subject typeCode="SUBJ" contextConductionInd="false">
+                    <EhrExtract classCode="EXTRACT" moodCode="EVN">
+                        <id root="5EFB1943-A0C1-11ED-808B-AC162D1F16F0"/>
+                        <statusCode code="COMPLETE"/>
+                        <availabilityTime value="20230130171310"/>
+                        <recordTarget typeCode="RCT">
+                            <patient classCode="PAT">
+                                <id root="2.16.840.1.113883.2.1.4.1" extension="9727864066"/>
+                            </patient>
+                        </recordTarget>
+                        <author typeCode="AUT">
+                            <time value="20230130171310"/>
+                            <AgentOrgSDS classCode="AGNT">
+                                <agentOrganizationSDS classCode="ORG" determinerCode="INSTANCE">
+                                    <id root="1.2.826.0.1285.0.1.10" extension="A86005"/>
+                                </agentOrganizationSDS>
+                            </AgentOrgSDS>
+                        </author>
+                        <destination typeCode="DST">
+                            <AgentOrgSDS classCode="AGNT">
+                                <agentOrganizationSDS classCode="ORG" determinerCode="INSTANCE">
+                                    <id root="1.2.826.0.1285.0.1.10" extension="A86005"/>
+                                </agentOrganizationSDS>
+                            </AgentOrgSDS>
+                        </destination>
+                        <component typeCode="COMP">
+                            <ehrFolder classCode="FOLDER" moodCode="EVN">
+                                <id root="5EFFD46B-A0C1-11ED-808B-AC162D1F16F0"/>
+                                <statusCode code="COMPLETE"/>
+                                <effectiveTime>
+                                    <low value="2008"/>
+                                    <high value="20230130144355"/>
+                                </effectiveTime>
+                                <availabilityTime value="20230130171310"/>
+                                <author typeCode="AUT">
+                                    <time value="20230130171310"/>
+                                    <AgentOrgSDS classCode="AGNT">
+                                        <agentOrganizationSDS classCode="ORG" determinerCode="INSTANCE">
+                                            <id root="1.2.826.0.1285.0.1.10" extension="A86005"/>
+                                        </agentOrganizationSDS>
+                                    </AgentOrgSDS>
+                                </author>
+                                <responsibleParty typeCode="RESP">
+                                    <agentDirectory classCode="AGNT">
+                                        <part typeCode="PART">
+                                            <Agent classCode="AGNT">
+                                                <id root="5EFB1956-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="704951000000106" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Other person"/>
+                                                <agentPerson classCode="PSN" determinerCode="INSTANCE">
+                                                    <name>
+                                                        <family>Dr David McAvenue</family>
+                                                    </name>
+                                                </agentPerson>
+                                            </Agent>
+                                        </part>
+                                        <part typeCode="PART">
+                                            <Agent classCode="AGNT">
+                                                <id root="5EFD6332-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="704951000000106" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Other person"/>
+                                                <agentPerson classCode="PSN" determinerCode="INSTANCE">
+                                                    <name>
+                                                        <family>Unknown Staff Member</family>
+                                                    </name>
+                                                </agentPerson>
+                                            </Agent>
+                                        </part>
+                                        <part typeCode="PART">
+                                            <Agent classCode="AGNT">
+                                                <id root="5EFB1946-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="704951000000106" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Other person"/>
+                                                <agentPerson classCode="PSN" determinerCode="INSTANCE">
+                                                    <name use="L">
+                                                        <prefix>Mr</prefix>
+                                                        <given>Andrew</given>
+                                                        <family>Guiseley</family>
+                                                    </name>
+                                                    <administrativeGenderCode code="1"/>
+                                                </agentPerson>
+                                                <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                                                    <id root="2.16.840.1.113883.2.1.4.3" extension="A86005"/>
+                                                    <code code="600"/>
+                                                    <name>West Farm Surgery</name>
+                                                    <telecom use="WP" value="tel:01132050080">
+                                                        <useablePeriod>
+                                                            <low value="20230130"/>
+                                                        </useablePeriod>
+                                                    </telecom>
+                                                    <addr use="WP">
+                                                        <streetAddressLine>31 West Farm Avenue</streetAddressLine>
+                                                        <streetAddressLine>Newcastle Upon Tyne</streetAddressLine>
+                                                        <streetAddressLine>Tyne and Wear</streetAddressLine>
+                                                        <postalCode>NE12 8LS</postalCode>
+                                                        <useablePeriod>
+                                                            <low value="20230130"/>
+                                                        </useablePeriod>
+                                                    </addr>
+                                                </representedOrganization>
+                                            </Agent>
+                                        </part>
+                                        <part typeCode="PART">
+                                            <Agent classCode="AGNT">
+                                                <id root="5EFB194A-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="704951000000106" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Other person"/>
+                                                <agentPerson classCode="PSN" determinerCode="INSTANCE">
+                                                    <name>
+                                                        <family>Testvale Surgery</family>
+                                                    </name>
+                                                </agentPerson>
+                                            </Agent>
+                                        </part>
+                                        <part typeCode="PART">
+                                            <Agent classCode="AGNT">
+                                                <id root="5EFFD468-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <id root="2.16.840.1.113883.2.1.4.2" extension="8992788"/>
+                                                <code code="704951000000106" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Other person"/>
+                                                <agentPerson classCode="PSN" determinerCode="INSTANCE">
+                                                    <name use="L">
+                                                        <prefix>Mr</prefix>
+                                                        <given>Peter</given>
+                                                        <family>Salisbury</family>
+                                                    </name>
+                                                </agentPerson>
+                                                <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                                                    <id root="2.16.840.1.113883.2.1.4.3" extension="A86005"/>
+                                                    <code code="600"/>
+                                                    <name>West Farm Surgery</name>
+                                                    <telecom use="WP" value="tel:01132050080">
+                                                        <useablePeriod>
+                                                            <low value="20230130"/>
+                                                        </useablePeriod>
+                                                    </telecom>
+                                                    <addr use="WP">
+                                                        <streetAddressLine>31 West Farm Avenue</streetAddressLine>
+                                                        <streetAddressLine>Newcastle Upon Tyne</streetAddressLine>
+                                                        <streetAddressLine>Tyne and Wear</streetAddressLine>
+                                                        <postalCode>NE12 8LS</postalCode>
+                                                        <useablePeriod>
+                                                            <low value="20230130"/>
+                                                        </useablePeriod>
+                                                    </addr>
+                                                </representedOrganization>
+                                            </Agent>
+                                        </part>
+                                        <part typeCode="PART">
+                                            <Agent classCode="AGNT">
+                                                <id root="5EFB1945-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="704951000000106" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Other person"/>
+                                                <agentPerson classCode="PSN" determinerCode="INSTANCE">
+                                                    <name>
+                                                        <family>David McAvenue</family>
+                                                    </name>
+                                                </agentPerson>
+                                            </Agent>
+                                        </part>
+                                        <part typeCode="PART">
+                                            <Agent classCode="AGNT">
+                                                <id root="5EFFD465-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="704951000000106" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Other person"/>
+                                                <agentPerson classCode="PSN" determinerCode="INSTANCE">
+                                                    <name>
+                                                        <family>West Farm Surgery</family>
+                                                    </name>
+                                                </agentPerson>
+                                            </Agent>
+                                        </part>
+                                        <part typeCode="PART">
+                                            <Agent classCode="AGNT">
+                                                <id root="5EFB194D-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="704951000000106" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Other person"/>
+                                                <agentPerson classCode="PSN" determinerCode="INSTANCE">
+                                                    <name>
+                                                        <family>Peter Whitcombe</family>
+                                                    </name>
+                                                </agentPerson>
+                                            </Agent>
+                                        </part>
+                                    </agentDirectory>
+                                </responsibleParty>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="5EFB1944-A0C1-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center nullFlavor="NI"/>
+                                        </effectiveTime>
+                                        <availabilityTime nullFlavor="UNK"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130144356"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1946-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery, GP2GPTEST</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1945-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD430-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="65I3." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="3rd diphtheria, pertussis &amp; tetanus triple &amp; polio vaccinatn">
+                                                    <originalText>DTP + Polio 3</originalText>
+                                                    <translation code="170402006" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Third diphtheria, pertussis and tetanus triple and polio vaccination"/>
+                                                    <translation code="65I3.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Third DTP (triple)+polio vacc."/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime nullFlavor="UNK"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Batch No: hhhh:yyyy</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD431-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="653.." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Tuberculosis (BCG) vaccination">
+                                                    <originalText>BCG 1</originalText>
+                                                    <translation code="42284007" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="BCG vaccination"/>
+                                                    <translation code="653..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Tuberculosis (BCG) vaccination"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime nullFlavor="UNK"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Reason: Epidemic&#10;Area: South America&#10;Method: Intradermal&#10;Site: Left deltoid&#10;Batch No: hhhh&#10;Dosage: 5 ml&#10;Expiry date: 18 Feb 2011&#10;Nature of risk: Risky business&#10;Notes: These are the notes on the undated immunisation with everyth</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD432-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaLGM" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Transfer-degraded record entry">
+                                                    <originalText>Foster parent present</originalText>
+                                                    <translation code="196411000000103" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Transfer-degraded record entry"/>
+                                                    <translation code="9bJ..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Transfer-degraded record entry"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime nullFlavor="UNK"/>
+                                            </ObservationStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="5EFB1947-A0C1-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="2008"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="2008"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130144356"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1946-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery, GP2GPTEST</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1945-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD433-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="6511." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="First cholera vaccination">
+                                                    <originalText>Cholera 1</originalText>
+                                                    <translation code="170311007" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration of first dose of cholera vaccine"/>
+                                                    <translation code="6511.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="First cholera vaccination"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="2008"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Reason: Routine Measure&#10;Batch No: jhkhj&#10;Dosage: 0.5 ml</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="5EFB1948-A0C1-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="200904"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="200904"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130144356"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1946-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery, GP2GPTEST</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1945-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <NarrativeStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFB195C-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <text>This imms is month and year dated only</text>
+                                                <statusCode code="COMPLETE"/>
+                                                <availabilityTime value="200904"/>
+                                            </NarrativeStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD434-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="65FA." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="First hepatitis A vaccination">
+                                                    <originalText>Avaxim 1</originalText>
+                                                    <translation code="170378007" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration of first dose of paediatric hepatitis A vaccine"/>
+                                                    <translation code="65FA.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="1st hepatitis A vaccination"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="200904"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Reason: Routine Measure&#10;Batch No: hhh&#10;Dosage: 0.5 ml</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="5EFB1949-A0C1-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20101209"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20101209"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130144356"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1946-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB194A-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <NarrativeStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFB195D-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <text>Registration: GMS&#10;Responsible party: David Bagnall (Testvale Surgery)</text>
+                                                <statusCode code="COMPLETE"/>
+                                                <availabilityTime value="20101209"/>
+                                            </NarrativeStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="5EFB194B-A0C1-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20101209"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20101209"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130144356"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1946-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB194A-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <NarrativeStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFB195E-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <text> ** Care started at: Testvale Surgery (GMS) **</text>
+                                                <statusCode code="COMPLETE"/>
+                                                <availabilityTime value="20101209"/>
+                                            </NarrativeStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="5EFB194C-A0C1-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20101210"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20101210"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130144356"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1946-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery, GP2GPTEST</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB194D-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD437-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaLGM" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Transfer-degraded record entry">
+                                                    <originalText>Agrippal S1 1</originalText>
+                                                    <translation code="196411000000103" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Transfer-degraded record entry"/>
+                                                    <translation code="9bJ..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Transfer-degraded record entry"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Reason: Routine Measure&#10;Batch No: hhh&#10;Dosage: 0.5 ml</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD438-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaLGM" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Transfer-degraded record entry">
+                                                    <originalText>Almevax Reinforcing. Almevax 1st Scheduled Booster</originalText>
+                                                    <translation code="196411000000103" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Transfer-degraded record entry"/>
+                                                    <translation code="9bJ..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Transfer-degraded record entry"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Reason: Routine Measure&#10;Batch No: hh&#10;Dosage: 0.5 ml</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD43D-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaCFj" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Immunisation consent not given">
+                                                    <translation code="310376006" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Immunisation consent not given"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Ended Refusal: DIPHTHERIA&#10;Ended on 21 Jan 2011 17:23</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD43E-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaCFj" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Immunisation consent not given">
+                                                    <translation code="310376006" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Immunisation consent not given"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Refusal: PERTUSSIS</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD43F-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaCFj" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Immunisation consent not given">
+                                                    <translation code="310376006" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Immunisation consent not given"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Refusal: POLIO</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD440-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaCFi" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Immunisation consent given">
+                                                    <originalText>Immunisation consent given</originalText>
+                                                    <translation code="310375005" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Immunisation consent given"/>
+                                                    <translation code="68N5.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Full consent for immunisation"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Consent: TETANUS</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD441-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaCFi" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Immunisation consent given">
+                                                    <originalText>Immunisation consent given</originalText>
+                                                    <translation code="310375005" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Immunisation consent given"/>
+                                                    <translation code="68N5.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Full consent for immunisation"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Ended Consent: PNEUMOCOCCAL&#10;Ended on 21 Jan 2011 17:23</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD442-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="n51.." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Human immunoglobulin product">
+                                                    <originalText>HNIG 1</originalText>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Reason: Routine Measure&#10;Method: Intramuscularly&#10;Site: Left deltoid&#10;Batch No: hh&#10;Dosage: 0.5 ml&#10;Notes: hhhhh</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD443-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaCFi" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Immunisation consent given">
+                                                    <originalText>Immunisation consent given</originalText>
+                                                    <translation code="310375005" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Immunisation consent given"/>
+                                                    <translation code="68N5.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Full consent for immunisation"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Consent: INFLUENZA</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD444-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaCFi" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Immunisation consent given">
+                                                    <originalText>Immunisation consent given</originalText>
+                                                    <translation code="310375005" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Immunisation consent given"/>
+                                                    <translation code="68N5.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Full consent for immunisation"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Consent: MENINGOCOCCAL C</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="5EFB194E-A0C1-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20101210000000"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20101210000000"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130144356"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1946-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery, GP2GPTEST</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB194D-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <MedicationStatement classCode="SBADM" moodCode="ORD">
+                                                <id root="5EFD6330-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center value="20101210"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210"/>
+                                                <consumable typeCode="CSM">
+                                                    <manufacturedProduct classCode="MANU">
+                                                        <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                                                            <code code="01363001" codeSystem="2.16.840.1.113883.2.1.6.4" displayName="Arilvax vaccine powder and solvent for suspension for injection 0.5ml vials (Novartis Vaccines and Diagnostics Ltd)">
+                                                                <translation code="8087111000001106" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Arilvax vaccine powder and solvent for suspension for injection 0.5ml vials (Novartis Vaccines and Diagnostics Ltd)"/>
+                                                            </code>
+                                                        </manufacturedMaterial>
+                                                    </manufacturedProduct>
+                                                </consumable>
+                                                <component typeCode="COMP">
+                                                    <ehrSupplyAuthorise classCode="SPLY" moodCode="INT">
+                                                        <id root="5EFD6331-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                        <code code="394823007" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="NHS prescription"/>
+                                                        <statusCode code="COMPLETE"/>
+                                                        <effectiveTime>
+                                                            <center nullFlavor="NI"/>
+                                                        </effectiveTime>
+                                                        <availabilityTime value="20101210"/>
+                                                        <repeatNumber value="0"/>
+                                                        <quantity value="1" unit="1">
+                                                            <translation value="1">
+                                                                <originalText>Unk UoM</originalText>
+                                                            </translation>
+                                                        </quantity>
+                                                    </ehrSupplyAuthorise>
+                                                </component>
+                                                <component typeCode="COMP">
+                                                    <ehrSupplyPrescribe classCode="SPLY" moodCode="RQO">
+                                                        <id root="5EFD6333-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                        <code code="394823007" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="NHS prescription"/>
+                                                        <statusCode code="COMPLETE"/>
+                                                        <availabilityTime value="20101210"/>
+                                                        <quantity value="1" unit="1">
+                                                            <translation value="1">
+                                                                <originalText>Unk UoM</originalText>
+                                                            </translation>
+                                                        </quantity>
+                                                        <inFulfillmentOf typeCode="FLFS">
+                                                            <priorMedicationRef classCode="SBADM" moodCode="INT">
+                                                                <id root="5EFD6331-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                            </priorMedicationRef>
+                                                        </inFulfillmentOf>
+                                                    </ehrSupplyPrescribe>
+                                                </component>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <pertinentMedicationDosage classCode="SBADM" moodCode="RMD">
+                                                        <text>0.5 ml</text>
+                                                    </pertinentMedicationDosage>
+                                                </pertinentInformation>
+                                            </MedicationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <MedicationStatement classCode="SBADM" moodCode="ORD">
+                                                <id root="5EFD6337-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center value="20101210"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210"/>
+                                                <consumable typeCode="CSM">
+                                                    <manufacturedProduct classCode="MANU">
+                                                        <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                                                            <code code="15769001" codeSystem="2.16.840.1.113883.2.1.6.4" displayName="Tamiflu 30mg capsules (Roche Products Ltd)">
+                                                                <translation code="13095411000001108" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Tamiflu 30mg capsules (Roche Products Ltd)"/>
+                                                            </code>
+                                                        </manufacturedMaterial>
+                                                    </manufacturedProduct>
+                                                </consumable>
+                                                <component typeCode="COMP">
+                                                    <ehrSupplyAuthorise classCode="SPLY" moodCode="INT">
+                                                        <id root="5EFD6338-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                        <code code="394823007" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="NHS prescription"/>
+                                                        <statusCode code="COMPLETE"/>
+                                                        <effectiveTime>
+                                                            <center nullFlavor="NI"/>
+                                                        </effectiveTime>
+                                                        <availabilityTime value="20101210"/>
+                                                        <repeatNumber value="0"/>
+                                                        <quantity value="1" unit="1">
+                                                            <translation value="1">
+                                                                <originalText>Unk UoM</originalText>
+                                                            </translation>
+                                                        </quantity>
+                                                    </ehrSupplyAuthorise>
+                                                </component>
+                                                <component typeCode="COMP">
+                                                    <ehrSupplyPrescribe classCode="SPLY" moodCode="RQO">
+                                                        <id root="5EFD6339-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                        <code code="394823007" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="NHS prescription"/>
+                                                        <statusCode code="COMPLETE"/>
+                                                        <availabilityTime value="20101210"/>
+                                                        <quantity value="1" unit="1">
+                                                            <translation value="1">
+                                                                <originalText>Unk UoM</originalText>
+                                                            </translation>
+                                                        </quantity>
+                                                        <inFulfillmentOf typeCode="FLFS">
+                                                            <priorMedicationRef classCode="SBADM" moodCode="INT">
+                                                                <id root="5EFD6338-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                            </priorMedicationRef>
+                                                        </inFulfillmentOf>
+                                                    </ehrSupplyPrescribe>
+                                                </component>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <pertinentMedicationDosage classCode="SBADM" moodCode="RMD">
+                                                        <text>0.5ml</text>
+                                                    </pertinentMedicationDosage>
+                                                </pertinentInformation>
+                                            </MedicationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD435-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaCFi" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Immunisation consent given">
+                                                    <originalText>Immunisation consent given</originalText>
+                                                    <translation code="310375005" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Immunisation consent given"/>
+                                                    <translation code="68N5.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Full consent for immunisation"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Consent: HIB. some stuff</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD436-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaCFi" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Immunisation consent given">
+                                                    <originalText>Immunisation consent given</originalText>
+                                                    <translation code="310375005" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Immunisation consent given"/>
+                                                    <translation code="68N5.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Full consent for immunisation"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Ended Consent: YELLOW FEVER. These are some consent notes&#10;Ended on 21 Jan 2011 17:23</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD439-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaQhk" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="CELVAPAN - first influenza A (H1N1v) 2009 vaccination given">
+                                                    <originalText>Celvapan 1</originalText>
+                                                    <translation code="515291000000105" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="CELVAPAN - first influenza A (H1N1v) 2009 vaccination given"/>
+                                                    <translation code="65E5.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="CELVAPAN - first influenza A (H1N1v) 2009 vaccination given"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Reason: Epidemic&#10;Area: Northern Europe&#10;Method: Intradermal&#10;Site: Stomach&#10;Batch No: Piggyflu1&#10;Dosage: 0.5ml&#10;Expiry date: 12 May 2011&#10;Nature of risk: Doomed&#10;Notes: These are some swine flu notes</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD43A-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaLGM" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Transfer-degraded record entry">
+                                                    <originalText>Arilvax 1</originalText>
+                                                    <translation code="196411000000103" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Transfer-degraded record entry"/>
+                                                    <translation code="9bJ..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Transfer-degraded record entry"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Reason: Traveller&#10;Area: Asia&#10;Method: Intramuscularly&#10;Site: Right deltoid&#10;Batch No: 1234567&#10;Dosage: 0.5 ml&#10;Expiry date: 30 Apr 2011&#10;Nature of risk: Risky&#10;Notes: This are some notes on yellow fever vacc</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD43B-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaLGM" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Transfer-degraded record entry">
+                                                    <originalText>Cslgen Inactivated Influenza Vaccine (Split Virion) (CHIRON). Cslgen Inactivated Influenza Vaccine (CHIRON) 1</originalText>
+                                                    <translation code="196411000000103" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Transfer-degraded record entry"/>
+                                                    <translation code="9bJ..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Transfer-degraded record entry"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Reason: Routine Measure&#10;Site: Left anterior forearm&#10;Batch No: bigflu24&#10;Dosage: 0.5 ml&#10;Expiry date: 13 Jul 2010&#10;Nature of risk: slight</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD43C-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="65FA." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="First hepatitis A vaccination">
+                                                    <originalText>Havrix Mono Junior Monodose 1</originalText>
+                                                    <translation code="170378007" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration of first dose of paediatric hepatitis A vaccine"/>
+                                                    <translation code="65FA.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="1st hepatitis A vaccination"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Batch No: HepBeGone88&#10;Dosage: 0.5 ml&#10;Expiry date: 12 Apr 1981&#10;Notes: This imm has a blank reason and everything else as vague</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD445-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaLGM" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Transfer-degraded record entry">
+                                                    <originalText>ACT - HIB 1</originalText>
+                                                    <translation code="196411000000103" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Transfer-degraded record entry"/>
+                                                    <translation code="9bJ..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Transfer-degraded record entry"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Reason: Routine Measure&#10;Method: Deep subcutaneous&#10;Site: Left deltoid&#10;Batch No: 987654&#10;Dosage: 0.5 ml&#10;Expiry date: 16 Nov 2011&#10;Nature of risk: slightly risky&#10;Notes: some notes here</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD44F-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaLGM" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Transfer-degraded record entry">
+                                                    <originalText>Relative present</originalText>
+                                                    <translation code="196411000000103" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Transfer-degraded record entry"/>
+                                                    <translation code="9bJ..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Transfer-degraded record entry"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD450-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaLGM" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Transfer-degraded record entry">
+                                                    <originalText>Parent present</originalText>
+                                                    <translation code="196411000000103" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Transfer-degraded record entry"/>
+                                                    <translation code="9bJ..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Transfer-degraded record entry"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD451-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaLGM" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Transfer-degraded record entry">
+                                                    <originalText>Relative present</originalText>
+                                                    <translation code="196411000000103" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Transfer-degraded record entry"/>
+                                                    <translation code="9bJ..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Transfer-degraded record entry"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD452-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaLGM" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Transfer-degraded record entry">
+                                                    <originalText>No other person present</originalText>
+                                                    <translation code="196411000000103" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Transfer-degraded record entry"/>
+                                                    <translation code="9bJ..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Transfer-degraded record entry"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                            </ObservationStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="5EFB194F-A0C1-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20101210000000"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20101210000000"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130144356"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1946-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery, GP2GPTEST</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB194D-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <MedicationStatement classCode="SBADM" moodCode="ORD">
+                                                <id root="5EFD6334-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center value="20101210"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210"/>
+                                                <consumable typeCode="CSM">
+                                                    <manufacturedProduct classCode="MANU">
+                                                        <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                                                            <code code="07356001" codeSystem="2.16.840.1.113883.2.1.6.4" displayName="HB-VAX II vaccine 10micrograms/ml [AV/PASTEUR]"/>
+                                                        </manufacturedMaterial>
+                                                    </manufacturedProduct>
+                                                </consumable>
+                                                <component typeCode="COMP">
+                                                    <ehrSupplyAuthorise classCode="SPLY" moodCode="INT">
+                                                        <id root="5EFD6335-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                        <code code="394823007" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="NHS prescription"/>
+                                                        <statusCode code="COMPLETE"/>
+                                                        <effectiveTime>
+                                                            <center nullFlavor="NI"/>
+                                                        </effectiveTime>
+                                                        <availabilityTime value="20101210"/>
+                                                        <repeatNumber value="0"/>
+                                                        <quantity value="1" unit="1">
+                                                            <translation value="1">
+                                                                <originalText>Unk UoM</originalText>
+                                                            </translation>
+                                                        </quantity>
+                                                    </ehrSupplyAuthorise>
+                                                </component>
+                                                <component typeCode="COMP">
+                                                    <ehrSupplyPrescribe classCode="SPLY" moodCode="RQO">
+                                                        <id root="5EFD6336-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                        <code code="394823007" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="NHS prescription"/>
+                                                        <statusCode code="COMPLETE"/>
+                                                        <availabilityTime value="20101210"/>
+                                                        <quantity value="1" unit="1">
+                                                            <translation value="1">
+                                                                <originalText>Unk UoM</originalText>
+                                                            </translation>
+                                                        </quantity>
+                                                        <inFulfillmentOf typeCode="FLFS">
+                                                            <priorMedicationRef classCode="SBADM" moodCode="INT">
+                                                                <id root="5EFD6335-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                            </priorMedicationRef>
+                                                        </inFulfillmentOf>
+                                                    </ehrSupplyPrescribe>
+                                                </component>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <pertinentMedicationDosage classCode="SBADM" moodCode="RMD">
+                                                        <text>0.5 ml</text>
+                                                    </pertinentMedicationDosage>
+                                                </pertinentInformation>
+                                            </MedicationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD446-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="65MB." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="MMR pre-school booster vaccination">
+                                                    <originalText>MMR II 1st Scheduled Booster</originalText>
+                                                    <translation code="170432003" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration of pre-school booster dose of measles and mumps and rubella vaccine"/>
+                                                    <translation code="65MB.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="MMR pre-school booster vaccination"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Area: United States&#10;Batch No: booster1&#10;Dosage: 0.5 ml&#10;Expiry date: 24 Mar 2011&#10;Nature of risk: booster nature of risk notes&#10;Notes: booster general notes</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD447-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaLGM" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Transfer-degraded record entry">
+                                                    <originalText>Infanrix quinta part 2. Infanix Quinta 5 2</originalText>
+                                                    <translation code="196411000000103" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Transfer-degraded record entry"/>
+                                                    <translation code="9bJ..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Transfer-degraded record entry"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Reason: Routine Measure&#10;Batch No: 343434&#10;Dosage: 0.5ml</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD448-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="65I1." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="1st diphtheria, pertussis &amp; tetanus triple &amp; polio vaccinatn">
+                                                    <originalText>DTP + Polio 1</originalText>
+                                                    <translation code="170400003" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="First diphtheria, pertussis and tetanus triple and polio vaccination"/>
+                                                    <translation code="65I1.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="First DTP (triple)+polio vacc."/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Reason: Routine Measure&#10;Batch No: 765432:121212&#10;Dosage: 0.5 ml&#10;Expiry date: 31 Dec 2010</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD449-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaLGM" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Transfer-degraded record entry">
+                                                    <originalText>HB-Vax II 1</originalText>
+                                                    <translation code="196411000000103" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Transfer-degraded record entry"/>
+                                                    <translation code="9bJ..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Transfer-degraded record entry"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Reason: Special Risk Group&#10;Area: Australia&#10;Method: Intravenously&#10;Site: Right Gluteal&#10;Batch No: NoMoreHepB1234&#10;Dosage: 0.5 ml&#10;Expiry date: 10 Dec 2010&#10;Nature of risk: this is a nature of risk note</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD44A-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaCFi" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Immunisation consent given">
+                                                    <originalText>Immunisation consent given</originalText>
+                                                    <translation code="310375005" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Immunisation consent given"/>
+                                                    <translation code="68N5.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Full consent for immunisation"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Consent: HEPATITIS B. These are consent notes</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD44B-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaCFi" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Immunisation consent given">
+                                                    <originalText>Immunisation consent given</originalText>
+                                                    <translation code="310375005" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Immunisation consent given"/>
+                                                    <translation code="68N5.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Full consent for immunisation"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Consent: RUBELLA. consent notes here</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD44C-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="65MB." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="MMR pre-school booster vaccination">
+                                                    <originalText>MMR II 1st Scheduled Booster</originalText>
+                                                    <translation code="170432003" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration of pre-school booster dose of measles and mumps and rubella vaccine"/>
+                                                    <translation code="65MB.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="MMR pre-school booster vaccination"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Reason: Special Risk Group&#10;Area: Other&#10;Method: Intramuscularly&#10;Site: Left anterior forearm&#10;Batch No: 45654&#10;Dosage: 0.5 ml&#10;Expiry date: 06 Dec 2010&#10;Nature of risk: child&#10;Notes: MMR part 1 notes</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD44D-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="65..." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Infectious diseas: prevent &amp;/or control (&amp; [named variants])">
+                                                    <originalText>Ixiaro 1</originalText>
+                                                    <translation code="170310008" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Infectious disease: prevent &amp;/or control (&amp; [immunisations] or [inoculations - prophylactic] or [vaccinations (&amp; travel)])"/>
+                                                    <translation code="65...00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Infectious dis:prevent/control"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Reason: Traveller&#10;Area: Africa&#10;Method: Intramuscularly&#10;Site: Right anterior forearm&#10;Batch No: JapEnc1234&#10;Dosage: 0.5ml&#10;Expiry date: 01 Jan 2070&#10;Nature of risk: some risk info&#10;Notes: These are some notes on Japanese B Encephalitis</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD44E-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaLGM" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Transfer-degraded record entry">
+                                                    <originalText>Foster parent present</originalText>
+                                                    <translation code="196411000000103" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Transfer-degraded record entry"/>
+                                                    <translation code="9bJ..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Transfer-degraded record entry"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD453-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaLGM" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Transfer-degraded record entry">
+                                                    <originalText>No other person present</originalText>
+                                                    <translation code="196411000000103" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Transfer-degraded record entry"/>
+                                                    <translation code="9bJ..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Transfer-degraded record entry"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD454-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaLGM" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Transfer-degraded record entry">
+                                                    <originalText>Parent present</originalText>
+                                                    <translation code="196411000000103" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Transfer-degraded record entry"/>
+                                                    <translation code="9bJ..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Transfer-degraded record entry"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD455-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaCFi" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Immunisation consent given">
+                                                    <originalText>Immunisation consent given</originalText>
+                                                    <translation code="310375005" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Immunisation consent given"/>
+                                                    <translation code="68N5.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Full consent for immunisation"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Consent: MEASLES. consent notes here</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD456-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaCFi" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Immunisation consent given">
+                                                    <originalText>Immunisation consent given</originalText>
+                                                    <translation code="310375005" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Immunisation consent given"/>
+                                                    <translation code="68N5.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Full consent for immunisation"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101210000000"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Consent: MUMPS. consent notes here</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="5EFB1950-A0C1-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20101216"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20101216"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130144356"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1946-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery, GP2GPTEST</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB194D-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD457-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaCFi" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Immunisation consent given">
+                                                    <originalText>Immunisation consent given</originalText>
+                                                    <translation code="310375005" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Immunisation consent given"/>
+                                                    <translation code="68N5.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Full consent for immunisation"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101216"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Consent: BCG</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD458-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaCFi" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Immunisation consent given">
+                                                    <originalText>Immunisation consent given</originalText>
+                                                    <translation code="310375005" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Immunisation consent given"/>
+                                                    <translation code="68N5.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Full consent for immunisation"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20101216"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Consent: H1N1 Swine Flu</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="5EFB1951-A0C1-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20110216"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20110216"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130144356"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1946-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery, GP2GPTEST</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1945-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD459-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="65H2." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Second diphtheria, pertussis and tetanus triple vaccination">
+                                                    <originalText>DTP 2</originalText>
+                                                    <translation code="170396003" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Second diphtheria, pertussis and tetanus triple vaccination"/>
+                                                    <translation code="65H2.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Second triple vaccination-DTP"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110216"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Reason: Routine Measure&#10;Batch No: aaa&#10;Dosage: 0.5 ml</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD45A-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaLGM" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Transfer-degraded record entry">
+                                                    <originalText>DTP Reinforcing Vacc. DTP Booster</originalText>
+                                                    <translation code="196411000000103" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Transfer-degraded record entry"/>
+                                                    <translation code="9bJ..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Transfer-degraded record entry"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110216"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Reason: Routine Measure&#10;Batch No: aaa&#10;Dosage: 0.5 ml</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD45B-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="65H1." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="First diphtheria, pertussis and tetanus triple vaccination">
+                                                    <originalText>DTP 1</originalText>
+                                                    <translation code="170395004" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="First diphtheria, pertussis and tetanus triple vaccination"/>
+                                                    <translation code="65H1.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="First triple vaccination - DTP"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110216"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Reason: Routine Measure&#10;Batch No: aaa&#10;Dosage: 0.5 ml</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD45C-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaLGM" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Transfer-degraded record entry">
+                                                    <originalText>DTP 1st Booster. DTP 1st Scheduled Booster</originalText>
+                                                    <translation code="196411000000103" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Transfer-degraded record entry"/>
+                                                    <translation code="9bJ..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Transfer-degraded record entry"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110216"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Reason: Routine Measure&#10;Batch No: aaa&#10;Dosage: 0.5 ml</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD45E-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaLGM" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Transfer-degraded record entry">
+                                                    <originalText>DTP 2nd Booster. DTP 2nd Scheduled Booster</originalText>
+                                                    <translation code="196411000000103" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Transfer-degraded record entry"/>
+                                                    <translation code="9bJ..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Transfer-degraded record entry"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110216"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Reason: Routine Measure&#10;Batch No: aaa&#10;Dosage: 0.5 ml</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD45F-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="65H3." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Third diphtheria, pertussis and tetanus triple vaccination">
+                                                    <originalText>DTP 3</originalText>
+                                                    <translation code="170397007" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Third diphtheria, pertussis and tetanus triple vaccination"/>
+                                                    <translation code="65H3.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Third triple vaccination - DTP"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110216"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Reason: Routine Measure&#10;Batch No: aaa&#10;Dosage: 0.5 ml</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="5EFB1952-A0C1-11ED-808B-AC162D1F16F0"/>
+                                        <code code="25671000000102" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Surgery Consultation Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20110216"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20110216"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130144356"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1946-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery, GP2GPTEST</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1945-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <NarrativeStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFB195F-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <text>This a vaccination in the intervention section</text>
+                                                <statusCode code="COMPLETE"/>
+                                                <availabilityTime value="20110216"/>
+                                            </NarrativeStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD45D-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaLGM" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Transfer-degraded record entry">
+                                                    <originalText>Agrippal S1 1</originalText>
+                                                    <translation code="196411000000103" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Transfer-degraded record entry"/>
+                                                    <translation code="9bJ..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Transfer-degraded record entry"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110216"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Reason: Routine Measure&#10;Batch No: hhh&#10;Dosage: 0.5 ml</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="5EFB1953-A0C1-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20110615"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20110615"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130144356"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1946-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery, GP2GPTEST</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1945-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD460-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaCFj" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Immunisation consent not given">
+                                                    <translation code="310376006" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Immunisation consent not given"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110615"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>(Summary type: Minor). This is a read coded consent refusal</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD462-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaCFi" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Immunisation consent given">
+                                                    <originalText>Immunisation consent given</originalText>
+                                                    <translation code="310375005" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Immunisation consent given"/>
+                                                    <translation code="68N5.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Full consent for immunisation"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110615"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>(Summary type: Minor). This is the consent as a Read code</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD463-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="653.." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Tuberculosis (BCG) vaccination">
+                                                    <originalText>Tuberculosis (BCG) vaccination</originalText>
+                                                    <translation code="42284007" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="BCG vaccination"/>
+                                                    <translation code="653..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Tuberculosis (BCG) vaccination"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110615"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>This is a Read coded imunisation rather than a non read codes</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="5EFB1954-A0C1-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20110615"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20110615"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130144356"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1946-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery, GP2GPTEST</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1945-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD461-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="65I1." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="1st diphtheria, pertussis &amp; tetanus triple &amp; polio vaccinatn">
+                                                    <originalText>1st diphtheria, pertussis &amp; tetanus triple &amp; polio vaccinatn</originalText>
+                                                    <translation code="170400003" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="First diphtheria, pertussis and tetanus triple and polio vaccination"/>
+                                                    <translation code="65I1.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="First DTP (triple)+polio vacc."/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110615"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>(Summary type: Minor)</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="5EFB1955-A0C1-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20120127"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20120127"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130144356"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1946-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery, GP2GPTEST</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1956-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD464-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaCFj" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Immunisation consent not given">
+                                                    <translation code="310376006" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Immunisation consent not given"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20120127"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Ended Refusal: ANTHRAX. hhhh&#10;Ended on 27 Jan 2012 11:24</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="5EFB195A-A0C1-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20230130144355"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20230130144355"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130144355"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1946-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>West Farm Surgery</name>
+                                                    <telecom use="WP" value="tel:01132050080">
+                                                        <useablePeriod>
+                                                            <low value="20230130"/>
+                                                        </useablePeriod>
+                                                    </telecom>
+                                                    <addr use="WP">
+                                                        <streetAddressLine>31 West Farm Avenue</streetAddressLine>
+                                                        <streetAddressLine>Newcastle Upon Tyne</streetAddressLine>
+                                                        <streetAddressLine>Tyne and Wear</streetAddressLine>
+                                                        <postalCode>NE12 8LS</postalCode>
+                                                        <useablePeriod>
+                                                            <low value="20230130"/>
+                                                        </useablePeriod>
+                                                    </addr>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFB1946-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <EhrEmpty classCode="OBS" moodCode="EVN">
+                                                <id root="5EFB195B-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </EhrEmpty>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="5EFFD466-A0C1-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20230130"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20230130"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFFD465-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>West Farm Surgery</name>
+                                                    <telecom use="WP" value="tel:01132050080">
+                                                        <useablePeriod>
+                                                            <low value="20230130"/>
+                                                        </useablePeriod>
+                                                    </telecom>
+                                                    <addr use="WP">
+                                                        <streetAddressLine>31 West Farm Avenue</streetAddressLine>
+                                                        <streetAddressLine>Newcastle Upon Tyne</streetAddressLine>
+                                                        <streetAddressLine>Tyne and Wear</streetAddressLine>
+                                                        <postalCode>NE12 8LS</postalCode>
+                                                        <useablePeriod>
+                                                            <low value="20230130"/>
+                                                        </useablePeriod>
+                                                    </addr>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <component typeCode="COMP">
+                                            <RegistrationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD467-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <code code="25891000000102" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="GMS - Provisional">
+                                                    <originalText>Applied</originalText>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <low value="20230130"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20230130"/>
+                                                <responsibleParty typeCode="RESP">
+                                                    <agentRef classCode="AGNT">
+                                                        <id root="5EFFD468-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                    </agentRef>
+                                                </responsibleParty>
+                                            </RegistrationStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="5EFFD469-A0C1-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20230130"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20230130"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="5EFFD465-A0C1-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>West Farm Surgery</name>
+                                                    <telecom use="WP" value="tel:01132050080">
+                                                        <useablePeriod>
+                                                            <low value="20230130"/>
+                                                        </useablePeriod>
+                                                    </telecom>
+                                                    <addr use="WP">
+                                                        <streetAddressLine>31 West Farm Avenue</streetAddressLine>
+                                                        <streetAddressLine>Newcastle Upon Tyne</streetAddressLine>
+                                                        <streetAddressLine>Tyne and Wear</streetAddressLine>
+                                                        <postalCode>NE12 8LS</postalCode>
+                                                        <useablePeriod>
+                                                            <low value="20230130"/>
+                                                        </useablePeriod>
+                                                    </addr>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <component typeCode="COMP">
+                                            <NarrativeStatement classCode="OBS" moodCode="EVN">
+                                                <id root="5EFFD46A-A0C1-11ED-808B-AC162D1F16F0"/>
+                                                <text> ** Care started at West Farm Surgery (Applied) **</text>
+                                                <statusCode code="COMPLETE"/>
+                                                <availabilityTime value="20230130"/>
+                                            </NarrativeStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                            </ehrFolder>
+                        </component>
+                        <inFulfillmentOf typeCode="FLFS">
+                            <priorEhrRequest classCode="EXTRACT" moodCode="RQO">
+                                <id root="5EFB1941-A0C1-11ED-808B-AC162D1F16F0"/>
+                            </priorEhrRequest>
+                        </inFulfillmentOf>
+                        <limitation typeCode="LIMIT" inversionInd="true">
+                            <limitingEhrExtractSpecification classCode="OBS" moodCode="DEF">
+                                <id root="5EFFD46C-A0C1-11ED-808B-AC162D1F16F0"/>
+                                <code code="37241000000102" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Entire record available to originator (administrative concept)"/>
+                            </limitingEhrExtractSpecification>
+                        </limitation>
+                    </EhrExtract>
+                </subject>
+            </ControlActEvent>
+        </RCMR_IN030000UK06>
+    </payload>
+    <attachments></attachments>
+</custom_transport>

@@ -1,0 +1,1492 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<custom_transport>
+    <sender>
+        <accredited_system_id>DUMMY</accredited_system_id>
+    </sender>
+    <receiver>
+        <organisation_code>DUMMY</organisation_code>
+    </receiver>
+    <payload>
+        <RCMR_IN030000UK06 xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ..\Schemas\RCMR_IN030000UK06.xsd">
+            <id root="E69ECDA2-A0C2-11ED-808B-AC162D1F16F0"/>
+            <creationTime value="20230130172407"/>
+            <versionCode code="V3NPfIT3.1.10"/>
+            <interactionId root="2.16.840.1.113883.2.1.3.2.4.12" extension="RCMR_IN030000UK06"/>
+            <processingCode code="P"/>
+            <processingModeCode code="T"/>
+            <acceptAckCode code="NE"/>
+            <communicationFunctionRcv typeCode="RCV">
+                <device classCode="DEV" determinerCode="INSTANCE">
+                    <id root="1.2.826.0.1285.0.2.0.107" extension="321321321321"/>
+                </device>
+            </communicationFunctionRcv>
+            <communicationFunctionSnd typeCode="SND">
+                <device classCode="DEV" determinerCode="INSTANCE">
+                    <id root="1.2.826.0.1285.0.2.0.107" extension="123123123123"/>
+                </device>
+            </communicationFunctionSnd>
+            <ControlActEvent classCode="CACT" moodCode="EVN">
+                <author1 typeCode="AUT">
+                    <AgentSystemSDS classCode="AGNT">
+                        <agentSystemSDS classCode="DEV" determinerCode="INSTANCE">
+                            <id root="1.2.826.0.1285.0.2.0.107" extension="SYSTMONEASID"/>
+                        </agentSystemSDS>
+                    </AgentSystemSDS>
+                </author1>
+                <subject typeCode="SUBJ" contextConductionInd="false">
+                    <EhrExtract classCode="EXTRACT" moodCode="EVN">
+                        <id root="E69ECDA3-A0C2-11ED-808B-AC162D1F16F0"/>
+                        <statusCode code="COMPLETE"/>
+                        <availabilityTime value="20230130172407"/>
+                        <recordTarget typeCode="RCT">
+                            <patient classCode="PAT">
+                                <id root="2.16.840.1.113883.2.1.4.1" extension="9727864120"/>
+                            </patient>
+                        </recordTarget>
+                        <author typeCode="AUT">
+                            <time value="20230130172407"/>
+                            <AgentOrgSDS classCode="AGNT">
+                                <agentOrganizationSDS classCode="ORG" determinerCode="INSTANCE">
+                                    <id root="1.2.826.0.1285.0.1.10" extension="A86005"/>
+                                </agentOrganizationSDS>
+                            </AgentOrgSDS>
+                        </author>
+                        <destination typeCode="DST">
+                            <AgentOrgSDS classCode="AGNT">
+                                <agentOrganizationSDS classCode="ORG" determinerCode="INSTANCE">
+                                    <id root="1.2.826.0.1285.0.1.10" extension="A86005"/>
+                                </agentOrganizationSDS>
+                            </AgentOrgSDS>
+                        </destination>
+                        <component typeCode="COMP">
+                            <ehrFolder classCode="FOLDER" moodCode="EVN">
+                                <id root="E6A388B7-A0C2-11ED-808B-AC162D1F16F0"/>
+                                <statusCode code="COMPLETE"/>
+                                <effectiveTime>
+                                    <low value="20110224"/>
+                                    <high value="20230130161648"/>
+                                </effectiveTime>
+                                <availabilityTime value="20230130172407"/>
+                                <author typeCode="AUT">
+                                    <time value="20230130172407"/>
+                                    <AgentOrgSDS classCode="AGNT">
+                                        <agentOrganizationSDS classCode="ORG" determinerCode="INSTANCE">
+                                            <id root="1.2.826.0.1285.0.1.10" extension="A86005"/>
+                                        </agentOrganizationSDS>
+                                    </AgentOrgSDS>
+                                </author>
+                                <responsibleParty typeCode="RESP">
+                                    <agentDirectory classCode="AGNT">
+                                        <part typeCode="PART">
+                                            <Agent classCode="AGNT">
+                                                <id root="E69ECDA5-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="704951000000106" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Other person"/>
+                                                <agentPerson classCode="PSN" determinerCode="INSTANCE">
+                                                    <name>
+                                                        <family>Testvale Surgery</family>
+                                                    </name>
+                                                </agentPerson>
+                                            </Agent>
+                                        </part>
+                                        <part typeCode="PART">
+                                            <Agent classCode="AGNT">
+                                                <id root="E69ECDA6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="704951000000106" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Other person"/>
+                                                <agentPerson classCode="PSN" determinerCode="INSTANCE">
+                                                    <name use="L">
+                                                        <prefix>Mr</prefix>
+                                                        <given>Andrew</given>
+                                                        <family>Guiseley</family>
+                                                    </name>
+                                                    <administrativeGenderCode code="1"/>
+                                                </agentPerson>
+                                                <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                                                    <id root="2.16.840.1.113883.2.1.4.3" extension="A86005"/>
+                                                    <code code="600"/>
+                                                    <name>West Farm Surgery</name>
+                                                    <telecom use="WP" value="tel:01132050080">
+                                                        <useablePeriod>
+                                                            <low value="20230130"/>
+                                                        </useablePeriod>
+                                                    </telecom>
+                                                    <addr use="WP">
+                                                        <streetAddressLine>31 West Farm Avenue</streetAddressLine>
+                                                        <streetAddressLine>Newcastle Upon Tyne</streetAddressLine>
+                                                        <streetAddressLine>Tyne and Wear</streetAddressLine>
+                                                        <postalCode>NE12 8LS</postalCode>
+                                                        <useablePeriod>
+                                                            <low value="20230130"/>
+                                                        </useablePeriod>
+                                                    </addr>
+                                                </representedOrganization>
+                                            </Agent>
+                                        </part>
+                                        <part typeCode="PART">
+                                            <Agent classCode="AGNT">
+                                                <id root="E6A388B4-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <id root="2.16.840.1.113883.2.1.4.2" extension="8992788"/>
+                                                <code code="704951000000106" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Other person"/>
+                                                <agentPerson classCode="PSN" determinerCode="INSTANCE">
+                                                    <name use="L">
+                                                        <prefix>Mr</prefix>
+                                                        <given>Peter</given>
+                                                        <family>Salisbury</family>
+                                                    </name>
+                                                </agentPerson>
+                                                <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                                                    <id root="2.16.840.1.113883.2.1.4.3" extension="A86005"/>
+                                                    <code code="600"/>
+                                                    <name>West Farm Surgery</name>
+                                                    <telecom use="WP" value="tel:01132050080">
+                                                        <useablePeriod>
+                                                            <low value="20230130"/>
+                                                        </useablePeriod>
+                                                    </telecom>
+                                                    <addr use="WP">
+                                                        <streetAddressLine>31 West Farm Avenue</streetAddressLine>
+                                                        <streetAddressLine>Newcastle Upon Tyne</streetAddressLine>
+                                                        <streetAddressLine>Tyne and Wear</streetAddressLine>
+                                                        <postalCode>NE12 8LS</postalCode>
+                                                        <useablePeriod>
+                                                            <low value="20230130"/>
+                                                        </useablePeriod>
+                                                    </addr>
+                                                </representedOrganization>
+                                            </Agent>
+                                        </part>
+                                        <part typeCode="PART">
+                                            <Agent classCode="AGNT">
+                                                <id root="E69ECDA8-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="704951000000106" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Other person"/>
+                                                <agentPerson classCode="PSN" determinerCode="INSTANCE">
+                                                    <name>
+                                                        <family>Hampshire Community</family>
+                                                    </name>
+                                                </agentPerson>
+                                            </Agent>
+                                        </part>
+                                        <part typeCode="PART">
+                                            <Agent classCode="AGNT">
+                                                <id root="E69ECDB6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="704951000000106" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Other person"/>
+                                                <agentPerson classCode="PSN" determinerCode="INSTANCE">
+                                                    <name>
+                                                        <family>David McAvenue</family>
+                                                    </name>
+                                                </agentPerson>
+                                            </Agent>
+                                        </part>
+                                        <part typeCode="PART">
+                                            <Agent classCode="AGNT">
+                                                <id root="E6A388B1-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="704951000000106" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Other person"/>
+                                                <agentPerson classCode="PSN" determinerCode="INSTANCE">
+                                                    <name>
+                                                        <family>West Farm Surgery</family>
+                                                    </name>
+                                                </agentPerson>
+                                            </Agent>
+                                        </part>
+                                        <part typeCode="PART">
+                                            <Agent classCode="AGNT">
+                                                <id root="E6A38891-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="704951000000106" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Other person"/>
+                                                <agentPerson classCode="PSN" determinerCode="INSTANCE">
+                                                    <name use="L">
+                                                        <prefix>Hampshire</prefix>
+                                                        <family>Community</family>
+                                                    </name>
+                                                </agentPerson>
+                                            </Agent>
+                                        </part>
+                                        <part typeCode="PART">
+                                            <Agent classCode="AGNT">
+                                                <id root="E69ECDAA-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="704951000000106" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Other person"/>
+                                                <agentPerson classCode="PSN" determinerCode="INSTANCE">
+                                                    <name>
+                                                        <family>Peter Whitcombe</family>
+                                                    </name>
+                                                </agentPerson>
+                                            </Agent>
+                                        </part>
+                                    </agentDirectory>
+                                </responsibleParty>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="E69ECDA4-A0C2-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20110224"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20110224"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130161705"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDA6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDA5-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <NarrativeStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E69ECDBF-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <text> ** Care started at: Testvale Surgery **</text>
+                                                <statusCode code="COMPLETE"/>
+                                                <availabilityTime value="20110224"/>
+                                            </NarrativeStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="E69ECDA7-A0C2-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20110224"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20110224"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130161705"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDA6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Hampshire Community</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDA8-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <NarrativeStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E69ECDC0-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <text> ** Care started at: Hampshire Community **</text>
+                                                <statusCode code="COMPLETE"/>
+                                                <availabilityTime value="20110224"/>
+                                            </NarrativeStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="E69ECDA9-A0C2-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20110224"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20110224"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130161705"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDA6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Hampshire Community, COMHAMPSHIRE</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDAA-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A38893-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="246A." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="O/E - Diastolic BP reading">
+                                                    <originalText>O/E - Diastolic BP reading</originalText>
+                                                    <translation code="1091811000000102" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Diastolic arterial pressure"/>
+                                                    <translation code="246A.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="O/E - Diastolic BP reading"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110224"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Value: 90.0 mm[Hg]</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A38894-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="2469." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="O/E - Systolic BP reading">
+                                                    <originalText>O/E - Systolic BP reading</originalText>
+                                                    <translation code="72313002" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Systolic arterial pressure"/>
+                                                    <translation code="2469.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="O/E - Systolic BP reading"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110224"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Value: 120.0 mm[Hg]</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="E69ECDAB-A0C2-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20110224000000"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20110224000000"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130161705"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDA6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Hampshire Community, COMHAMPSHIRE</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDAA-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <RequestStatement classCode="OBS" moodCode="RQO">
+                                                <id root="E6A38890-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="8H..." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Referral for further care">
+                                                    <translation code="183444007" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Referral for further care"/>
+                                                    <translation code="8H...00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Referral for further care"/>
+                                                </code>
+                                                <text>Outcome: Care/Input Completed&#10;Referral Type: Other&#10;Summary: Referral for further care&#10;Sender: WHITCOMBE (Peter)&#10;Status: Brian House Inactive (Active)&#10;Recorded on: 24 Feb 2011&#10;Recorded at: Hampshire Community (COMHAMPSHIRE)&#10;Source of referral: Self-Referral&#10;Service offered: Private&#10;Urgency: High Risk&#10;Source of referral: Self-Referral&#10;Date of referral: 24 Feb 2011 15:33&#10;Date of action: 24 Feb 2011 15:33&#10;Primary reason for referral: Bipolar Disorder&#10;Location: Pandemic flu vaccination centre&#10;Outcome of referral: Brian House &#129; Diagnostic/Assessment criteria&#10;Patient aware: true&#10;Recipient: Hampshire  Community&#10;Sent: 24 Feb 2011 15:33</text>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110224000000"/>
+                                                <responsibleParty typeCode="RESP">
+                                                    <agentRef classCode="AGNT">
+                                                        <id root="E6A38891-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                    </agentRef>
+                                                </responsibleParty>
+                                            </RequestStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <NarrativeStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A38892-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <text>Recipient: Hampshire  Community&#10;Sent: 24 Feb 2011 15:33</text>
+                                                <statusCode code="COMPLETE"/>
+                                                <availabilityTime value="20110224000000"/>
+                                            </NarrativeStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="E69ECDAC-A0C2-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20110225000000"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20110225000000"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130161705"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDA6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery, GP2GPTEST</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDAA-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <EhrEmpty classCode="OBS" moodCode="EVN">
+                                                <id root="E69ECDC1-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </EhrEmpty>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="E69ECDAD-A0C2-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20110225000000"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20110225000000"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130161705"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDA6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery, GP2GPTEST</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDAA-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <EhrEmpty classCode="OBS" moodCode="EVN">
+                                                <id root="E69ECDC2-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </EhrEmpty>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="E69ECDAE-A0C2-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20110225000000"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20110225000000"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130161705"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDA6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery, GP2GPTEST</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDAA-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <EhrEmpty classCode="OBS" moodCode="EVN">
+                                                <id root="E69ECDC3-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </EhrEmpty>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="E69ECDAF-A0C2-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20110225"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20110225"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130161705"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDA6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDA5-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <NarrativeStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E69ECDC4-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <text>Registration: Applied&#10;Responsible party: Peter Whitcombe (Testvale Surgery)</text>
+                                                <statusCode code="COMPLETE"/>
+                                                <availabilityTime value="20110225"/>
+                                            </NarrativeStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="E69ECDB0-A0C2-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20110225"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20110225"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130161705"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDA6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDA5-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <NarrativeStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E69ECDC5-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <text> ** Care started at: Testvale Surgery (Applied) **</text>
+                                                <statusCode code="COMPLETE"/>
+                                                <availabilityTime value="20110225"/>
+                                            </NarrativeStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="E69ECDB1-A0C2-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20110225"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20110225"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130161705"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDA6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDA5-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <NarrativeStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E69ECDC6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <text> ** Care ended at Testvale Surgery **</text>
+                                                <statusCode code="COMPLETE"/>
+                                                <availabilityTime value="20110225"/>
+                                            </NarrativeStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="E69ECDB2-A0C2-11ED-808B-AC162D1F16F0"/>
+                                        <code code="25671000000102" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Surgery Consultation Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20110225"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20110225"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130161705"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDA6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Hampshire Community, COMHAMPSHIRE</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDAA-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E69ECDBD-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaIw6" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Borg Breathlessness Score: 8 very severe (+)">
+                                                    <translation code="401291006" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Borg Breathlessness Score: 8 very severe (+)"/>
+                                                    <translation code="173X.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Borg Breathlessness Score: 8 very severe (+)"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <low value="20110225"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110225"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Problem severity: Minor</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <LinkSet classCode="OBS" moodCode="EVN">
+                                                <id root="E69ECDBE-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="394774009" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Active Problem"/>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <low value="20110225"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110225"/>
+                                                <component typeCode="COMP">
+                                                    <statementRef classCode="OBS" moodCode="EVN">
+                                                        <id root="E6A38895-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                    </statementRef>
+                                                </component>
+                                                <component typeCode="COMP">
+                                                    <statementRef classCode="OBS" moodCode="EVN">
+                                                        <id root="E6A38896-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                    </statementRef>
+                                                </component>
+                                                <component typeCode="COMP">
+                                                    <statementRef classCode="OBS" moodCode="EVN">
+                                                        <id root="E6A3889A-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                    </statementRef>
+                                                </component>
+                                                <component typeCode="COMP">
+                                                    <statementRef classCode="OBS" moodCode="EVN">
+                                                        <id root="E6A3889B-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                    </statementRef>
+                                                </component>
+                                                <component typeCode="COMP">
+                                                    <statementRef classCode="OBS" moodCode="EVN">
+                                                        <id root="E6A3889C-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                    </statementRef>
+                                                </component>
+                                                <component typeCode="COMP">
+                                                    <statementRef classCode="OBS" moodCode="EVN">
+                                                        <id root="E6A3889D-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                    </statementRef>
+                                                </component>
+                                                <component typeCode="COMP">
+                                                    <statementRef classCode="OBS" moodCode="EVN">
+                                                        <id root="E6A3889E-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                    </statementRef>
+                                                </component>
+                                                <component typeCode="COMP">
+                                                    <statementRef classCode="OBS" moodCode="EVN">
+                                                        <id root="E6A3889F-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                    </statementRef>
+                                                </component>
+                                                <conditionNamed typeCode="NAME" inversionInd="true">
+                                                    <namedStatementRef classCode="OBS" moodCode="EVN">
+                                                        <id root="E69ECDBD-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                    </namedStatementRef>
+                                                </conditionNamed>
+                                            </LinkSet>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A38895-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="8H53." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Referral to ear, nose and throat service">
+                                                    <originalText>Referral to ear, nose and throat service</originalText>
+                                                    <translation code="183544005" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Referral to ear, nose and throat service"/>
+                                                    <translation code="8H53.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="ENT referral"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110225"/>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A38896-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="X00kz" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Rhinitis caseosa">
+                                                    <translation code="232344001" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Rhinitis caseosa"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110225"/>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A38897-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaIw6" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Borg Breathlessness Score: 8 very severe (+)">
+                                                    <translation code="401291006" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Borg Breathlessness Score: 8 very severe (+)"/>
+                                                    <translation code="173X.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Borg Breathlessness Score: 8 very severe (+)"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110225"/>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A38898-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XE26u" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Nasal swab taken">
+                                                    <translation code="269944001" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Nasal swab taken"/>
+                                                    <translation code="4JF2.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Nasal swab taken"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110225"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>(Summary type: Chronic). These are some notes on nasal swab added at Hampshire Community</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A38899-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="X1024" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Aspirin-sensitive asthma with nasal polyps">
+                                                    <originalText>Aspirin-sensitive asthma with nasal polyps</originalText>
+                                                    <translation code="10692681000119108" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Aspirin exacerbated respiratory disease"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110225"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>(New Episode. Summary type: Chronic)</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A3889A-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="22A.." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="O/E - weight">
+                                                    <originalText>O/E - weight</originalText>
+                                                    <translation code="27113001" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Body weight"/>
+                                                    <translation code="22A..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="O/E - weight"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110225"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Value: 60.0 kg&#10;(Summary type: Minor)</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A3889B-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XM1Jh" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Smoker in the family">
+                                                    <translation code="275105001" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Smoker in the family"/>
+                                                    <translation code="13WF.11" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Smoker in the family"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110225"/>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A3889C-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XE0qq" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Dyspnoea">
+                                                    <originalText>Dyspnoea</originalText>
+                                                    <translation code="267036007" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Dyspnoea"/>
+                                                    <translation code="1739.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Shortness of breath"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110225"/>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A3889D-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="H3101" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Smokers&apos; cough">
+                                                    <translation code="46802002" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Smokers&apos; cough"/>
+                                                    <translation code="H310100" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Smokers&apos; cough"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110225"/>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A3889E-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="229.." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="O/E - height">
+                                                    <originalText>O/E - height</originalText>
+                                                    <translation code="248333004" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Standing height"/>
+                                                    <translation code="229..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="O/E - height"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110225"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Value: 1.45 m&#10;(Summary type: Minor)</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A3889F-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="2D33." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="O/E - nasal polyp present">
+                                                    <originalText>O/E - nasal polyp present</originalText>
+                                                    <translation code="736499003" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Polyp of nasal cavity and/or nasal sinus"/>
+                                                    <translation code="2D33.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="O/E - nasal polyp present"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110225"/>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A388A0-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaIw6" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Borg Breathlessness Score: 8 very severe (+)">
+                                                    <translation code="401291006" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Borg Breathlessness Score: 8 very severe (+)"/>
+                                                    <translation code="173X.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Borg Breathlessness Score: 8 very severe (+)"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110225"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Problem severity: Minor</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="E69ECDB3-A0C2-11ED-808B-AC162D1F16F0"/>
+                                        <code code="25671000000102" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Surgery Consultation Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20110228"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20110228"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130161705"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDA6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery, GP2GPTEST</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDAA-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <CompoundStatement classCode="CATEGORY" moodCode="EVN">
+                                                <id root="E6A388A1-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="14L..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="H/O: drug allergy"/>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110228"/>
+                                                <component typeCode="COMP" contextConductionInd="true">
+                                                    <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                        <id root="E6A388A2-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                        <code code="Xa5PC" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Silver nitrate adverse reaction">
+                                                            <translation code="292662000" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Silver nitrate adverse reaction"/>
+                                                        </code>
+                                                        <statusCode code="COMPLETE"/>
+                                                        <effectiveTime>
+                                                            <center nullFlavor="NI"/>
+                                                        </effectiveTime>
+                                                        <availabilityTime value="20110228"/>
+                                                    </ObservationStatement>
+                                                </component>
+                                            </CompoundStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <CompoundStatement classCode="CATEGORY" moodCode="EVN">
+                                                <id root="E6A388A3-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="SN53.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Allergy, unspecified"/>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110228"/>
+                                                <component typeCode="COMP" contextConductionInd="true">
+                                                    <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                        <id root="E6A388A4-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                        <code code="XaLGS" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Transfer-degraded non-drug allergy">
+                                                            <translation code="196471000000108" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Transfer-degraded non-drug allergy"/>
+                                                            <translation code="9bJ5.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Transfer-degraded non-drug allergy"/>
+                                                        </code>
+                                                        <statusCode code="COMPLETE"/>
+                                                        <effectiveTime>
+                                                            <center nullFlavor="NI"/>
+                                                        </effectiveTime>
+                                                        <availabilityTime value="20110228"/>
+                                                        <pertinentInformation typeCode="PERT">
+                                                            <sequenceNumber value="+1"/>
+                                                            <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                                <text>Allergy screening test</text>
+                                                            </pertinentAnnotation>
+                                                        </pertinentInformation>
+                                                    </ObservationStatement>
+                                                </component>
+                                            </CompoundStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <CompoundStatement classCode="CATEGORY" moodCode="EVN">
+                                                <id root="E6A388A5-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="SN53.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Allergy, unspecified"/>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110228"/>
+                                                <component typeCode="COMP" contextConductionInd="true">
+                                                    <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                        <id root="E6A388A6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                        <code code="XaB3a" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Allergic skin rash">
+                                                            <originalText>Allergic skin rash</originalText>
+                                                            <translation code="21626009" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Cutaneous hypersensitivity"/>
+                                                        </code>
+                                                        <statusCode code="COMPLETE"/>
+                                                        <effectiveTime>
+                                                            <center nullFlavor="NI"/>
+                                                        </effectiveTime>
+                                                        <availabilityTime value="20110228"/>
+                                                        <pertinentInformation typeCode="PERT">
+                                                            <sequenceNumber value="+1"/>
+                                                            <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                                <text>This data was entered in the GP Surgery</text>
+                                                            </pertinentAnnotation>
+                                                        </pertinentInformation>
+                                                    </ObservationStatement>
+                                                </component>
+                                            </CompoundStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A388A9-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XaIqQ" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Allergy screening test">
+                                                    <translation code="1009441000000104" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Allergy screening test"/>
+                                                    <translation code="43cB.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Allergy screening test"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110228"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Low privacy setting, added at GP surgery</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A388AC-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XM07J" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Eruption">
+                                                    <originalText>Eruption</originalText>
+                                                    <translation code="271807003" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Eruption"/>
+                                                    <translation code="R021.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="[D]Rash and other nonspecific skin eruption"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110228"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Low privacy setting, added at GP surgery</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <CompoundStatement classCode="CATEGORY" moodCode="EVN">
+                                                <id root="E6A388AD-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="14L..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="H/O: drug allergy"/>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110228"/>
+                                                <component typeCode="COMP" contextConductionInd="true">
+                                                    <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                        <id root="E6A388AE-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                        <code code="XaLGR" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Transfer-degraded drug allergy">
+                                                            <originalText>Allergic reaction to substance</originalText>
+                                                            <translation code="196461000000101" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Transfer-degraded drug allergy"/>
+                                                            <translation code="9bJ4.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Transfer-degraded drug allergy"/>
+                                                        </code>
+                                                        <statusCode code="COMPLETE"/>
+                                                        <effectiveTime>
+                                                            <center nullFlavor="NI"/>
+                                                        </effectiveTime>
+                                                        <availabilityTime value="20110228"/>
+                                                        <pertinentInformation typeCode="PERT">
+                                                            <sequenceNumber value="+1"/>
+                                                            <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                                <text>Low privacy setting, added at GP surgery</text>
+                                                            </pertinentAnnotation>
+                                                        </pertinentInformation>
+                                                    </ObservationStatement>
+                                                </component>
+                                            </CompoundStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A388AF-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XM1Wy" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="O/E - skin lesion">
+                                                    <translation code="275869006" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="O/E - skin lesion"/>
+                                                    <translation code="2FY..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="O/E - skin lesion"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110228"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Low privacy setting, added at GP surgery</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="E69ECDB4-A0C2-11ED-808B-AC162D1F16F0"/>
+                                        <code code="25671000000102" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Surgery Consultation Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20110228"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20110228"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130161705"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDA6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery, GP2GPTEST</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDAA-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A388A7-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="42E7." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Basophilic stippling">
+                                                    <translation code="53362006" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Basophilic stippling"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110228"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>High privacy setting, added at GP surgery</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A388A8-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="Ub0nM" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Shares needles">
+                                                    <translation code="228400001" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Shares needles"/>
+                                                    <translation code="1V3C.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Shares needles"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110228"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>High privacy setting, added at GP surgery</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A388AA-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="E24.." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Drug dependence">
+                                                    <translation code="191816009" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Drug dependence"/>
+                                                    <translation code="E24..00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Drug dependence"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110228"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>High privacy setting, added at GP surgery</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A388AB-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="XE0hi" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Drug addiction therapy">
+                                                    <translation code="266707007" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Drug addiction therapy"/>
+                                                    <translation code="8B23.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Drug addiction therapy"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110228"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>High privacy setting, added at GP surgery</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="E69ECDB5-A0C2-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20110304"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20110304"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130161705"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDA6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Hampshire Community, COMHAMPSHIRE</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDB6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <ObservationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A388B0-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="PKyz5" codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="Angelman&apos;s syndrome">
+                                                    <originalText>Angelman&apos;s syndrome</originalText>
+                                                    <translation code="76880004" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Angelman syndrome"/>
+                                                    <translation code="PKyz511" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="Angelman syndrome"/>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <center nullFlavor="NI"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20110304"/>
+                                                <pertinentInformation typeCode="PERT">
+                                                    <sequenceNumber value="+1"/>
+                                                    <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                        <text>Completely private setting</text>
+                                                    </pertinentAnnotation>
+                                                </pertinentInformation>
+                                            </ObservationStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="E69ECDB7-A0C2-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20110308000000"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20110308000000"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130161705"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDA6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery, GP2GPTEST</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDB6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <EhrEmpty classCode="OBS" moodCode="EVN">
+                                                <id root="E69ECDC7-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </EhrEmpty>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="E69ECDB8-A0C2-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20110720000000"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20110720000000"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130161705"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDA6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>Testvale Surgery, GP2GPTEST</name>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <Participant2 typeCode="PRF" contextControlCode="OP">
+                                            <agentRef classCode="AGNT">
+                                                <id root="E69ECDB6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </Participant2>
+                                        <component typeCode="COMP">
+                                            <EhrEmpty classCode="OBS" moodCode="EVN">
+                                                <id root="E69ECDC8-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </EhrEmpty>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="E6A388B2-A0C2-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20230130"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20230130"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="E6A388B1-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>West Farm Surgery</name>
+                                                    <telecom use="WP" value="tel:01132050080">
+                                                        <useablePeriod>
+                                                            <low value="20230130"/>
+                                                        </useablePeriod>
+                                                    </telecom>
+                                                    <addr use="WP">
+                                                        <streetAddressLine>31 West Farm Avenue</streetAddressLine>
+                                                        <streetAddressLine>Newcastle Upon Tyne</streetAddressLine>
+                                                        <streetAddressLine>Tyne and Wear</streetAddressLine>
+                                                        <postalCode>NE12 8LS</postalCode>
+                                                        <useablePeriod>
+                                                            <low value="20230130"/>
+                                                        </useablePeriod>
+                                                    </addr>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <component typeCode="COMP">
+                                            <RegistrationStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A388B3-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <code code="25891000000102" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="GMS - Provisional">
+                                                    <originalText>Applied</originalText>
+                                                </code>
+                                                <statusCode code="COMPLETE"/>
+                                                <effectiveTime>
+                                                    <low value="20230130"/>
+                                                </effectiveTime>
+                                                <availabilityTime value="20230130"/>
+                                                <responsibleParty typeCode="RESP">
+                                                    <agentRef classCode="AGNT">
+                                                        <id root="E6A388B4-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                    </agentRef>
+                                                </responsibleParty>
+                                            </RegistrationStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                                <component typeCode="COMP">
+                                    <ehrComposition classCode="COMPOSITION" moodCode="EVN">
+                                        <id root="E6A388B5-A0C2-11ED-808B-AC162D1F16F0"/>
+                                        <code code="37351000000107" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Administration Note"/>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center value="20230130"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="20230130"/>
+                                        <author typeCode="AUT" contextControlCode="OP">
+                                            <time value="20230130"/>
+                                            <agentRef classCode="AGNT">
+                                                <id root="E6A388B1-A0C2-11ED-808B-AC162D1F16F0"/>
+                                            </agentRef>
+                                        </author>
+                                        <location typeCode="LOC">
+                                            <locatedEntity classCode="LOCE">
+                                                <locatedPlace classCode="PLC" determinerCode="INSTANCE">
+                                                    <name>West Farm Surgery</name>
+                                                    <telecom use="WP" value="tel:01132050080">
+                                                        <useablePeriod>
+                                                            <low value="20230130"/>
+                                                        </useablePeriod>
+                                                    </telecom>
+                                                    <addr use="WP">
+                                                        <streetAddressLine>31 West Farm Avenue</streetAddressLine>
+                                                        <streetAddressLine>Newcastle Upon Tyne</streetAddressLine>
+                                                        <streetAddressLine>Tyne and Wear</streetAddressLine>
+                                                        <postalCode>NE12 8LS</postalCode>
+                                                        <useablePeriod>
+                                                            <low value="20230130"/>
+                                                        </useablePeriod>
+                                                    </addr>
+                                                </locatedPlace>
+                                            </locatedEntity>
+                                        </location>
+                                        <component typeCode="COMP">
+                                            <NarrativeStatement classCode="OBS" moodCode="EVN">
+                                                <id root="E6A388B6-A0C2-11ED-808B-AC162D1F16F0"/>
+                                                <text> ** Care started at West Farm Surgery (Applied) **</text>
+                                                <statusCode code="COMPLETE"/>
+                                                <availabilityTime value="20230130"/>
+                                            </NarrativeStatement>
+                                        </component>
+                                    </ehrComposition>
+                                </component>
+                            </ehrFolder>
+                        </component>
+                        <inFulfillmentOf typeCode="FLFS">
+                            <priorEhrRequest classCode="EXTRACT" moodCode="RQO">
+                                <id root="E69ECDA1-A0C2-11ED-808B-AC162D1F16F0"/>
+                            </priorEhrRequest>
+                        </inFulfillmentOf>
+                        <limitation typeCode="LIMIT" inversionInd="true">
+                            <limitingEhrExtractSpecification classCode="OBS" moodCode="DEF">
+                                <id root="E6A388B8-A0C2-11ED-808B-AC162D1F16F0"/>
+                                <code code="37241000000102" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Entire record available to originator (administrative concept)"/>
+                            </limitingEhrExtractSpecification>
+                        </limitation>
+                    </EhrExtract>
+                </subject>
+            </ControlActEvent>
+        </RCMR_IN030000UK06>
+    </payload>
+    <attachments></attachments>
+</custom_transport>

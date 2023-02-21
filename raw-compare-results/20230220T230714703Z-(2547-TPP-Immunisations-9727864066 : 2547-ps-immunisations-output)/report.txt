@@ -1,0 +1,1237 @@
+
+-----------------------------
+Comparing the following files
+./unprocessed-files/2547-TPP-Immunisations-9727864066.json----./unprocessed-files/2547-ps-immunisations-output.json
+
+---------------------------------------------------------------------------------
+Analysing Entries of type Patient
+---------------------------------------------------------------------------------
+EMIS Entires = 1 vs PS Entries = 1
+
+Matches will be found via the following fields: onsetDateTime,coding.code.[0].code
+
+EMIS Patient Entry 1 
+EMIS Entry f607100000000000 vs PS Entry f607100000000000
+MISSING: Property active is missing in PS Entry (Emis Value : true) 
+
+---------------------------------------------------------------------------------
+Analysing Entries of type Organization
+---------------------------------------------------------------------------------
+EMIS Entires = 1 vs PS Entries = 3
+ALERT: There is a mismatch in the number of entries of type Organization
+
+Matches will be found via the following fields: id
+
+EMIS Organization Entry 1
+MISSING Entry: EMIS entry with ID 0100000000000000_0b00000000000000 has not been found in the PS enties 
+RESOURCE MISMATCH: Id 0100000000000000_0b00000000000000 has been found against anohter PS Resource type Location
+
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6506c3bf-2817-4385-a2c2-85a471da0945
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6d6c100000000000-ORG
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFFD468-A0C1-11ED-808B-AC162D1F16F0-ORG
+NOTE: Given the limited Details in Organisation, there is no automatic way to compare 
+
+---------------------------------------------------------------------------------
+Analysing Entries of type Practitioner
+---------------------------------------------------------------------------------
+EMIS Entires = 1 vs PS Entries = 9
+ALERT: There is a mismatch in the number of entries of type Practitioner
+
+Matches will be found via the following fields: name.[0].family,name.[0].given.[0]
+
+EMIS Practitioner Entry 1
+EMIS Entry 6d6c100000000000 vs PS Entry 6d6c100000000000
+MISSING: Property lastUpdated is missing in PS Entry (Emis Value : 2023-01-30T14:46:34) 
+
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFB1956-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFD6332-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFB194A-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFFD468-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFB1945-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFFD465-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFB194D-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 51a94408-8677-4491-ac7d-5500920a0ff5
+
+---------------------------------------------------------------------------------
+Analysing Entries of type Encounter
+---------------------------------------------------------------------------------
+EMIS Entires = 15 vs PS Entries = 15
+
+Matches will be found via the following fields: period.start,type.[0].text,id
+
+EMIS Encounter Entry 1
+MISSING Entry: EMIS entry with ID 4000000000000000_b7562a0000000000 has not been found in the PS enties 
+
+EMIS Encounter Entry 2
+EMIS Entry 4000000000000000_a7562a0000000000 vs PS Entry 4000000000000000_a7562a0000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+MISSING: Property text is missing in PS Entry (Emis Value : Admin - Administration note) 
+NEW: Property coding is not present in the EMIS data (PS Value : [object Object]) 
+MISSING: Property display is missing in PS Entry (Emis Value : David McAvenue) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB1945-A0C1-11ED-808B-AC162D1F16F0) 
+MISSING: Property display is missing in PS Entry (Emis Value : GP2GP Import - Testvale Surgery, GP2GPTEST) 
+NEW: Property reference is not present in the EMIS data (PS Value : Location/B9647DBD-BEAE-44C3-B267-157979080930) 
+
+EMIS Encounter Entry 3
+EMIS Entry 4000000000000000_5b562a0000000000 vs PS Entry 4000000000000000_5b562a0000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+MISSING: Property text is missing in PS Entry (Emis Value : Clinical - Administration note) 
+NEW: Property coding is not present in the EMIS data (PS Value : [object Object]) 
+MISSING: Property display is missing in PS Entry (Emis Value : David McAvenue) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB1945-A0C1-11ED-808B-AC162D1F16F0) 
+MISSING: Property display is missing in PS Entry (Emis Value : GP2GP Import - Testvale Surgery, GP2GPTEST) 
+NEW: Property reference is not present in the EMIS data (PS Value : Location/B9647DBD-BEAE-44C3-B267-157979080930) 
+
+EMIS Encounter Entry 4
+MISSING Entry: EMIS entry with ID 4000000000000000_da562a0000000000 has not been found in the PS enties 
+    -Potential Encounter match 5EFB1949-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Encounter match 5EFB194B-A0C1-11ED-808B-AC162D1F16F0
+
+EMIS Encounter Entry 5
+MISSING Entry: EMIS entry with ID 4000000000000000_ca562a0000000000 has not been found in the PS enties 
+    -Potential Encounter match 5EFB1949-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Encounter match 5EFB194B-A0C1-11ED-808B-AC162D1F16F0
+
+EMIS Encounter Entry 6
+EMIS Entry 4000000000000000_4b562a0000000000 vs PS Entry 4000000000000000_4b562a0000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+MISSING: Property text is missing in PS Entry (Emis Value : Admin - Administration note) 
+NEW: Property coding is not present in the EMIS data (PS Value : [object Object]) 
+MISSING: Property display is missing in PS Entry (Emis Value : Peter Whitcombe) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194D-A0C1-11ED-808B-AC162D1F16F0) 
+MISSING: Property display is missing in PS Entry (Emis Value : GP2GP Import - Testvale Surgery, GP2GPTEST) 
+NEW: Property reference is not present in the EMIS data (PS Value : Location/B9647DBD-BEAE-44C3-B267-157979080930) 
+
+EMIS Encounter Entry 7
+MISSING Entry: EMIS entry with ID 4000000000000000_d7562a0000000000 has not been found in the PS enties 
+    -Potential Encounter match 5EFB194E-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Encounter match 5EFB194F-A0C1-11ED-808B-AC162D1F16F0
+
+EMIS Encounter Entry 8
+MISSING Entry: EMIS entry with ID 4000000000000000_c7562a0000000000 has not been found in the PS enties 
+    -Potential Encounter match 5EFB194E-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Encounter match 5EFB194F-A0C1-11ED-808B-AC162D1F16F0
+
+EMIS Encounter Entry 9
+EMIS Entry 4000000000000000_3b562a0000000000 vs PS Entry 4000000000000000_3b562a0000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+MISSING: Property text is missing in PS Entry (Emis Value : Admin - Administration note) 
+NEW: Property coding is not present in the EMIS data (PS Value : [object Object]) 
+MISSING: Property display is missing in PS Entry (Emis Value : Peter Whitcombe) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194D-A0C1-11ED-808B-AC162D1F16F0) 
+MISSING: Property display is missing in PS Entry (Emis Value : GP2GP Import - Testvale Surgery, GP2GPTEST) 
+NEW: Property reference is not present in the EMIS data (PS Value : Location/B9647DBD-BEAE-44C3-B267-157979080930) 
+
+EMIS Encounter Entry 10
+MISSING Entry: EMIS entry with ID 4000000000000000_1b562a0000000000 has not been found in the PS enties 
+    -Potential Encounter match 5EFB1951-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Encounter match 5EFB1952-A0C1-11ED-808B-AC162D1F16F0
+
+EMIS Encounter Entry 11
+MISSING Entry: EMIS entry with ID 4000000000000000_2b562a0000000000 has not been found in the PS enties 
+    -Potential Encounter match 5EFB1951-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Encounter match 5EFB1952-A0C1-11ED-808B-AC162D1F16F0
+
+EMIS Encounter Entry 12
+MISSING Entry: EMIS entry with ID 4000000000000000_0b562a0000000000 has not been found in the PS enties 
+    -Potential Encounter match 5EFB1953-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Encounter match 5EFB1954-A0C1-11ED-808B-AC162D1F16F0
+
+EMIS Encounter Entry 13
+MISSING Entry: EMIS entry with ID 4000000000000000_fa562a0000000000 has not been found in the PS enties 
+    -Potential Encounter match 5EFB1953-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Encounter match 5EFB1954-A0C1-11ED-808B-AC162D1F16F0
+
+EMIS Encounter Entry 14
+EMIS Entry 4000000000000000_ea562a0000000000 vs PS Entry 4000000000000000_ea562a0000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+MISSING: Property text is missing in PS Entry (Emis Value : Admin - Administration note) 
+NEW: Property coding is not present in the EMIS data (PS Value : [object Object]) 
+MISSING: Property display is missing in PS Entry (Emis Value : Dr David McAvenue) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB1956-A0C1-11ED-808B-AC162D1F16F0) 
+MISSING: Property display is missing in PS Entry (Emis Value : GP2GP Import - Testvale Surgery, GP2GPTEST) 
+NEW: Property reference is not present in the EMIS data (PS Value : Location/B9647DBD-BEAE-44C3-B267-157979080930) 
+
+EMIS Encounter Entry 15
+MISSING Entry: EMIS entry with ID 4000000000000000_53562a0000000000 has not been found in the PS enties 
+RESOURCE MISMATCH: Id 4000000000000000_53562a0000000000 has been found against anohter PS Resource type Encounter
+
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFB1944-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFB1949-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFB194B-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFB194E-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFB194F-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFB1951-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFB1952-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFB1953-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFB1954-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_53562a0000000000
+
+---------------------------------------------------------------------------------
+Analysing Entries of type List
+---------------------------------------------------------------------------------
+EMIS Entires = 41 vs PS Entries = 30
+ALERT: There is a mismatch in the number of entries of type List
+
+Matches will be found via the following fields: code.coding.[0].code,date,title,id
+
+EMIS List Entry 1
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+EMIS List Entry 2
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+EMIS List Entry 3
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+EMIS List Entry 4
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+EMIS List Entry 5
+EMIS Entry 4000000000000000_b7562a0000000000_Topics vs PS Entry 4000000000000000_53562a0000000000-CONS
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_b7562a0000000000_Topics != 4000000000000000_53562a0000000000-CONS)
+DIFF: Emis Value of resource.title does not match PS Property (Admin - Administration note != Administration Note)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_b7562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+
+EMIS List Entry 6
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+EMIS List Entry 7
+EMIS Entry 4000000000000000_b7562a0000000000_NoTopic vs PS Entry 4000000000000000_b7562a0000000000_NoTopic
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_b7562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Array Property resource.entry does not have equal length with PS property resource.entry (3 != 1)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (Observation/5000000000000000_fedaf31000000000 != Observation/5EFFD46A-A0C1-11ED-808B-AC162D1F16F0)
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+
+EMIS List Entry 8
+EMIS Entry 4000000000000000_a7562a0000000000_Topics vs PS Entry 4000000000000000_53562a0000000000-CONS
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_a7562a0000000000_Topics != 4000000000000000_53562a0000000000-CONS)
+DIFF: Emis Value of resource.title does not match PS Property (Admin - Administration note != Administration Note)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_a7562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (List/4000000000000000_a7562a0000000000_NoTopic != List/4000000000000000_b7562a0000000000_NoTopic)
+
+EMIS List Entry 9
+EMIS Entry 4000000000000000_a7562a0000000000_NoTopic vs PS Entry 4000000000000000_b7562a0000000000_NoTopic
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_a7562a0000000000_NoTopic != 4000000000000000_b7562a0000000000_NoTopic)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_a7562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (Observation/5000000000000000_dedaf31000000000 != Observation/5EFFD46A-A0C1-11ED-808B-AC162D1F16F0)
+
+EMIS List Entry 10
+EMIS Entry 4000000000000000_5b562a0000000000_Topics vs PS Entry 4000000000000000_53562a0000000000-CONS
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_5b562a0000000000_Topics != 4000000000000000_53562a0000000000-CONS)
+DIFF: Emis Value of resource.title does not match PS Property (Clinical - Administration note != Administration Note)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_5b562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (List/4000000000000000_5b562a0000000000_NoTopic != List/4000000000000000_b7562a0000000000_NoTopic)
+
+EMIS List Entry 11
+EMIS Entry 4000000000000000_5b562a0000000000_NoTopic vs PS Entry 4000000000000000_b7562a0000000000_NoTopic
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_5b562a0000000000_NoTopic != 4000000000000000_b7562a0000000000_NoTopic)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_5b562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Array Property resource.entry does not have equal length with PS property resource.entry (2 != 1)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (Observation/9300000000000000_622a0e0000000000 != Observation/5EFFD46A-A0C1-11ED-808B-AC162D1F16F0)
+MISSING EMIS has an additional array entry in resource.[object Object]
+
+EMIS List Entry 12
+EMIS Entry 4000000000000000_da562a0000000000_Topics vs PS Entry 4000000000000000_53562a0000000000-CONS
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_da562a0000000000_Topics != 4000000000000000_53562a0000000000-CONS)
+DIFF: Emis Value of resource.title does not match PS Property (Admin - Administration note != Administration Note)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_da562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (List/4000000000000000_da562a0000000000_NoTopic != List/4000000000000000_b7562a0000000000_NoTopic)
+
+EMIS List Entry 13
+EMIS Entry 4000000000000000_da562a0000000000_NoTopic vs PS Entry 4000000000000000_b7562a0000000000_NoTopic
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_da562a0000000000_NoTopic != 4000000000000000_b7562a0000000000_NoTopic)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_da562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (Observation/9300000000000000_752a0e0000000000 != Observation/5EFFD46A-A0C1-11ED-808B-AC162D1F16F0)
+
+EMIS List Entry 14
+EMIS Entry 4000000000000000_ca562a0000000000_Topics vs PS Entry 4000000000000000_53562a0000000000-CONS
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_ca562a0000000000_Topics != 4000000000000000_53562a0000000000-CONS)
+DIFF: Emis Value of resource.title does not match PS Property (Clinical - Administration note != Administration Note)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_ca562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (List/4000000000000000_ca562a0000000000_NoTopic != List/4000000000000000_b7562a0000000000_NoTopic)
+
+EMIS List Entry 15
+EMIS Entry 4000000000000000_ca562a0000000000_NoTopic vs PS Entry 4000000000000000_b7562a0000000000_NoTopic
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_ca562a0000000000_NoTopic != 4000000000000000_b7562a0000000000_NoTopic)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_ca562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (Observation/9300000000000000_652a0e0000000000 != Observation/5EFFD46A-A0C1-11ED-808B-AC162D1F16F0)
+
+EMIS List Entry 16
+EMIS Entry 4000000000000000_4b562a0000000000_Topics vs PS Entry 4000000000000000_53562a0000000000-CONS
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_4b562a0000000000_Topics != 4000000000000000_53562a0000000000-CONS)
+DIFF: Emis Value of resource.title does not match PS Property (Admin - Administration note != Administration Note)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_4b562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (List/4000000000000000_4b562a0000000000_NoTopic != List/4000000000000000_b7562a0000000000_NoTopic)
+
+EMIS List Entry 17
+EMIS Entry 4000000000000000_4b562a0000000000_NoTopic vs PS Entry 4000000000000000_b7562a0000000000_NoTopic
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_4b562a0000000000_NoTopic != 4000000000000000_b7562a0000000000_NoTopic)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_4b562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Array Property resource.entry does not have equal length with PS property resource.entry (10 != 1)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (Observation/5000000000000000_bcdaf31000000000 != Observation/5EFFD46A-A0C1-11ED-808B-AC162D1F16F0)
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+
+EMIS List Entry 18
+EMIS Entry 4000000000000000_d7562a0000000000_Topics vs PS Entry 4000000000000000_53562a0000000000-CONS
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_d7562a0000000000_Topics != 4000000000000000_53562a0000000000-CONS)
+DIFF: Emis Value of resource.title does not match PS Property (Clinical - Administration note != Administration Note)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_d7562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (List/4000000000000000_d7562a0000000000_NoTopic != List/4000000000000000_b7562a0000000000_NoTopic)
+
+EMIS List Entry 19
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+EMIS List Entry 20
+EMIS Entry 4000000000000000_d7562a0000000000_NoTopic vs PS Entry 4000000000000000_b7562a0000000000_NoTopic
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_d7562a0000000000_NoTopic != 4000000000000000_b7562a0000000000_NoTopic)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_d7562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Array Property resource.entry does not have equal length with PS property resource.entry (13 != 1)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (MedicationRequest/1000000000000000_d654280000000000_order != Observation/5EFFD46A-A0C1-11ED-808B-AC162D1F16F0)
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+
+EMIS List Entry 21
+EMIS Entry 4000000000000000_c7562a0000000000_Topics vs PS Entry 4000000000000000_53562a0000000000-CONS
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_c7562a0000000000_Topics != 4000000000000000_53562a0000000000-CONS)
+DIFF: Emis Value of resource.title does not match PS Property (Clinical - Administration note != Administration Note)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_c7562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (List/4000000000000000_c7562a0000000000_NoTopic != List/4000000000000000_b7562a0000000000_NoTopic)
+
+EMIS List Entry 22
+EMIS Entry 4000000000000000_c7562a0000000000_NoTopic vs PS Entry 4000000000000000_b7562a0000000000_NoTopic
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_c7562a0000000000_NoTopic != 4000000000000000_b7562a0000000000_NoTopic)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_c7562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Array Property resource.entry does not have equal length with PS property resource.entry (14 != 1)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (MedicationRequest/1000000000000000_c654280000000000_order != Observation/5EFFD46A-A0C1-11ED-808B-AC162D1F16F0)
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+
+EMIS List Entry 23
+EMIS Entry 4000000000000000_3b562a0000000000_Topics vs PS Entry 4000000000000000_53562a0000000000-CONS
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_3b562a0000000000_Topics != 4000000000000000_53562a0000000000-CONS)
+DIFF: Emis Value of resource.title does not match PS Property (Admin - Administration note != Administration Note)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_3b562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (List/4000000000000000_3b562a0000000000_NoTopic != List/4000000000000000_b7562a0000000000_NoTopic)
+
+EMIS List Entry 24
+EMIS Entry 4000000000000000_3b562a0000000000_NoTopic vs PS Entry 4000000000000000_b7562a0000000000_NoTopic
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_3b562a0000000000_NoTopic != 4000000000000000_b7562a0000000000_NoTopic)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_3b562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Array Property resource.entry does not have equal length with PS property resource.entry (2 != 1)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (Observation/5000000000000000_8cdaf31000000000 != Observation/5EFFD46A-A0C1-11ED-808B-AC162D1F16F0)
+MISSING EMIS has an additional array entry in resource.[object Object]
+
+EMIS List Entry 25
+EMIS Entry 4000000000000000_1b562a0000000000_Topics vs PS Entry 4000000000000000_53562a0000000000-CONS
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_1b562a0000000000_Topics != 4000000000000000_53562a0000000000-CONS)
+DIFF: Emis Value of resource.title does not match PS Property (Admin - Administration note != Administration Note)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_1b562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (List/4000000000000000_1b562a0000000000_NoTopic != List/4000000000000000_b7562a0000000000_NoTopic)
+
+EMIS List Entry 26
+EMIS Entry 4000000000000000_1b562a0000000000_NoTopic vs PS Entry 4000000000000000_b7562a0000000000_NoTopic
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_1b562a0000000000_NoTopic != 4000000000000000_b7562a0000000000_NoTopic)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_1b562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Array Property resource.entry does not have equal length with PS property resource.entry (6 != 1)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (Observation/5000000000000000_3cdaf31000000000 != Observation/5EFFD46A-A0C1-11ED-808B-AC162D1F16F0)
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+
+EMIS List Entry 27
+EMIS Entry 4000000000000000_2b562a0000000000_Topics vs PS Entry 4000000000000000_53562a0000000000-CONS
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_2b562a0000000000_Topics != 4000000000000000_53562a0000000000-CONS)
+DIFF: Emis Value of resource.title does not match PS Property (Clinical - Surgery Consultation Note != Administration Note)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_2b562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (List/4000000000000000_2b562a0000000000_NoTopic != List/4000000000000000_b7562a0000000000_NoTopic)
+
+EMIS List Entry 28
+EMIS Entry 4000000000000000_2b562a0000000000_NoTopic vs PS Entry 4000000000000000_b7562a0000000000_NoTopic
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_2b562a0000000000_NoTopic != 4000000000000000_b7562a0000000000_NoTopic)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_2b562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Array Property resource.entry does not have equal length with PS property resource.entry (2 != 1)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (Observation/9300000000000000_462a0e0000000000 != Observation/5EFFD46A-A0C1-11ED-808B-AC162D1F16F0)
+MISSING EMIS has an additional array entry in resource.[object Object]
+
+EMIS List Entry 29
+EMIS Entry 4000000000000000_0b562a0000000000_Topics vs PS Entry 4000000000000000_53562a0000000000-CONS
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_0b562a0000000000_Topics != 4000000000000000_53562a0000000000-CONS)
+DIFF: Emis Value of resource.title does not match PS Property (Admin - Administration note != Administration Note)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_0b562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (List/4000000000000000_0b562a0000000000_NoTopic != List/4000000000000000_b7562a0000000000_NoTopic)
+
+EMIS List Entry 30
+EMIS Entry 4000000000000000_0b562a0000000000_NoTopic vs PS Entry 4000000000000000_b7562a0000000000_NoTopic
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_0b562a0000000000_NoTopic != 4000000000000000_b7562a0000000000_NoTopic)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_0b562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Array Property resource.entry does not have equal length with PS property resource.entry (3 != 1)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (Observation/5000000000000000_ebdaf31000000000 != Observation/5EFFD46A-A0C1-11ED-808B-AC162D1F16F0)
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING EMIS has an additional array entry in resource.[object Object]
+
+EMIS List Entry 31
+EMIS Entry 4000000000000000_fa562a0000000000_Topics vs PS Entry 4000000000000000_53562a0000000000-CONS
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_fa562a0000000000_Topics != 4000000000000000_53562a0000000000-CONS)
+DIFF: Emis Value of resource.title does not match PS Property (Admin - Administration note != Administration Note)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_fa562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (List/4000000000000000_fa562a0000000000_NoTopic != List/4000000000000000_b7562a0000000000_NoTopic)
+
+EMIS List Entry 32
+EMIS Entry 4000000000000000_fa562a0000000000_NoTopic vs PS Entry 4000000000000000_b7562a0000000000_NoTopic
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_fa562a0000000000_NoTopic != 4000000000000000_b7562a0000000000_NoTopic)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_fa562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (Observation/5000000000000000_58eaf31000000000 != Observation/5EFFD46A-A0C1-11ED-808B-AC162D1F16F0)
+
+EMIS List Entry 33
+EMIS Entry 4000000000000000_ea562a0000000000_Topics vs PS Entry 4000000000000000_53562a0000000000-CONS
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_ea562a0000000000_Topics != 4000000000000000_53562a0000000000-CONS)
+DIFF: Emis Value of resource.title does not match PS Property (Admin - Administration note != Administration Note)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_ea562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (List/4000000000000000_ea562a0000000000_NoTopic != List/4000000000000000_b7562a0000000000_NoTopic)
+
+EMIS List Entry 34
+EMIS Entry 4000000000000000_ea562a0000000000_NoTopic vs PS Entry 4000000000000000_b7562a0000000000_NoTopic
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_ea562a0000000000_NoTopic != 4000000000000000_b7562a0000000000_NoTopic)
+DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_ea562a0000000000 != Encounter/4000000000000000_53562a0000000000)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T14:43:56 != 2023-01-30)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (Observation/5000000000000000_48eaf31000000000 != Observation/5EFFD46A-A0C1-11ED-808B-AC162D1F16F0)
+
+EMIS List Entry 35
+EMIS Entry 4000000000000000_53562a0000000000_Topics vs PS Entry 4000000000000000_53562a0000000000-CONS
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_53562a0000000000_Topics != 4000000000000000_53562a0000000000-CONS)
+DIFF: Emis Value of resource.title does not match PS Property (Admin != Administration Note)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T11:55:17 != 2023-01-30)
+DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (List/4000000000000000_53562a0000000000_NoTopic != List/4000000000000000_b7562a0000000000_NoTopic)
+
+EMIS List Entry 36
+EMIS Entry 4000000000000000_53562a0000000000_NoTopic vs PS Entry 4000000000000000_b7562a0000000000_NoTopic
+DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_53562a0000000000_NoTopic != 4000000000000000_b7562a0000000000_NoTopic)
+DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T11:55:17 != 2023-01-30)
+MISSING: Property display is missing in PS Entry (Emis Value : Patient Flag items are not supported by the provider system.) 
+NEW: Property reference is not present in the EMIS data (PS Value : Observation/5EFFD46A-A0C1-11ED-808B-AC162D1F16F0) 
+
+EMIS List Entry 37
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+EMIS List Entry 38
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+EMIS List Entry 39
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+EMIS List Entry 40
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+EMIS List Entry 41
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFB1944-A0C1-11ED-808B-AC162D1F16F0-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_a7562a0000000000-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_5b562a0000000000-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFB1949-A0C1-11ED-808B-AC162D1F16F0-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFB194B-A0C1-11ED-808B-AC162D1F16F0-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_4b562a0000000000-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFB194E-A0C1-11ED-808B-AC162D1F16F0-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFB194F-A0C1-11ED-808B-AC162D1F16F0-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_3b562a0000000000-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFB1951-A0C1-11ED-808B-AC162D1F16F0-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFB1952-A0C1-11ED-808B-AC162D1F16F0-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFB1953-A0C1-11ED-808B-AC162D1F16F0-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFB1954-A0C1-11ED-808B-AC162D1F16F0-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_ea562a0000000000-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 84292abe-daa9-4301-b354-4ef4544d1514
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 85c8f897-fd18-4708-a0a4-8961bd464283
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID b3a8901f-bc5e-45a6-9877-d2d6f6ef359e
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 2f40f1d7-7f62-40eb-8cda-43d0915b1753
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6b8e24d1-54cf-4dd8-b247-35e02f951cce
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 1af9e3dd-dc01-4c8e-9c58-bbddb90192db
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID c100a0cf-e3c0-4b3e-be6b-78fd47aea004
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6f60aa88-f60c-49e0-be80-162408d74b6c
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 9ab1f427-7b17-42b9-b523-d6a4a9aca63f
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4eeb8a84-9fbe-4cbe-a01a-70a0bd93a643
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 55aabf1f-ed97-4034-992e-66381b6b0135
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 9d41108e-83f5-4b93-b7b4-20f1fe8a10fc
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID e95acbc8-df93-4d29-8fc4-1483103e1e47
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 477af735-37bb-4a7d-832e-66ffadcb40e2
+
+---------------------------------------------------------------------------------
+Analysing Entries of type Location
+---------------------------------------------------------------------------------
+EMIS Entires = 1 vs PS Entries = 3
+ALERT: There is a mismatch in the number of entries of type Location
+
+Matches will be found via the following fields: name
+
+EMIS Location Entry 1
+EMIS Entry 0100000000000000_0b00000000000000 vs PS Entry 0100000000000000_0b00000000000000
+MISSING: Property lastUpdated is missing in PS Entry (Emis Value : 2023-01-30T14:46:34) 
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 65CEA07F-006C-4E1C-B7E9-8806591B99AB
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID B9647DBD-BEAE-44C3-B267-157979080930
+
+---------------------------------------------------------------------------------
+Analysing Entries of type Medication
+---------------------------------------------------------------------------------
+EMIS Entires = 3 vs PS Entries = 3
+
+Matches will be found via the following fields: code.coding.[0].display
+
+EMIS Medication Entry 1
+MISSING Entry: EMIS entry with ID 1007356_0 has not been found in the PS enties 
+
+EMIS Medication Entry 2
+EMIS Entry 1015769_0 vs PS Entry 1015769_0
+
+EMIS Medication Entry 3
+EMIS Entry 1001363_0 vs PS Entry 1001363_0
+
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID a88650da-6630-43ca-9f2d-89efea39c9dc
+
+---------------------------------------------------------------------------------
+Analysing Entries of type MedicationRequest
+---------------------------------------------------------------------------------
+EMIS Entires = 6 vs PS Entries = 6
+
+Matches will be found via the following fields: dispenseRequest.validityPeriod.start,intent,dosageInstruction.[0].text
+
+EMIS MedicationRequest Entry 1
+MISSING Entry: EMIS entry with ID 1000000000000000_c654280000000000_plan has not been found in the PS enties 
+    -Potential MedicationRequest match 5EFD6331-A0C1-11ED-808B-AC162D1F16F0
+    -Potential MedicationRequest match 5EFD6335-A0C1-11ED-808B-AC162D1F16F0
+
+EMIS MedicationRequest Entry 2
+MISSING Entry: EMIS entry with ID 1000000000000000_c654280000000000_order has not been found in the PS enties 
+    -Potential MedicationRequest match 5EFD6333-A0C1-11ED-808B-AC162D1F16F0
+    -Potential MedicationRequest match 5EFD6336-A0C1-11ED-808B-AC162D1F16F0
+
+EMIS MedicationRequest Entry 3
+EMIS Entry 1000000000000000_d654280000000000_plan vs PS Entry 1000000000000000_d654280000000000_plan
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.context.reference does not match PS Property (Encounter/4000000000000000_d7562a0000000000 != Encounter/5EFB194E-A0C1-11ED-808B-AC162D1F16F0)
+DIFF: Emis Value of resource.authoredOn does not match PS Property (2010-12-10T00:00:00 != 2023-01-30T14:43:56)
+MISSING: Property display is missing in PS Entry (Emis Value : Peter Whitcombe) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194D-A0C1-11ED-808B-AC162D1F16F0) 
+MISSING: Property extension is missing in PS Entry (Emis Value : [object Object]) 
+NEW: Property unit is not present in the EMIS data (PS Value : Unk UoM) 
+MISSING: Property end is missing in PS Entry (Emis Value : 2010-12-11) 
+NEW: Property requester is not present in the EMIS data (PS Value : [object Object]) 
+
+EMIS MedicationRequest Entry 4
+EMIS Entry 1000000000000000_d654280000000000_order vs PS Entry 1000000000000000_d654280000000000_order
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.context.reference does not match PS Property (Encounter/4000000000000000_d7562a0000000000 != Encounter/5EFB194E-A0C1-11ED-808B-AC162D1F16F0)
+DIFF: Emis Value of resource.authoredOn does not match PS Property (2010-12-10T00:00:00 != 2023-01-30T14:43:56)
+MISSING: Property display is missing in PS Entry (Emis Value : Peter Whitcombe) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194D-A0C1-11ED-808B-AC162D1F16F0) 
+MISSING: Property extension is missing in PS Entry (Emis Value : [object Object]) 
+NEW: Property unit is not present in the EMIS data (PS Value : Unk UoM) 
+MISSING: Property end is missing in PS Entry (Emis Value : 2010-12-11) 
+NEW: Property requester is not present in the EMIS data (PS Value : [object Object]) 
+
+EMIS MedicationRequest Entry 5
+MISSING Entry: EMIS entry with ID 1000000000000000_e654280000000000_plan has not been found in the PS enties 
+    -Potential MedicationRequest match 5EFD6331-A0C1-11ED-808B-AC162D1F16F0
+    -Potential MedicationRequest match 5EFD6335-A0C1-11ED-808B-AC162D1F16F0
+
+EMIS MedicationRequest Entry 6
+MISSING Entry: EMIS entry with ID 1000000000000000_e654280000000000_order has not been found in the PS enties 
+    -Potential MedicationRequest match 5EFD6333-A0C1-11ED-808B-AC162D1F16F0
+    -Potential MedicationRequest match 5EFD6336-A0C1-11ED-808B-AC162D1F16F0
+
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFD6333-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFD6331-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFD6336-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFD6335-A0C1-11ED-808B-AC162D1F16F0
+
+---------------------------------------------------------------------------------
+Analysing Entries of type MedicationStatement
+---------------------------------------------------------------------------------
+EMIS Entires = 3 vs PS Entries = 3
+
+Matches will be found via the following fields: effectivePeriod.start,dosage.[0].text
+
+EMIS MedicationStatement Entry 1
+MISSING Entry: EMIS entry with ID 1000000000000000_c654280000000000 has not been found in the PS enties 
+    -Potential MedicationStatement match 5EFD6331-A0C1-11ED-808B-AC162D1F16F0-MS
+    -Potential MedicationStatement match 5EFD6335-A0C1-11ED-808B-AC162D1F16F0-MS
+
+EMIS MedicationStatement Entry 2
+EMIS Entry 1000000000000000_d654280000000000 vs PS Entry 1000000000000000_d654280000000000_plan-MS
+DIFF: Emis Value of resource.id does not match PS Property (1000000000000000_d654280000000000 != 1000000000000000_d654280000000000_plan-MS)
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.context.reference does not match PS Property (Encounter/4000000000000000_d7562a0000000000 != Encounter/5EFB194E-A0C1-11ED-808B-AC162D1F16F0)
+MISSING: Property end is missing in PS Entry (Emis Value : 2010-12-11) 
+DIFF: Emis Value of resource.dateAsserted does not match PS Property (2010-12-10T00:00:00 != 2023-01-30T14:43:56)
+DIFF: Emis Value of resource.extension.0.url does not match PS Property (https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationStatementLastIssueDate-1 != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescribingAgency-1)
+MISSING: Property valueDateTime is missing in PS Entry (Emis Value : 2010-12-10) 
+NEW: Property valueCodeableConcept is not present in the EMIS data (PS Value : [object Object]) 
+DIFF: Emis Value of resource.extension.1.url does not match PS Property (https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescribingAgency-1 != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationStatementLastIssueDate-1)
+MISSING: Property valueCodeableConcept is missing in PS Entry (Emis Value : [object Object]) 
+NEW: Property valueDateTime is not present in the EMIS data (PS Value : 2010-12-10) 
+
+EMIS MedicationStatement Entry 3
+MISSING Entry: EMIS entry with ID 1000000000000000_e654280000000000 has not been found in the PS enties 
+    -Potential MedicationStatement match 5EFD6331-A0C1-11ED-808B-AC162D1F16F0-MS
+    -Potential MedicationStatement match 5EFD6335-A0C1-11ED-808B-AC162D1F16F0-MS
+
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFD6331-A0C1-11ED-808B-AC162D1F16F0-MS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFD6335-A0C1-11ED-808B-AC162D1F16F0-MS
+
+---------------------------------------------------------------------------------
+Analysing Entries of type Observation
+---------------------------------------------------------------------------------
+EMIS Entires = 57 vs PS Entries = 51
+ALERT: There is a mismatch in the number of entries of type Observation
+
+Matches will be found via the following fields: code.coding.[0].code,effectiveDateTime,comment
+
+EMIS Observation Entry 1
+EMIS Entry 5000000000000000_fedaf31000000000 vs PS Entry 5000000000000000_fedaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+MISSING: Property text is missing in PS Entry (Emis Value : 3rd diphtheria, pertussis & tetanus triple & polio vaccinatn) 
+DIFF: Emis Value of resource.context.reference does not match PS Property (Encounter/4000000000000000_b7562a0000000000 != Encounter/5EFB1944-A0C1-11ED-808B-AC162D1F16F0)
+MISSING: Property display is missing in PS Entry (Emis Value : David McAvenue) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB1945-A0C1-11ED-808B-AC162D1F16F0) 
+DIFF: Emis Value of resource.comment does not match PS Property (Original text: DTP + Polio 3
+Batch No: hhhh:yyyy != Batch No: hhhh:yyyy)
+
+EMIS Observation Entry 2
+MISSING Entry: EMIS entry with ID 5000000000000000_0fdaf31000000000 has not been found in the PS enties 
+
+EMIS Observation Entry 3
+MISSING Entry: EMIS entry with ID 5000000000000000_eedaf31000000000 has not been found in the PS enties 
+    -Potential Observation match 5EFFD432-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5000000000000000_bcdaf31000000000
+    -Potential Observation match 5000000000000000_acdaf31000000000
+    -Potential Observation match 5000000000000000_6edaf31000000000
+    -Potential Observation match 5000000000000000_9edaf31000000000
+    -Potential Observation match 5000000000000000_5edaf31000000000
+    -Potential Observation match 5EFFD44F-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD450-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD451-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD452-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5000000000000000_addaf31000000000
+    -Potential Observation match 5000000000000000_8ddaf31000000000
+    -Potential Observation match 5EFFD44E-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD453-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD454-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD45A-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD45C-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD45E-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5000000000000000_7cdaf31000000000
+
+EMIS Observation Entry 4
+MISSING Entry: EMIS entry with ID 5000000000000000_dedaf31000000000 has not been found in the PS enties 
+
+EMIS Observation Entry 5
+MISSING Entry: EMIS entry with ID 5000000000000000_cedaf31000000000 has not been found in the PS enties 
+
+EMIS Observation Entry 6
+EMIS Entry 5000000000000000_bedaf31000000000 vs PS Entry 5000000000000000_bedaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+DIFF: Emis Value of resource.context.reference does not match PS Property (Encounter/4000000000000000_d7562a0000000000 != Encounter/5EFB194E-A0C1-11ED-808B-AC162D1F16F0)
+MISSING: Property display is missing in PS Entry (Emis Value : Peter Whitcombe) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194D-A0C1-11ED-808B-AC162D1F16F0) 
+
+EMIS Observation Entry 7
+EMIS Entry 5000000000000000_aedaf31000000000 vs PS Entry 5000000000000000_aedaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+DIFF: Emis Value of resource.context.reference does not match PS Property (Encounter/4000000000000000_d7562a0000000000 != Encounter/5EFB194E-A0C1-11ED-808B-AC162D1F16F0)
+MISSING: Property display is missing in PS Entry (Emis Value : Peter Whitcombe) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194D-A0C1-11ED-808B-AC162D1F16F0) 
+
+EMIS Observation Entry 8
+MISSING Entry: EMIS entry with ID 5000000000000000_bcdaf31000000000 has not been found in the PS enties 
+    -Potential Observation match 5000000000000000_bcdaf31000000000
+    -Potential Observation match 5000000000000000_acdaf31000000000
+RESOURCE MISMATCH: Id 5000000000000000_bcdaf31000000000 has been found against anohter PS Resource type Observation
+
+EMIS Observation Entry 9
+MISSING Entry: EMIS entry with ID 5000000000000000_acdaf31000000000 has not been found in the PS enties 
+    -Potential Observation match 5000000000000000_bcdaf31000000000
+    -Potential Observation match 5000000000000000_acdaf31000000000
+RESOURCE MISMATCH: Id 5000000000000000_acdaf31000000000 has been found against anohter PS Resource type Observation
+
+EMIS Observation Entry 10
+EMIS Entry 5000000000000000_7edaf31000000000 vs PS Entry 5000000000000000_7edaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+MISSING: Property extension is missing in PS Entry (Emis Value : [object Object]) 
+NEW: Property text is not present in the EMIS data (PS Value : Celvapan 1) 
+DIFF: Emis Value of resource.context.reference does not match PS Property (Encounter/4000000000000000_d7562a0000000000 != Encounter/5EFB194E-A0C1-11ED-808B-AC162D1F16F0)
+MISSING: Property display is missing in PS Entry (Emis Value : Peter Whitcombe) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194D-A0C1-11ED-808B-AC162D1F16F0) 
+DIFF: Emis Value of resource.comment does not match PS Property (Original text: Celvapan 1
+Reason: Epidemic
+Area: Northern Europe
+Method: Intradermal
+Site: Stomach
+Batch No: Piggyflu1
+Dosage: 0.5ml
+Expiry date: 12 May 2011
+Nature of risk: Doomed
+Notes: These are some swine flu notes != Reason: Epidemic
+Area: Northern Europe
+Method: Intradermal
+Site: Stomach
+Batch No: Piggyflu1
+Dosage: 0.5ml
+Expiry date: 12 May 2011
+Nature of risk: Doomed
+Notes: These are some swine flu notes)
+
+EMIS Observation Entry 11
+MISSING Entry: EMIS entry with ID 5000000000000000_6edaf31000000000 has not been found in the PS enties 
+    -Potential Observation match 5000000000000000_6edaf31000000000
+    -Potential Observation match 5000000000000000_9edaf31000000000
+    -Potential Observation match 5000000000000000_5edaf31000000000
+    -Potential Observation match 5EFFD44F-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD450-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD451-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD452-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5000000000000000_addaf31000000000
+    -Potential Observation match 5000000000000000_8ddaf31000000000
+    -Potential Observation match 5EFFD44E-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD453-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD454-A0C1-11ED-808B-AC162D1F16F0
+RESOURCE MISMATCH: Id 5000000000000000_6edaf31000000000 has been found against anohter PS Resource type Observation
+
+EMIS Observation Entry 12
+MISSING Entry: EMIS entry with ID 5000000000000000_9edaf31000000000 has not been found in the PS enties 
+    -Potential Observation match 5000000000000000_6edaf31000000000
+    -Potential Observation match 5000000000000000_9edaf31000000000
+    -Potential Observation match 5000000000000000_5edaf31000000000
+    -Potential Observation match 5EFFD44F-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD450-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD451-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD452-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5000000000000000_addaf31000000000
+    -Potential Observation match 5000000000000000_8ddaf31000000000
+    -Potential Observation match 5EFFD44E-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD453-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD454-A0C1-11ED-808B-AC162D1F16F0
+RESOURCE MISMATCH: Id 5000000000000000_9edaf31000000000 has been found against anohter PS Resource type Observation
+
+EMIS Observation Entry 13
+MISSING Entry: EMIS entry with ID 5000000000000000_8edaf31000000000 has not been found in the PS enties 
+
+EMIS Observation Entry 14
+EMIS Entry 5000000000000000_1ddaf31000000000 vs PS Entry 5000000000000000_1ddaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+MISSING: Property display is missing in PS Entry (Emis Value : Peter Whitcombe) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194D-A0C1-11ED-808B-AC162D1F16F0) 
+
+EMIS Observation Entry 15
+EMIS Entry 5000000000000000_0ddaf31000000000 vs PS Entry 5000000000000000_0ddaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+MISSING: Property display is missing in PS Entry (Emis Value : Peter Whitcombe) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194D-A0C1-11ED-808B-AC162D1F16F0) 
+
+EMIS Observation Entry 16
+EMIS Entry 5000000000000000_3ddaf31000000000 vs PS Entry 5000000000000000_3ddaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+MISSING: Property display is missing in PS Entry (Emis Value : Peter Whitcombe) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194D-A0C1-11ED-808B-AC162D1F16F0) 
+
+EMIS Observation Entry 17
+EMIS Entry 5000000000000000_2ddaf31000000000 vs PS Entry 5000000000000000_2ddaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+MISSING: Property display is missing in PS Entry (Emis Value : Peter Whitcombe) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194D-A0C1-11ED-808B-AC162D1F16F0) 
+
+EMIS Observation Entry 18
+EMIS Entry 5000000000000000_dcdaf31000000000 vs PS Entry 5000000000000000_dcdaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+MISSING: Property display is missing in PS Entry (Emis Value : Peter Whitcombe) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194D-A0C1-11ED-808B-AC162D1F16F0) 
+
+EMIS Observation Entry 19
+MISSING Entry: EMIS entry with ID 5000000000000000_ccdaf31000000000 has not been found in the PS enties 
+    -Potential Observation match 5000000000000000_bcdaf31000000000
+    -Potential Observation match 5000000000000000_acdaf31000000000
+
+EMIS Observation Entry 20
+EMIS Entry 5000000000000000_fcdaf31000000000 vs PS Entry 5000000000000000_fcdaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+MISSING: Property display is missing in PS Entry (Emis Value : Peter Whitcombe) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194D-A0C1-11ED-808B-AC162D1F16F0) 
+
+EMIS Observation Entry 21
+EMIS Entry 5000000000000000_ecdaf31000000000 vs PS Entry 5000000000000000_ecdaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+MISSING: Property display is missing in PS Entry (Emis Value : Peter Whitcombe) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194D-A0C1-11ED-808B-AC162D1F16F0) 
+
+EMIS Observation Entry 22
+MISSING Entry: EMIS entry with ID 5000000000000000_5edaf31000000000 has not been found in the PS enties 
+    -Potential Observation match 5000000000000000_6edaf31000000000
+    -Potential Observation match 5000000000000000_9edaf31000000000
+    -Potential Observation match 5000000000000000_5edaf31000000000
+    -Potential Observation match 5EFFD44F-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD450-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD451-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD452-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5000000000000000_addaf31000000000
+    -Potential Observation match 5000000000000000_8ddaf31000000000
+    -Potential Observation match 5EFFD44E-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD453-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD454-A0C1-11ED-808B-AC162D1F16F0
+RESOURCE MISMATCH: Id 5000000000000000_5edaf31000000000 has been found against anohter PS Resource type Observation
+
+EMIS Observation Entry 23
+MISSING Entry: EMIS entry with ID 5000000000000000_9ddaf31000000000 has not been found in the PS enties 
+
+EMIS Observation Entry 24
+MISSING Entry: EMIS entry with ID 5000000000000000_addaf31000000000 has not been found in the PS enties 
+    -Potential Observation match 5000000000000000_6edaf31000000000
+    -Potential Observation match 5000000000000000_9edaf31000000000
+    -Potential Observation match 5000000000000000_5edaf31000000000
+    -Potential Observation match 5EFFD44F-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD450-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD451-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD452-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5000000000000000_addaf31000000000
+    -Potential Observation match 5000000000000000_8ddaf31000000000
+    -Potential Observation match 5EFFD44E-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD453-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD454-A0C1-11ED-808B-AC162D1F16F0
+RESOURCE MISMATCH: Id 5000000000000000_addaf31000000000 has been found against anohter PS Resource type Observation
+
+EMIS Observation Entry 25
+EMIS Entry 5000000000000000_7ddaf31000000000 vs PS Entry 5000000000000000_7ddaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+MISSING: Property text is missing in PS Entry (Emis Value : 1st diphtheria, pertussis & tetanus triple & polio vaccinatn) 
+DIFF: Emis Value of resource.context.reference does not match PS Property (Encounter/4000000000000000_c7562a0000000000 != Encounter/5EFB194F-A0C1-11ED-808B-AC162D1F16F0)
+MISSING: Property display is missing in PS Entry (Emis Value : Peter Whitcombe) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194D-A0C1-11ED-808B-AC162D1F16F0) 
+DIFF: Emis Value of resource.comment does not match PS Property (Original text: DTP + Polio 1
+Reason: Routine Measure
+Batch No: 765432:121212
+Dosage: 0.5 ml
+Expiry date: 31 Dec 2010 != Reason: Routine Measure
+Batch No: 765432:121212
+Dosage: 0.5 ml
+Expiry date: 31 Dec 2010)
+
+EMIS Observation Entry 26
+MISSING Entry: EMIS entry with ID 5000000000000000_8ddaf31000000000 has not been found in the PS enties 
+    -Potential Observation match 5000000000000000_6edaf31000000000
+    -Potential Observation match 5000000000000000_9edaf31000000000
+    -Potential Observation match 5000000000000000_5edaf31000000000
+    -Potential Observation match 5EFFD44F-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD450-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD451-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD452-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5000000000000000_addaf31000000000
+    -Potential Observation match 5000000000000000_8ddaf31000000000
+    -Potential Observation match 5EFFD44E-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD453-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD454-A0C1-11ED-808B-AC162D1F16F0
+RESOURCE MISMATCH: Id 5000000000000000_8ddaf31000000000 has been found against anohter PS Resource type Observation
+
+EMIS Observation Entry 27
+EMIS Entry 5000000000000000_dddaf31000000000 vs PS Entry 5000000000000000_dddaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+DIFF: Emis Value of resource.context.reference does not match PS Property (Encounter/4000000000000000_c7562a0000000000 != Encounter/5EFB194F-A0C1-11ED-808B-AC162D1F16F0)
+MISSING: Property display is missing in PS Entry (Emis Value : Peter Whitcombe) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194D-A0C1-11ED-808B-AC162D1F16F0) 
+
+EMIS Observation Entry 28
+EMIS Entry 5000000000000000_eddaf31000000000 vs PS Entry 5000000000000000_eddaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+DIFF: Emis Value of resource.context.reference does not match PS Property (Encounter/4000000000000000_c7562a0000000000 != Encounter/5EFB194F-A0C1-11ED-808B-AC162D1F16F0)
+MISSING: Property display is missing in PS Entry (Emis Value : Peter Whitcombe) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194D-A0C1-11ED-808B-AC162D1F16F0) 
+
+EMIS Observation Entry 29
+MISSING Entry: EMIS entry with ID 5000000000000000_bddaf31000000000 has not been found in the PS enties 
+
+EMIS Observation Entry 30
+EMIS Entry 5000000000000000_cddaf31000000000 vs PS Entry 5000000000000000_cddaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+MISSING: Property text is missing in PS Entry (Emis Value : Infectious diseas: prevent &/or control (& [named variants])) 
+DIFF: Emis Value of resource.context.reference does not match PS Property (Encounter/4000000000000000_c7562a0000000000 != Encounter/5EFB194F-A0C1-11ED-808B-AC162D1F16F0)
+MISSING: Property display is missing in PS Entry (Emis Value : Peter Whitcombe) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194D-A0C1-11ED-808B-AC162D1F16F0) 
+DIFF: Emis Value of resource.comment does not match PS Property (Original text: Ixiaro 1
+Reason: Traveller
+Area: Africa
+Method: Intramuscularly
+Site: Right anterior forearm
+Batch No: JapEnc1234
+Dosage: 0.5ml
+Expiry date: 01 Jan 2070
+Nature of risk: some risk info
+Notes: These are some notes on Japanese B Encephalitis != Reason: Traveller
+Area: Africa
+Method: Intramuscularly
+Site: Right anterior forearm
+Batch No: JapEnc1234
+Dosage: 0.5ml
+Expiry date: 01 Jan 2070
+Nature of risk: some risk info
+Notes: These are some notes on Japanese B Encephalitis)
+
+EMIS Observation Entry 31
+MISSING Entry: EMIS entry with ID 5000000000000000_6ddaf31000000000 has not been found in the PS enties 
+    -Potential Observation match 5000000000000000_6edaf31000000000
+    -Potential Observation match 5000000000000000_9edaf31000000000
+    -Potential Observation match 5000000000000000_5edaf31000000000
+    -Potential Observation match 5EFFD44F-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD450-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD451-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD452-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5000000000000000_addaf31000000000
+    -Potential Observation match 5000000000000000_8ddaf31000000000
+    -Potential Observation match 5EFFD44E-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD453-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD454-A0C1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 32
+MISSING Entry: EMIS entry with ID 5000000000000000_2edaf31000000000 has not been found in the PS enties 
+    -Potential Observation match 5000000000000000_6edaf31000000000
+    -Potential Observation match 5000000000000000_9edaf31000000000
+    -Potential Observation match 5000000000000000_5edaf31000000000
+    -Potential Observation match 5EFFD44F-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD450-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD451-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD452-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5000000000000000_addaf31000000000
+    -Potential Observation match 5000000000000000_8ddaf31000000000
+    -Potential Observation match 5EFFD44E-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD453-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD454-A0C1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 33
+MISSING Entry: EMIS entry with ID 5000000000000000_1edaf31000000000 has not been found in the PS enties 
+    -Potential Observation match 5000000000000000_6edaf31000000000
+    -Potential Observation match 5000000000000000_9edaf31000000000
+    -Potential Observation match 5000000000000000_5edaf31000000000
+    -Potential Observation match 5EFFD44F-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD450-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD451-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD452-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5000000000000000_addaf31000000000
+    -Potential Observation match 5000000000000000_8ddaf31000000000
+    -Potential Observation match 5EFFD44E-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD453-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD454-A0C1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 34
+MISSING Entry: EMIS entry with ID 5000000000000000_4edaf31000000000 has not been found in the PS enties 
+    -Potential Observation match 5000000000000000_6edaf31000000000
+    -Potential Observation match 5000000000000000_9edaf31000000000
+    -Potential Observation match 5000000000000000_5edaf31000000000
+    -Potential Observation match 5EFFD44F-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD450-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD451-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD452-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5000000000000000_addaf31000000000
+    -Potential Observation match 5000000000000000_8ddaf31000000000
+    -Potential Observation match 5EFFD44E-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD453-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD454-A0C1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 35
+MISSING Entry: EMIS entry with ID 5000000000000000_3edaf31000000000 has not been found in the PS enties 
+    -Potential Observation match 5000000000000000_6edaf31000000000
+    -Potential Observation match 5000000000000000_9edaf31000000000
+    -Potential Observation match 5000000000000000_5edaf31000000000
+    -Potential Observation match 5EFFD44F-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD450-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD451-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD452-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5000000000000000_addaf31000000000
+    -Potential Observation match 5000000000000000_8ddaf31000000000
+    -Potential Observation match 5EFFD44E-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD453-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD454-A0C1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 36
+MISSING Entry: EMIS entry with ID 5000000000000000_4ddaf31000000000 has not been found in the PS enties 
+    -Potential Observation match 5000000000000000_6edaf31000000000
+    -Potential Observation match 5000000000000000_9edaf31000000000
+    -Potential Observation match 5000000000000000_5edaf31000000000
+    -Potential Observation match 5EFFD44F-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD450-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD451-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD452-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5000000000000000_addaf31000000000
+    -Potential Observation match 5000000000000000_8ddaf31000000000
+    -Potential Observation match 5EFFD44E-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD453-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD454-A0C1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 37
+MISSING Entry: EMIS entry with ID 5000000000000000_5ddaf31000000000 has not been found in the PS enties 
+    -Potential Observation match 5000000000000000_6edaf31000000000
+    -Potential Observation match 5000000000000000_9edaf31000000000
+    -Potential Observation match 5000000000000000_5edaf31000000000
+    -Potential Observation match 5EFFD44F-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD450-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD451-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD452-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5000000000000000_addaf31000000000
+    -Potential Observation match 5000000000000000_8ddaf31000000000
+    -Potential Observation match 5EFFD44E-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD453-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD454-A0C1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 38
+EMIS Entry 5000000000000000_0edaf31000000000 vs PS Entry 5000000000000000_0edaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+DIFF: Emis Value of resource.context.reference does not match PS Property (Encounter/4000000000000000_c7562a0000000000 != Encounter/5EFB194F-A0C1-11ED-808B-AC162D1F16F0)
+MISSING: Property display is missing in PS Entry (Emis Value : Peter Whitcombe) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194D-A0C1-11ED-808B-AC162D1F16F0) 
+
+EMIS Observation Entry 39
+EMIS Entry 5000000000000000_fddaf31000000000 vs PS Entry 5000000000000000_fddaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+DIFF: Emis Value of resource.context.reference does not match PS Property (Encounter/4000000000000000_c7562a0000000000 != Encounter/5EFB194F-A0C1-11ED-808B-AC162D1F16F0)
+MISSING: Property display is missing in PS Entry (Emis Value : Peter Whitcombe) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194D-A0C1-11ED-808B-AC162D1F16F0) 
+
+EMIS Observation Entry 40
+EMIS Entry 5000000000000000_8cdaf31000000000 vs PS Entry 5000000000000000_8cdaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+MISSING: Property display is missing in PS Entry (Emis Value : Peter Whitcombe) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194D-A0C1-11ED-808B-AC162D1F16F0) 
+
+EMIS Observation Entry 41
+EMIS Entry 5000000000000000_9cdaf31000000000 vs PS Entry 5000000000000000_9cdaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+MISSING: Property display is missing in PS Entry (Emis Value : Peter Whitcombe) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194D-A0C1-11ED-808B-AC162D1F16F0) 
+
+EMIS Observation Entry 42
+EMIS Entry 5000000000000000_3cdaf31000000000 vs PS Entry 5000000000000000_3cdaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+DIFF: Emis Value of resource.context.reference does not match PS Property (Encounter/4000000000000000_1b562a0000000000 != Encounter/5EFB1951-A0C1-11ED-808B-AC162D1F16F0)
+MISSING: Property display is missing in PS Entry (Emis Value : David McAvenue) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB1945-A0C1-11ED-808B-AC162D1F16F0) 
+DIFF: Emis Value of resource.comment does not match PS Property (Original text: DTP 2
+Reason: Routine Measure
+Batch No: aaa
+Dosage: 0.5 ml != Reason: Routine Measure
+Batch No: aaa
+Dosage: 0.5 ml)
+
+EMIS Observation Entry 43
+MISSING Entry: EMIS entry with ID 5000000000000000_2cdaf31000000000 has not been found in the PS enties 
+    -Potential Observation match 5EFFD45A-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD45C-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD45E-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5000000000000000_7cdaf31000000000
+
+EMIS Observation Entry 44
+EMIS Entry 5000000000000000_1cdaf31000000000 vs PS Entry 5000000000000000_1cdaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+DIFF: Emis Value of resource.context.reference does not match PS Property (Encounter/4000000000000000_1b562a0000000000 != Encounter/5EFB1951-A0C1-11ED-808B-AC162D1F16F0)
+MISSING: Property display is missing in PS Entry (Emis Value : David McAvenue) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB1945-A0C1-11ED-808B-AC162D1F16F0) 
+DIFF: Emis Value of resource.comment does not match PS Property (Original text: DTP 1
+Reason: Routine Measure
+Batch No: aaa
+Dosage: 0.5 ml != Reason: Routine Measure
+Batch No: aaa
+Dosage: 0.5 ml)
+
+EMIS Observation Entry 45
+MISSING Entry: EMIS entry with ID 5000000000000000_4cdaf31000000000 has not been found in the PS enties 
+    -Potential Observation match 5EFFD45A-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD45C-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD45E-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5000000000000000_7cdaf31000000000
+
+EMIS Observation Entry 46
+MISSING Entry: EMIS entry with ID 5000000000000000_7cdaf31000000000 has not been found in the PS enties 
+    -Potential Observation match 5EFFD45A-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD45C-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD45E-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5000000000000000_7cdaf31000000000
+RESOURCE MISMATCH: Id 5000000000000000_7cdaf31000000000 has been found against anohter PS Resource type Observation
+
+EMIS Observation Entry 47
+MISSING Entry: EMIS entry with ID 5000000000000000_6cdaf31000000000 has not been found in the PS enties 
+    -Potential Observation match 5EFFD45A-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD45C-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5EFFD45E-A0C1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 5000000000000000_7cdaf31000000000
+
+EMIS Observation Entry 48
+EMIS Entry 5000000000000000_5cdaf31000000000 vs PS Entry 5000000000000000_5cdaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+DIFF: Emis Value of resource.context.reference does not match PS Property (Encounter/4000000000000000_1b562a0000000000 != Encounter/5EFB1951-A0C1-11ED-808B-AC162D1F16F0)
+MISSING: Property display is missing in PS Entry (Emis Value : David McAvenue) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB1945-A0C1-11ED-808B-AC162D1F16F0) 
+DIFF: Emis Value of resource.comment does not match PS Property (Original text: DTP 3
+Reason: Routine Measure
+Batch No: aaa
+Dosage: 0.5 ml != Reason: Routine Measure
+Batch No: aaa
+Dosage: 0.5 ml)
+
+EMIS Observation Entry 49
+EMIS Entry 5000000000000000_ebdaf31000000000 vs PS Entry 5000000000000000_ebdaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+DIFF: Emis Value of resource.context.reference does not match PS Property (Encounter/4000000000000000_0b562a0000000000 != Encounter/5EFB1953-A0C1-11ED-808B-AC162D1F16F0)
+MISSING: Property display is missing in PS Entry (Emis Value : David McAvenue) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB1945-A0C1-11ED-808B-AC162D1F16F0) 
+
+EMIS Observation Entry 50
+EMIS Entry 5000000000000000_58eaf31000000000 vs PS Entry 5000000000000000_58eaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+MISSING: Property text is missing in PS Entry (Emis Value : 1st diphtheria, pertussis & tetanus triple & polio vaccinatn) 
+DIFF: Emis Value of resource.context.reference does not match PS Property (Encounter/4000000000000000_fa562a0000000000 != Encounter/5EFB1954-A0C1-11ED-808B-AC162D1F16F0)
+MISSING: Property display is missing in PS Entry (Emis Value : David McAvenue) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB1945-A0C1-11ED-808B-AC162D1F16F0) 
+
+EMIS Observation Entry 51
+EMIS Entry 5000000000000000_0cdaf31000000000 vs PS Entry 5000000000000000_0cdaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+DIFF: Emis Value of resource.context.reference does not match PS Property (Encounter/4000000000000000_0b562a0000000000 != Encounter/5EFB1953-A0C1-11ED-808B-AC162D1F16F0)
+MISSING: Property display is missing in PS Entry (Emis Value : David McAvenue) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB1945-A0C1-11ED-808B-AC162D1F16F0) 
+
+EMIS Observation Entry 52
+MISSING Entry: EMIS entry with ID 5000000000000000_fbdaf31000000000 has not been found in the PS enties 
+
+EMIS Observation Entry 53
+EMIS Entry 5000000000000000_48eaf31000000000 vs PS Entry 5000000000000000_48eaf31000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.code.coding.0.extension.0.url does not match PS Property (https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid)
+MISSING: Property display is missing in PS Entry (Emis Value : Dr David McAvenue) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB1956-A0C1-11ED-808B-AC162D1F16F0) 
+
+EMIS Observation Entry 54
+EMIS Entry 9300000000000000_622a0e0000000000 vs PS Entry 9300000000000000_622a0e0000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+MISSING: Property display is missing in PS Entry (Emis Value : David McAvenue) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB1945-A0C1-11ED-808B-AC162D1F16F0) 
+
+EMIS Observation Entry 55
+EMIS Entry 9300000000000000_752a0e0000000000 vs PS Entry 9300000000000000_752a0e0000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.context.reference does not match PS Property (Encounter/4000000000000000_da562a0000000000 != Encounter/5EFB1949-A0C1-11ED-808B-AC162D1F16F0)
+MISSING: Property display is missing in PS Entry (Emis Value : Testvale Surgery) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB194A-A0C1-11ED-808B-AC162D1F16F0) 
+
+EMIS Observation Entry 56
+MISSING Entry: EMIS entry with ID 9300000000000000_652a0e0000000000 has not been found in the PS enties 
+    -Potential Observation match 9300000000000000_752a0e0000000000
+    -Potential Observation match 9300000000000000_652a0e0000000000
+RESOURCE MISMATCH: Id 9300000000000000_652a0e0000000000 has been found against anohter PS Resource type Observation
+
+EMIS Observation Entry 57
+EMIS Entry 9300000000000000_462a0e0000000000 vs PS Entry 9300000000000000_462a0e0000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Emis Value of resource.context.reference does not match PS Property (Encounter/4000000000000000_2b562a0000000000 != Encounter/5EFB1952-A0C1-11ED-808B-AC162D1F16F0)
+MISSING: Property display is missing in PS Entry (Emis Value : David McAvenue) 
+NEW: Property reference is not present in the EMIS data (PS Value : Practitioner/5EFB1945-A0C1-11ED-808B-AC162D1F16F0) 
+
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFFD432-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5000000000000000_bcdaf31000000000
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5000000000000000_acdaf31000000000
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFFD442-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5000000000000000_6edaf31000000000
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5000000000000000_9edaf31000000000
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5000000000000000_5edaf31000000000
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFFD44F-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFFD450-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFFD451-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFFD452-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5000000000000000_addaf31000000000
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5000000000000000_8ddaf31000000000
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFFD44E-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFFD453-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFFD454-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFFD45A-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFFD45C-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFFD45E-A0C1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5000000000000000_7cdaf31000000000
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 9300000000000000_652a0e0000000000
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 5EFFD46A-A0C1-11ED-808B-AC162D1F16F0
