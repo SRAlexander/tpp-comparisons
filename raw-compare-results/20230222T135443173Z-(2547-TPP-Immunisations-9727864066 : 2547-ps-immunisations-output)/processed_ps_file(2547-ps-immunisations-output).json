@@ -1,6 +1,6 @@
 {
     "resourceType": "Bundle",
-    "id": "48f99510-cbe7-4f5f-bf35-ab290929a46a",
+    "id": "",
     "meta": {
         "profile": [
             "https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-StructuredRecord-Bundle-1"
@@ -11,22 +11,13 @@
         {
             "resource": {
                 "resourceType": "Patient",
-                "id": "7eb64762-86ee-4a43-b4cf-3d4d230f116d",
-                "meta": {
-                    "versionId": "1521806400000",
-                    "profile": [
-                        "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Patient-1"
-                    ]
-                },
+                "id": "d8ac400000000000",
                 "identifier": [
                     {
                         "system": "https://fhir.nhs.uk/Id/nhs-number",
                         "value": "9465701939"
                     }
-                ],
-                "managingOrganization": {
-                    "reference": "Organization/6BE15B57-B2B1-11ED-808B-AC162D1F16F0-ORG"
-                }
+                ]
             }
         },
         {
@@ -100,56 +91,13 @@
                         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                         "value": "A86005"
                     }
-                ],
-                "name": "West Farm Surgery",
-                "telecom": [
-                    {
-                        "system": "phone",
-                        "value": "01132050080",
-                        "use": "work",
-                        "rank": 1
-                    }
-                ],
-                "address": [
-                    {
-                        "use": "work",
-                        "type": "physical",
-                        "line": [
-                            "31 West Farm Avenue",
-                            "Newcastle Upon Tyne",
-                            "Tyne and Wear"
-                        ],
-                        "postalCode": "NE12 8LS"
-                    }
-                ]
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "PractitionerRole",
-                "id": "6BE15B57-B2B1-11ED-808B-AC162D1F16F0-PR",
-                "meta": {
-                    "profile": [
-                        "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-PractitionerRole-1"
-                    ]
-                },
-                "practitioner": {
-                    "reference": "Practitioner/6BE15B57-B2B1-11ED-808B-AC162D1F16F0"
-                },
-                "organization": {
-                    "reference": "Organization/6BE15B57-B2B1-11ED-808B-AC162D1F16F0-ORG"
-                },
-                "code": [
-                    {
-                        "text": "Other person"
-                    }
                 ]
             }
         },
         {
             "resource": {
                 "resourceType": "Practitioner",
-                "id": "6BE15B45-B2B1-11ED-808B-AC162D1F16F0",
+                "id": "26f1000000000000",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
@@ -169,7 +117,7 @@
         {
             "resource": {
                 "resourceType": "Organization",
-                "id": "6BE15B45-B2B1-11ED-808B-AC162D1F16F0-ORG",
+                "id": "26f1000000000000-ORG",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Organization-1"
@@ -179,49 +127,6 @@
                     {
                         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                         "value": "A86005"
-                    }
-                ],
-                "name": "West Farm Surgery",
-                "telecom": [
-                    {
-                        "system": "phone",
-                        "value": "01132050080",
-                        "use": "work",
-                        "rank": 1
-                    }
-                ],
-                "address": [
-                    {
-                        "use": "work",
-                        "type": "physical",
-                        "line": [
-                            "31 West Farm Avenue",
-                            "Newcastle Upon Tyne",
-                            "Tyne and Wear"
-                        ],
-                        "postalCode": "NE12 8LS"
-                    }
-                ]
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "PractitionerRole",
-                "id": "6BE15B45-B2B1-11ED-808B-AC162D1F16F0-PR",
-                "meta": {
-                    "profile": [
-                        "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-PractitionerRole-1"
-                    ]
-                },
-                "practitioner": {
-                    "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
-                },
-                "organization": {
-                    "reference": "Organization/6BE15B45-B2B1-11ED-808B-AC162D1F16F0-ORG"
-                },
-                "code": [
-                    {
-                        "text": "Other person"
                     }
                 ]
             }
@@ -235,12 +140,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Encounter-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE15B44-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "finished",
                 "type": [
                     {
@@ -254,7 +153,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "participant": [
                     {
@@ -270,7 +169,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     },
                     {
@@ -286,14 +185,14 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     }
                 ],
                 "location": [
                     {
                         "location": {
-                            "reference": "Location/2220F7D3-AC1D-4A8B-9166-A491AFF75F45"
+                            "reference": "Location/0100000000000000_0b00000000000000"
                         }
                     }
                 ]
@@ -302,18 +201,12 @@
         {
             "resource": {
                 "resourceType": "Encounter",
-                "id": "6BE15B46-B2B1-11ED-808B-AC162D1F16F0",
+                "id": "4000000000000000_7e44170000000000",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Encounter-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE15B46-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "finished",
                 "type": [
                     {
@@ -327,7 +220,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "participant": [
                     {
@@ -343,7 +236,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     },
                     {
@@ -359,7 +252,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     }
                 ],
@@ -369,7 +262,7 @@
                 "location": [
                     {
                         "location": {
-                            "reference": "Location/2220F7D3-AC1D-4A8B-9166-A491AFF75F45"
+                            "reference": "Location/0100000000000000_0b00000000000000"
                         }
                     }
                 ]
@@ -378,18 +271,12 @@
         {
             "resource": {
                 "resourceType": "Encounter",
-                "id": "6BE15B47-B2B1-11ED-808B-AC162D1F16F0",
+                "id": "4000000000000000_6e44170000000000",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Encounter-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE15B47-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "finished",
                 "type": [
                     {
@@ -403,7 +290,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "participant": [
                     {
@@ -419,7 +306,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     },
                     {
@@ -435,7 +322,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     }
                 ],
@@ -445,7 +332,7 @@
                 "location": [
                     {
                         "location": {
-                            "reference": "Location/2220F7D3-AC1D-4A8B-9166-A491AFF75F45"
+                            "reference": "Location/0100000000000000_0b00000000000000"
                         }
                     }
                 ]
@@ -454,18 +341,12 @@
         {
             "resource": {
                 "resourceType": "Encounter",
-                "id": "6BE15B49-B2B1-11ED-808B-AC162D1F16F0",
+                "id": "4000000000000000_3744170000000000",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Encounter-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE15B49-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "finished",
                 "type": [
                     {
@@ -479,7 +360,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "participant": [
                     {
@@ -495,7 +376,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     },
                     {
@@ -511,7 +392,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     }
                 ],
@@ -521,7 +402,7 @@
                 "location": [
                     {
                         "location": {
-                            "reference": "Location/2220F7D3-AC1D-4A8B-9166-A491AFF75F45"
+                            "reference": "Location/0100000000000000_0b00000000000000"
                         }
                     }
                 ]
@@ -530,18 +411,12 @@
         {
             "resource": {
                 "resourceType": "Encounter",
-                "id": "6BE15B4A-B2B1-11ED-808B-AC162D1F16F0",
+                "id": "4000000000000000_4744170000000000",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Encounter-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE15B4A-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "finished",
                 "type": [
                     {
@@ -555,7 +430,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "participant": [
                     {
@@ -571,7 +446,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     },
                     {
@@ -587,7 +462,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     }
                 ],
@@ -597,7 +472,7 @@
                 "location": [
                     {
                         "location": {
-                            "reference": "Location/2220F7D3-AC1D-4A8B-9166-A491AFF75F45"
+                            "reference": "Location/0100000000000000_0b00000000000000"
                         }
                     }
                 ]
@@ -606,18 +481,12 @@
         {
             "resource": {
                 "resourceType": "Encounter",
-                "id": "6BE15B4B-B2B1-11ED-808B-AC162D1F16F0",
+                "id": "4000000000000000_5744170000000000",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Encounter-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE15B4B-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "finished",
                 "type": [
                     {
@@ -631,7 +500,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "participant": [
                     {
@@ -647,7 +516,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     },
                     {
@@ -663,7 +532,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     }
                 ],
@@ -673,7 +542,7 @@
                 "location": [
                     {
                         "location": {
-                            "reference": "Location/2220F7D3-AC1D-4A8B-9166-A491AFF75F45"
+                            "reference": "Location/0100000000000000_0b00000000000000"
                         }
                     }
                 ]
@@ -682,18 +551,12 @@
         {
             "resource": {
                 "resourceType": "Encounter",
-                "id": "6BE15B4C-B2B1-11ED-808B-AC162D1F16F0",
+                "id": "4000000000000000_4644170000000000",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Encounter-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE15B4C-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "finished",
                 "type": [
                     {
@@ -707,7 +570,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "participant": [
                     {
@@ -723,7 +586,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     },
                     {
@@ -739,7 +602,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     }
                 ],
@@ -749,7 +612,7 @@
                 "location": [
                     {
                         "location": {
-                            "reference": "Location/2220F7D3-AC1D-4A8B-9166-A491AFF75F45"
+                            "reference": "Location/0100000000000000_0b00000000000000"
                         }
                     }
                 ]
@@ -758,18 +621,12 @@
         {
             "resource": {
                 "resourceType": "Encounter",
-                "id": "6BE15B4F-B2B1-11ED-808B-AC162D1F16F0",
+                "id": "4000000000000000_5e44170000000000",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Encounter-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE15B4F-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "finished",
                 "type": [
                     {
@@ -783,7 +640,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "participant": [
                     {
@@ -799,7 +656,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     },
                     {
@@ -815,7 +672,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     }
                 ],
@@ -825,7 +682,7 @@
                 "location": [
                     {
                         "location": {
-                            "reference": "Location/2220F7D3-AC1D-4A8B-9166-A491AFF75F45"
+                            "reference": "Location/0100000000000000_0b00000000000000"
                         }
                     }
                 ]
@@ -834,18 +691,12 @@
         {
             "resource": {
                 "resourceType": "Encounter",
-                "id": "6BE15B51-B2B1-11ED-808B-AC162D1F16F0",
+                "id": "4000000000000000_9e44170000000000",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Encounter-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE15B51-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "finished",
                 "type": [
                     {
@@ -859,7 +710,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "participant": [
                     {
@@ -875,7 +726,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     },
                     {
@@ -891,7 +742,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     }
                 ],
@@ -901,7 +752,7 @@
                 "location": [
                     {
                         "location": {
-                            "reference": "Location/2220F7D3-AC1D-4A8B-9166-A491AFF75F45"
+                            "reference": "Location/0100000000000000_0b00000000000000"
                         }
                     }
                 ]
@@ -916,12 +767,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Encounter-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE15B52-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "finished",
                 "type": [
                     {
@@ -935,7 +780,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "participant": [
                     {
@@ -951,7 +796,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     },
                     {
@@ -967,7 +812,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     }
                 ],
@@ -977,7 +822,7 @@
                 "location": [
                     {
                         "location": {
-                            "reference": "Location/2220F7D3-AC1D-4A8B-9166-A491AFF75F45"
+                            "reference": "Location/0100000000000000_0b00000000000000"
                         }
                     }
                 ]
@@ -992,12 +837,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Encounter-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE15B53-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "finished",
                 "type": [
                     {
@@ -1011,7 +850,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "participant": [
                     {
@@ -1027,7 +866,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     },
                     {
@@ -1043,7 +882,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     }
                 ],
@@ -1053,7 +892,7 @@
                 "location": [
                     {
                         "location": {
-                            "reference": "Location/2220F7D3-AC1D-4A8B-9166-A491AFF75F45"
+                            "reference": "Location/0100000000000000_0b00000000000000"
                         }
                     }
                 ]
@@ -1062,18 +901,12 @@
         {
             "resource": {
                 "resourceType": "Encounter",
-                "id": "6BE15B55-B2B1-11ED-808B-AC162D1F16F0",
+                "id": "4000000000000000_a544170000000000",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Encounter-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE15B55-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "finished",
                 "type": [
                     {
@@ -1087,7 +920,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "participant": [
                     {
@@ -1103,7 +936,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     },
                     {
@@ -1119,7 +952,7 @@
                             }
                         ],
                         "individual": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Practitioner/26f1000000000000"
                         }
                     }
                 ],
@@ -1129,7 +962,7 @@
                 "location": [
                     {
                         "location": {
-                            "reference": "Location/2220F7D3-AC1D-4A8B-9166-A491AFF75F45"
+                            "reference": "Location/0100000000000000_0b00000000000000"
                         }
                     }
                 ]
@@ -1144,12 +977,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Encounter-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC81-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "finished",
                 "type": [
                     {
@@ -1163,7 +990,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "participant": [
                     {
@@ -1189,7 +1016,7 @@
                 "location": [
                     {
                         "location": {
-                            "reference": "Location/2220F7D3-AC1D-4A8B-9166-A491AFF75F45"
+                            "reference": "Location/0100000000000000_0b00000000000000"
                         }
                     }
                 ]
@@ -1217,12 +1044,12 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
                     "reference": "Encounter/6BE15B44-B2B1-11ED-808B-AC162D1F16F0"
                 },
-                "date": "2023-02-22T13:04:20+00:00",
+                "date": "2023-02-22T13:04:20",
                 "orderedBy": {
                     "coding": [
                         {
@@ -1244,7 +1071,7 @@
         {
             "resource": {
                 "resourceType": "List",
-                "id": "6BE15B46-B2B1-11ED-808B-AC162D1F16F0-CONS",
+                "id": "4000000000000000_7e44170000000000-CONS",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
@@ -1263,10 +1090,10 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
-                    "reference": "Encounter/6BE15B46-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_7e44170000000000"
                 },
                 "date": "2008",
                 "orderedBy": {
@@ -1290,7 +1117,7 @@
         {
             "resource": {
                 "resourceType": "List",
-                "id": "6BE15B47-B2B1-11ED-808B-AC162D1F16F0-CONS",
+                "id": "4000000000000000_6e44170000000000-CONS",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
@@ -1309,10 +1136,10 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
-                    "reference": "Encounter/6BE15B47-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_6e44170000000000"
                 },
                 "date": "2009-04",
                 "orderedBy": {
@@ -1336,7 +1163,7 @@
         {
             "resource": {
                 "resourceType": "List",
-                "id": "6BE15B49-B2B1-11ED-808B-AC162D1F16F0-CONS",
+                "id": "4000000000000000_3744170000000000-CONS",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
@@ -1355,12 +1182,12 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
-                    "reference": "Encounter/6BE15B49-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_3744170000000000"
                 },
-                "date": "2010-12-10T09:01:20+00:00",
+                "date": "2010-12-10T09:01:20",
                 "orderedBy": {
                     "coding": [
                         {
@@ -1373,7 +1200,7 @@
                 "entry": [
                     {
                         "item": {
-                            "reference": "List/1c1cb61f-d2ae-4e2c-a5a9-67569cff1110"
+                            "reference": "List/4000000000000000_3744170000000000_NoTopic"
                         }
                     }
                 ]
@@ -1382,7 +1209,7 @@
         {
             "resource": {
                 "resourceType": "List",
-                "id": "6BE15B4A-B2B1-11ED-808B-AC162D1F16F0-CONS",
+                "id": "4000000000000000_4744170000000000-CONS",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
@@ -1401,12 +1228,12 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
-                    "reference": "Encounter/6BE15B4A-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_4744170000000000"
                 },
-                "date": "2010-12-10T09:07:18+00:00",
+                "date": "2010-12-10T09:07:18",
                 "orderedBy": {
                     "coding": [
                         {
@@ -1419,7 +1246,7 @@
                 "entry": [
                     {
                         "item": {
-                            "reference": "List/626cc59a-2632-4c5c-a6b3-f44995c1c296"
+                            "reference": "List/4000000000000000_4744170000000000_NoTopic"
                         }
                     }
                 ]
@@ -1428,7 +1255,7 @@
         {
             "resource": {
                 "resourceType": "List",
-                "id": "6BE15B4B-B2B1-11ED-808B-AC162D1F16F0-CONS",
+                "id": "4000000000000000_5744170000000000-CONS",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
@@ -1447,12 +1274,12 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
-                    "reference": "Encounter/6BE15B4B-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_5744170000000000"
                 },
-                "date": "2010-12-10T09:17:08+00:00",
+                "date": "2010-12-10T09:17:08",
                 "orderedBy": {
                     "coding": [
                         {
@@ -1465,7 +1292,7 @@
                 "entry": [
                     {
                         "item": {
-                            "reference": "List/1be5a7d2-29de-4088-9aa8-52a1a5291111"
+                            "reference": "List/4000000000000000_5744170000000000_NoTopic"
                         }
                     }
                 ]
@@ -1474,7 +1301,7 @@
         {
             "resource": {
                 "resourceType": "List",
-                "id": "6BE15B4C-B2B1-11ED-808B-AC162D1F16F0-CONS",
+                "id": "4000000000000000_4644170000000000-CONS",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
@@ -1493,12 +1320,12 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
-                    "reference": "Encounter/6BE15B4C-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_4644170000000000"
                 },
-                "date": "2010-12-16T12:38:53+00:00",
+                "date": "2010-12-16T12:38:53",
                 "orderedBy": {
                     "coding": [
                         {
@@ -1511,7 +1338,7 @@
                 "entry": [
                     {
                         "item": {
-                            "reference": "List/8788ad2d-fb6b-4106-8d3e-7c853c0ef3de"
+                            "reference": "List/4000000000000000_4644170000000000_NoTopic"
                         }
                     }
                 ]
@@ -1520,7 +1347,7 @@
         {
             "resource": {
                 "resourceType": "List",
-                "id": "6BE15B4F-B2B1-11ED-808B-AC162D1F16F0-CONS",
+                "id": "4000000000000000_5e44170000000000-CONS",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
@@ -1539,12 +1366,12 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
-                    "reference": "Encounter/6BE15B4F-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_5e44170000000000"
                 },
-                "date": "2011-02-16T11:30:40+00:00",
+                "date": "2011-02-16T11:30:40",
                 "orderedBy": {
                     "coding": [
                         {
@@ -1557,7 +1384,7 @@
                 "entry": [
                     {
                         "item": {
-                            "reference": "List/79730889-43d0-40e4-b710-3309b4632ebc"
+                            "reference": "List/4000000000000000_5e44170000000000_T_d52e640000000000"
                         }
                     }
                 ]
@@ -1566,7 +1393,7 @@
         {
             "resource": {
                 "resourceType": "List",
-                "id": "6BE15B51-B2B1-11ED-808B-AC162D1F16F0-CONS",
+                "id": "4000000000000000_9e44170000000000-CONS",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
@@ -1585,12 +1412,12 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
-                    "reference": "Encounter/6BE15B51-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_9e44170000000000"
                 },
-                "date": "2011-02-16T11:37:00+00:00",
+                "date": "2011-02-16T11:37:00",
                 "orderedBy": {
                     "coding": [
                         {
@@ -1603,7 +1430,7 @@
                 "entry": [
                     {
                         "item": {
-                            "reference": "List/9b368b9c-792c-462f-9b6e-2a7a86d656c2"
+                            "reference": "List/4000000000000000_9e44170000000000_NoTopic"
                         }
                     }
                 ]
@@ -1631,12 +1458,12 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
                     "reference": "Encounter/6BE15B52-B2B1-11ED-808B-AC162D1F16F0"
                 },
-                "date": "2011-06-15T11:20:34+00:00",
+                "date": "2011-06-15T11:20:34",
                 "orderedBy": {
                     "coding": [
                         {
@@ -1677,12 +1504,12 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
                     "reference": "Encounter/6BE15B53-B2B1-11ED-808B-AC162D1F16F0"
                 },
-                "date": "2011-06-15T11:53:20+00:00",
+                "date": "2011-06-15T11:53:20",
                 "orderedBy": {
                     "coding": [
                         {
@@ -1704,7 +1531,7 @@
         {
             "resource": {
                 "resourceType": "List",
-                "id": "6BE15B55-B2B1-11ED-808B-AC162D1F16F0-CONS",
+                "id": "4000000000000000_a544170000000000-CONS",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
@@ -1723,12 +1550,12 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
-                    "reference": "Encounter/6BE15B55-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_a544170000000000"
                 },
-                "date": "2012-01-27T11:24:41+00:00",
+                "date": "2012-01-27T11:24:41",
                 "orderedBy": {
                     "coding": [
                         {
@@ -1741,7 +1568,7 @@
                 "entry": [
                     {
                         "item": {
-                            "reference": "List/19728143-4ce3-464a-b609-3874995cc98d"
+                            "reference": "List/4000000000000000_a544170000000000_NoTopic"
                         }
                     }
                 ]
@@ -1769,7 +1596,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
                     "reference": "Encounter/6BE3CC81-B2B1-11ED-808B-AC162D1F16F0"
@@ -1814,12 +1641,12 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
                     "reference": "Encounter/6BE15B44-B2B1-11ED-808B-AC162D1F16F0"
                 },
-                "date": "2023-02-22T13:04:20+00:00",
+                "date": "2023-02-22T13:04:20",
                 "orderedBy": {
                     "coding": [
                         {
@@ -1869,10 +1696,10 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
-                    "reference": "Encounter/6BE15B46-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_7e44170000000000"
                 },
                 "date": "2008",
                 "orderedBy": {
@@ -1914,10 +1741,10 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
-                    "reference": "Encounter/6BE15B47-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_6e44170000000000"
                 },
                 "date": "2009-04",
                 "orderedBy": {
@@ -1932,7 +1759,7 @@
                 "entry": [
                     {
                         "item": {
-                            "reference": "Observation/6BE15B59-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Observation/9300000000000000_e52e640000000000"
                         }
                     },
                     {
@@ -1946,7 +1773,7 @@
         {
             "resource": {
                 "resourceType": "List",
-                "id": "1c1cb61f-d2ae-4e2c-a5a9-67569cff1110",
+                "id": "4000000000000000_3744170000000000_NoTopic",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
@@ -1964,12 +1791,12 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
-                    "reference": "Encounter/6BE15B49-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_3744170000000000"
                 },
-                "date": "2010-12-10T09:01:20+00:00",
+                "date": "2010-12-10T09:01:20",
                 "orderedBy": {
                     "coding": [
                         {
@@ -2032,17 +1859,17 @@
                     },
                     {
                         "item": {
-                            "reference": "MedicationStatement/6BE3CC6D-B2B1-11ED-808B-AC162D1F16F0-MS"
+                            "reference": "MedicationStatement/1000000000000000_2d55c40000000000_plan-MS"
                         }
                     },
                     {
                         "item": {
-                            "reference": "MedicationRequest/6BE3CC6D-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "MedicationRequest/1000000000000000_2d55c40000000000_plan"
                         }
                     },
                     {
                         "item": {
-                            "reference": "MedicationRequest/6BE3CC6E-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "MedicationRequest/1000000000000000_2d55c40000000000_order"
                         }
                     },
                     {
@@ -2071,7 +1898,7 @@
         {
             "resource": {
                 "resourceType": "List",
-                "id": "626cc59a-2632-4c5c-a6b3-f44995c1c296",
+                "id": "4000000000000000_4744170000000000_NoTopic",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
@@ -2089,12 +1916,12 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
-                    "reference": "Encounter/6BE15B4A-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_4744170000000000"
                 },
-                "date": "2010-12-10T09:07:18+00:00",
+                "date": "2010-12-10T09:07:18",
                 "orderedBy": {
                     "coding": [
                         {
@@ -2191,7 +2018,7 @@
         {
             "resource": {
                 "resourceType": "List",
-                "id": "1be5a7d2-29de-4088-9aa8-52a1a5291111",
+                "id": "4000000000000000_5744170000000000_NoTopic",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
@@ -2209,12 +2036,12 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
-                    "reference": "Encounter/6BE15B4B-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_5744170000000000"
                 },
-                "date": "2010-12-10T09:17:08+00:00",
+                "date": "2010-12-10T09:17:08",
                 "orderedBy": {
                     "coding": [
                         {
@@ -2227,12 +2054,12 @@
                 "entry": [
                     {
                         "item": {
-                            "reference": "Observation/6BE15B5A-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Observation/9300000000000000_0e1e640000000000"
                         }
                     },
                     {
                         "item": {
-                            "reference": "Observation/6BE15B5B-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Observation/9300000000000000_fd1e640000000000"
                         }
                     },
                     {
@@ -2291,7 +2118,7 @@
         {
             "resource": {
                 "resourceType": "List",
-                "id": "8788ad2d-fb6b-4106-8d3e-7c853c0ef3de",
+                "id": "4000000000000000_4644170000000000_NoTopic",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
@@ -2309,12 +2136,12 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
-                    "reference": "Encounter/6BE15B4C-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_4644170000000000"
                 },
-                "date": "2010-12-16T12:38:53+00:00",
+                "date": "2010-12-16T12:38:53",
                 "orderedBy": {
                     "coding": [
                         {
@@ -2341,7 +2168,7 @@
         {
             "resource": {
                 "resourceType": "List",
-                "id": "79730889-43d0-40e4-b710-3309b4632ebc",
+                "id": "4000000000000000_5e44170000000000_T_d52e640000000000",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
@@ -2359,12 +2186,12 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
-                    "reference": "Encounter/6BE15B4F-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_5e44170000000000"
                 },
-                "date": "2011-02-16T11:30:40+00:00",
+                "date": "2011-02-16T11:30:40",
                 "orderedBy": {
                     "coding": [
                         {
@@ -2377,7 +2204,7 @@
                 "entry": [
                     {
                         "item": {
-                            "reference": "Observation/6BE15B5D-B2B1-11ED-808B-AC162D1F16F0"
+                            "reference": "Observation/4000000000000000_5e44170000000000_T_d52e640000000000_Cat_H_Nar"
                         }
                     },
                     {
@@ -2391,7 +2218,7 @@
         {
             "resource": {
                 "resourceType": "List",
-                "id": "9b368b9c-792c-462f-9b6e-2a7a86d656c2",
+                "id": "4000000000000000_9e44170000000000_NoTopic",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
@@ -2409,12 +2236,12 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
-                    "reference": "Encounter/6BE15B51-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_9e44170000000000"
                 },
-                "date": "2011-02-16T11:37:00+00:00",
+                "date": "2011-02-16T11:37:00",
                 "orderedBy": {
                     "coding": [
                         {
@@ -2479,12 +2306,12 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
                     "reference": "Encounter/6BE15B52-B2B1-11ED-808B-AC162D1F16F0"
                 },
-                "date": "2011-06-15T11:20:34+00:00",
+                "date": "2011-06-15T11:20:34",
                 "orderedBy": {
                     "coding": [
                         {
@@ -2534,12 +2361,12 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
                     "reference": "Encounter/6BE15B53-B2B1-11ED-808B-AC162D1F16F0"
                 },
-                "date": "2011-06-15T11:53:20+00:00",
+                "date": "2011-06-15T11:53:20",
                 "orderedBy": {
                     "coding": [
                         {
@@ -2561,7 +2388,7 @@
         {
             "resource": {
                 "resourceType": "List",
-                "id": "19728143-4ce3-464a-b609-3874995cc98d",
+                "id": "4000000000000000_a544170000000000_NoTopic",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-List-1"
@@ -2579,12 +2406,12 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
-                    "reference": "Encounter/6BE15B55-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_a544170000000000"
                 },
-                "date": "2012-01-27T11:24:41+00:00",
+                "date": "2012-01-27T11:24:41",
                 "orderedBy": {
                     "coding": [
                         {
@@ -2624,7 +2451,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "encounter": {
                     "reference": "Encounter/6BE3CC81-B2B1-11ED-808B-AC162D1F16F0"
@@ -2651,44 +2478,20 @@
         {
             "resource": {
                 "resourceType": "Location",
-                "id": "2220F7D3-AC1D-4A8B-9166-A491AFF75F45",
+                "id": "0100000000000000_0b00000000000000",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Location-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "2220F7D3-AC1D-4A8B-9166-A491AFF75F45"
-                    }
-                ],
                 "status": "active",
-                "name": "West Farm Surgery",
-                "telecom": [
-                    {
-                        "system": "phone",
-                        "value": "01132050080",
-                        "use": "work",
-                        "rank": 1
-                    }
-                ],
-                "address": {
-                    "use": "work",
-                    "type": "physical",
-                    "line": [
-                        "31 West Farm Avenue",
-                        "Newcastle Upon Tyne",
-                        "Tyne and Wear"
-                    ],
-                    "postalCode": "NE12 8LS"
-                }
+                "name": "West Farm Surgery"
             }
         },
         {
             "resource": {
                 "resourceType": "Medication",
-                "id": "e6451bb4-57b8-4f9c-a0ac-95230500db5c",
+                "id": "1001363_0",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Medication-1"
@@ -2728,12 +2531,6 @@
                         }
                     }
                 ],
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC6B-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "basedOn": [
                     {
                         "reference": "MedicationRequest/6BE3CC6A-B2B1-11ED-808B-AC162D1F16F0"
@@ -2742,22 +2539,22 @@
                 "status": "completed",
                 "intent": "order",
                 "medicationReference": {
-                    "reference": "Medication/e6451bb4-57b8-4f9c-a0ac-95230500db5c"
+                    "reference": "Medication/1001363_0"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B49-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_3744170000000000"
                 },
-                "authoredOn": "2010-12-10T09:01:20+00:00",
+                "authoredOn": "2010-12-10T09:01:20",
                 "requester": {
                     "agent": {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 },
                 "recorder": {
-                    "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Practitioner/26f1000000000000"
                 },
                 "dosageInstruction": [
                     {
@@ -2769,7 +2566,7 @@
                         "start": "2010-12-10"
                     },
                     "quantity": {
-                        "value": 1.0,
+                        "value": 1,
                         "unit": "Unk UoM"
                     }
                 }
@@ -2798,31 +2595,25 @@
                         }
                     }
                 ],
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC6A-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "completed",
                 "intent": "plan",
                 "medicationReference": {
-                    "reference": "Medication/e6451bb4-57b8-4f9c-a0ac-95230500db5c"
+                    "reference": "Medication/1001363_0"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B49-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_3744170000000000"
                 },
-                "authoredOn": "2010-12-10T09:01:20+00:00",
+                "authoredOn": "2010-12-10T09:01:20",
                 "requester": {
                     "agent": {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 },
                 "recorder": {
-                    "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Practitioner/26f1000000000000"
                 },
                 "dosageInstruction": [
                     {
@@ -2834,7 +2625,7 @@
                         "start": "2010-12-10"
                     },
                     "quantity": {
-                        "value": 1.0,
+                        "value": 1,
                         "unit": "Unk UoM"
                     }
                 }
@@ -2867,30 +2658,24 @@
                         "valueDateTime": "2010-12-10"
                     }
                 ],
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC6A-B2B1-11ED-808B-AC162D1F16F0-MS"
-                    }
-                ],
                 "basedOn": [
                     {
                         "reference": "MedicationRequest/6BE3CC6A-B2B1-11ED-808B-AC162D1F16F0"
                     }
                 ],
                 "context": {
-                    "reference": "Encounter/6BE15B49-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_3744170000000000"
                 },
                 "status": "completed",
                 "medicationReference": {
-                    "reference": "Medication/e6451bb4-57b8-4f9c-a0ac-95230500db5c"
+                    "reference": "Medication/1001363_0"
                 },
                 "effectivePeriod": {
                     "start": "2010-12-10"
                 },
-                "dateAsserted": "2010-12-10T09:01:20+00:00",
+                "dateAsserted": "2010-12-10T09:01:20",
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "taken": "unk",
                 "dosage": [
@@ -2903,7 +2688,7 @@
         {
             "resource": {
                 "resourceType": "Medication",
-                "id": "0b5b3a64-6435-46b3-8d4d-1007a2e87fd2",
+                "id": "1015769_0",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Medication-1"
@@ -2923,7 +2708,7 @@
         {
             "resource": {
                 "resourceType": "MedicationRequest",
-                "id": "6BE3CC6E-B2B1-11ED-808B-AC162D1F16F0",
+                "id": "1000000000000000_2d55c40000000000_order",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
@@ -2943,36 +2728,30 @@
                         }
                     }
                 ],
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC6E-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "basedOn": [
                     {
-                        "reference": "MedicationRequest/6BE3CC6D-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "MedicationRequest/1000000000000000_2d55c40000000000_plan"
                     }
                 ],
                 "status": "completed",
                 "intent": "order",
                 "medicationReference": {
-                    "reference": "Medication/0b5b3a64-6435-46b3-8d4d-1007a2e87fd2"
+                    "reference": "Medication/1015769_0"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B49-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_3744170000000000"
                 },
-                "authoredOn": "2010-12-10T09:01:20+00:00",
+                "authoredOn": "2010-12-10T09:01:20",
                 "requester": {
                     "agent": {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 },
                 "recorder": {
-                    "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Practitioner/26f1000000000000"
                 },
                 "dosageInstruction": [
                     {
@@ -2984,7 +2763,7 @@
                         "start": "2010-12-10"
                     },
                     "quantity": {
-                        "value": 1.0,
+                        "value": 1,
                         "unit": "Unk UoM"
                     }
                 }
@@ -2993,7 +2772,7 @@
         {
             "resource": {
                 "resourceType": "MedicationRequest",
-                "id": "6BE3CC6D-B2B1-11ED-808B-AC162D1F16F0",
+                "id": "1000000000000000_2d55c40000000000_plan",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationRequest-1"
@@ -3013,31 +2792,25 @@
                         }
                     }
                 ],
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC6D-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "completed",
                 "intent": "plan",
                 "medicationReference": {
-                    "reference": "Medication/0b5b3a64-6435-46b3-8d4d-1007a2e87fd2"
+                    "reference": "Medication/1015769_0"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B49-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_3744170000000000"
                 },
-                "authoredOn": "2010-12-10T09:01:20+00:00",
+                "authoredOn": "2010-12-10T09:01:20",
                 "requester": {
                     "agent": {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 },
                 "recorder": {
-                    "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Practitioner/26f1000000000000"
                 },
                 "dosageInstruction": [
                     {
@@ -3049,7 +2822,7 @@
                         "start": "2010-12-10"
                     },
                     "quantity": {
-                        "value": 1.0,
+                        "value": 1,
                         "unit": "Unk UoM"
                     }
                 }
@@ -3058,7 +2831,7 @@
         {
             "resource": {
                 "resourceType": "MedicationStatement",
-                "id": "6BE3CC6D-B2B1-11ED-808B-AC162D1F16F0-MS",
+                "id": "1000000000000000_2d55c40000000000_plan-MS",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-MedicationStatement-1"
@@ -3082,30 +2855,24 @@
                         "valueDateTime": "2010-12-10"
                     }
                 ],
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC6D-B2B1-11ED-808B-AC162D1F16F0-MS"
-                    }
-                ],
                 "basedOn": [
                     {
-                        "reference": "MedicationRequest/6BE3CC6D-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "MedicationRequest/1000000000000000_2d55c40000000000_plan"
                     }
                 ],
                 "context": {
-                    "reference": "Encounter/6BE15B49-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_3744170000000000"
                 },
                 "status": "completed",
                 "medicationReference": {
-                    "reference": "Medication/0b5b3a64-6435-46b3-8d4d-1007a2e87fd2"
+                    "reference": "Medication/1015769_0"
                 },
                 "effectivePeriod": {
                     "start": "2010-12-10"
                 },
-                "dateAsserted": "2010-12-10T09:01:20+00:00",
+                "dateAsserted": "2010-12-10T09:01:20",
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "taken": "unk",
                 "dosage": [
@@ -3152,12 +2919,6 @@
                         }
                     }
                 ],
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC71-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "basedOn": [
                     {
                         "reference": "MedicationRequest/6BE3CC70-B2B1-11ED-808B-AC162D1F16F0"
@@ -3169,19 +2930,19 @@
                     "reference": "Medication/d82f02d0-bb58-4a98-b8d8-0d54d925cfbd"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4A-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_4744170000000000"
                 },
-                "authoredOn": "2010-12-10T09:07:18+00:00",
+                "authoredOn": "2010-12-10T09:07:18",
                 "requester": {
                     "agent": {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 },
                 "recorder": {
-                    "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Practitioner/26f1000000000000"
                 },
                 "dosageInstruction": [
                     {
@@ -3193,7 +2954,7 @@
                         "start": "2010-12-10"
                     },
                     "quantity": {
-                        "value": 1.0,
+                        "value": 1,
                         "unit": "Unk UoM"
                     }
                 }
@@ -3222,31 +2983,25 @@
                         }
                     }
                 ],
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC70-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "completed",
                 "intent": "plan",
                 "medicationReference": {
                     "reference": "Medication/d82f02d0-bb58-4a98-b8d8-0d54d925cfbd"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4A-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_4744170000000000"
                 },
-                "authoredOn": "2010-12-10T09:07:18+00:00",
+                "authoredOn": "2010-12-10T09:07:18",
                 "requester": {
                     "agent": {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 },
                 "recorder": {
-                    "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Practitioner/26f1000000000000"
                 },
                 "dosageInstruction": [
                     {
@@ -3258,7 +3013,7 @@
                         "start": "2010-12-10"
                     },
                     "quantity": {
-                        "value": 1.0,
+                        "value": 1,
                         "unit": "Unk UoM"
                     }
                 }
@@ -3291,19 +3046,13 @@
                         "valueDateTime": "2010-12-10"
                     }
                 ],
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC70-B2B1-11ED-808B-AC162D1F16F0-MS"
-                    }
-                ],
                 "basedOn": [
                     {
                         "reference": "MedicationRequest/6BE3CC70-B2B1-11ED-808B-AC162D1F16F0"
                     }
                 ],
                 "context": {
-                    "reference": "Encounter/6BE15B4A-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_4744170000000000"
                 },
                 "status": "completed",
                 "medicationReference": {
@@ -3312,9 +3061,9 @@
                 "effectivePeriod": {
                     "start": "2010-12-10"
                 },
-                "dateAsserted": "2010-12-10T09:07:18+00:00",
+                "dateAsserted": "2010-12-10T09:07:18",
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "taken": "unk",
                 "dosage": [
@@ -3333,12 +3082,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC51-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -3361,15 +3104,15 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
                     "reference": "Encounter/6BE15B44-B2B1-11ED-808B-AC162D1F16F0"
                 },
-                "issued": "2011-02-16T11:26:50.000+00:00",
+                "issued": "2011-02-16T11:26:50",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Batch No: hhhh:yyyy"
@@ -3384,12 +3127,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC72-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -3402,15 +3139,15 @@
                     "text": "Foster parent present"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
                     "reference": "Encounter/6BE15B44-B2B1-11ED-808B-AC162D1F16F0"
                 },
-                "issued": "2011-02-16T11:26:50.000+00:00",
+                "issued": "2011-02-16T11:26:50",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ]
             }
@@ -3424,12 +3161,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC40-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -3452,19 +3183,19 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B49-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_3744170000000000"
                 },
                 "effectivePeriod": {
                     "start": "2010-12-10T09:01:20+00:00",
                     "end": "2011-01-21T17:23:03+00:00"
                 },
-                "issued": "2010-12-10T09:01:20.000+00:00",
+                "issued": "2010-12-10T09:01:20",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Ended Consent: YELLOW FEVER. These are some consent notes"
@@ -3479,12 +3210,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC41-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -3507,16 +3232,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B49-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_3744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:01:20+00:00",
-                "issued": "2010-12-10T09:01:20.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:01:20",
+                "issued": "2010-12-10T09:01:20",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Consent: HIB. some stuff"
@@ -3531,12 +3256,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC55-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -3549,16 +3268,16 @@
                     "text": "ACT - HIB 1"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B49-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_3744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:01:20+00:00",
-                "issued": "2010-12-10T09:01:20.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:01:20",
+                "issued": "2010-12-10T09:01:20",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Reason: Routine Measure\nMethod: Deep subcutaneous\nSite: Left deltoid\nBatch No: 987654\nDosage: 0.5 ml\nExpiry date: 16 Nov 2011\nNature of risk: slightly risky\nNotes: some notes here"
@@ -3573,12 +3292,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC56-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -3591,16 +3304,16 @@
                     "text": "Arilvax 1"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B49-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_3744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:01:20+00:00",
-                "issued": "2010-12-10T09:01:20.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:01:20",
+                "issued": "2010-12-10T09:01:20",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Reason: Traveller\nArea: Asia\nMethod: Intramuscularly\nSite: Right deltoid\nBatch No: 1234567\nDosage: 0.5 ml\nExpiry date: 30 Apr 2011\nNature of risk: Risky\nNotes: This are some notes on yellow fever vacc"
@@ -3615,12 +3328,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC57-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -3633,16 +3340,16 @@
                     "text": "Cslgen Inactivated Influenza Vaccine (Split Virion) (CHIRON). Cslgen Inactivated Influenza Vaccine (CHIRON) 1"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B49-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_3744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:01:20+00:00",
-                "issued": "2010-12-10T09:01:20.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:01:20",
+                "issued": "2010-12-10T09:01:20",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Reason: Routine Measure\nSite: Left anterior forearm\nBatch No: bigflu24\nDosage: 0.5 ml\nExpiry date: 13 Jul 2010\nNature of risk: slight"
@@ -3657,12 +3364,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC58-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -3675,16 +3376,16 @@
                     "text": "Celvapan 1"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B49-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_3744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:01:20+00:00",
-                "issued": "2010-12-10T09:01:20.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:01:20",
+                "issued": "2010-12-10T09:01:20",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Reason: Epidemic\nArea: Northern Europe\nMethod: Intradermal\nSite: Stomach\nBatch No: Piggyflu1\nDosage: 0.5ml\nExpiry date: 12 May 2011\nNature of risk: Doomed\nNotes: These are some swine flu notes"
@@ -3699,12 +3400,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC73-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -3717,16 +3412,16 @@
                     "text": "Parent present"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B49-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_3744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:01:20+00:00",
-                "issued": "2010-12-10T09:01:20.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:01:20",
+                "issued": "2010-12-10T09:01:20",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ]
             }
@@ -3740,12 +3435,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC74-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -3758,16 +3447,16 @@
                     "text": "Relative present"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B49-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_3744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:01:20+00:00",
-                "issued": "2010-12-10T09:01:20.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:01:20",
+                "issued": "2010-12-10T09:01:20",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ]
             }
@@ -3781,12 +3470,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC75-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -3799,16 +3482,16 @@
                     "text": "Relative present"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B49-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_3744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:01:20+00:00",
-                "issued": "2010-12-10T09:01:20.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:01:20",
+                "issued": "2010-12-10T09:01:20",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ]
             }
@@ -3822,12 +3505,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC76-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -3840,16 +3517,16 @@
                     "text": "No other person present"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B49-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_3744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:01:20+00:00",
-                "issued": "2010-12-10T09:01:20.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:01:20",
+                "issued": "2010-12-10T09:01:20",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ]
             }
@@ -3863,12 +3540,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC42-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -3891,16 +3562,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4A-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_4744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:07:18+00:00",
-                "issued": "2010-12-10T09:07:18.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:07:18",
+                "issued": "2010-12-10T09:07:18",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Consent: HEPATITIS B. These are consent notes"
@@ -3915,12 +3586,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC43-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -3943,16 +3608,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4A-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_4744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:07:18+00:00",
-                "issued": "2010-12-10T09:07:18.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:07:18",
+                "issued": "2010-12-10T09:07:18",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Consent: MUMPS. consent notes here"
@@ -3967,12 +3632,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC44-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -3995,16 +3654,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4A-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_4744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:07:18+00:00",
-                "issued": "2010-12-10T09:07:18.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:07:18",
+                "issued": "2010-12-10T09:07:18",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Consent: MEASLES. consent notes here"
@@ -4019,12 +3678,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC45-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -4047,16 +3700,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4A-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_4744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:07:18+00:00",
-                "issued": "2010-12-10T09:07:18.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:07:18",
+                "issued": "2010-12-10T09:07:18",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Consent: RUBELLA. consent notes here"
@@ -4071,12 +3724,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC59-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -4089,16 +3736,16 @@
                     "text": "Infanrix quinta part 2. Infanix Quinta 5 2"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4A-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_4744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:07:18+00:00",
-                "issued": "2010-12-10T09:07:18.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:07:18",
+                "issued": "2010-12-10T09:07:18",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Reason: Routine Measure\nBatch No: 343434\nDosage: 0.5ml"
@@ -4113,12 +3760,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC5A-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -4131,16 +3772,16 @@
                     "text": "HB-Vax II 1"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4A-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_4744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:07:18+00:00",
-                "issued": "2010-12-10T09:07:18.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:07:18",
+                "issued": "2010-12-10T09:07:18",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Reason: Special Risk Group\nArea: Australia\nMethod: Intravenously\nSite: Right Gluteal\nBatch No: NoMoreHepB1234\nDosage: 0.5 ml\nExpiry date: 10 Dec 2010\nNature of risk: this is a nature of risk note"
@@ -4155,12 +3796,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC5C-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -4183,16 +3818,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4A-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_4744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:07:18+00:00",
-                "issued": "2010-12-10T09:07:18.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:07:18",
+                "issued": "2010-12-10T09:07:18",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Reason: Routine Measure\nBatch No: 765432:121212\nDosage: 0.5 ml\nExpiry date: 31 Dec 2010"
@@ -4207,12 +3842,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC5E-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -4225,16 +3854,16 @@
                     "text": "Ixiaro vaccination part 1. Ixiaro 1"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4A-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_4744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:07:18+00:00",
-                "issued": "2010-12-10T09:07:18.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:07:18",
+                "issued": "2010-12-10T09:07:18",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Reason: Traveller\nArea: Africa\nMethod: Intramuscularly\nSite: Right anterior forearm\nBatch No: JapEnc1234\nDosage: 0.5ml\nExpiry date: 01 Jan 2070\nNature of risk: some risk info\nNotes: These are some notes on Japanese B Encephalitis"
@@ -4249,12 +3878,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC77-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -4267,16 +3890,16 @@
                     "text": "Foster parent present"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4A-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_4744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:07:18+00:00",
-                "issued": "2010-12-10T09:07:18.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:07:18",
+                "issued": "2010-12-10T09:07:18",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ]
             }
@@ -4290,12 +3913,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC78-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -4308,16 +3925,16 @@
                     "text": "No other person present"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4A-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_4744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:07:18+00:00",
-                "issued": "2010-12-10T09:07:18.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:07:18",
+                "issued": "2010-12-10T09:07:18",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ]
             }
@@ -4331,12 +3948,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC79-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -4349,16 +3960,16 @@
                     "text": "Parent present"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4A-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_4744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:07:18+00:00",
-                "issued": "2010-12-10T09:07:18.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:07:18",
+                "issued": "2010-12-10T09:07:18",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ]
             }
@@ -4372,12 +3983,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC46-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -4400,19 +4005,19 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4B-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_5744170000000000"
                 },
                 "effectivePeriod": {
                     "start": "2010-12-10T09:17:08+00:00",
                     "end": "2011-01-21T17:23:03+00:00"
                 },
-                "issued": "2010-12-10T09:17:08.000+00:00",
+                "issued": "2010-12-10T09:17:08",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Ended Consent: PNEUMOCOCCAL"
@@ -4427,12 +4032,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC47-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -4455,16 +4054,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4B-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_5744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:17:08+00:00",
-                "issued": "2010-12-10T09:17:08.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:17:08",
+                "issued": "2010-12-10T09:17:08",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Consent: MENINGOCOCCAL C"
@@ -4479,12 +4078,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC48-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -4507,16 +4100,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4B-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_5744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:17:08+00:00",
-                "issued": "2010-12-10T09:17:08.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:17:08",
+                "issued": "2010-12-10T09:17:08",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Consent: TETANUS"
@@ -4531,12 +4124,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC49-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -4559,16 +4146,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4B-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_5744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:17:08+00:00",
-                "issued": "2010-12-10T09:17:08.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:17:08",
+                "issued": "2010-12-10T09:17:08",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Refusal: PERTUSSIS"
@@ -4583,12 +4170,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC4A-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -4611,19 +4192,19 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4B-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_5744170000000000"
                 },
                 "effectivePeriod": {
                     "start": "2010-12-10T09:17:08+00:00",
                     "end": "2011-01-21T17:23:03+00:00"
                 },
-                "issued": "2010-12-10T09:17:08.000+00:00",
+                "issued": "2010-12-10T09:17:08",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Ended Refusal: DIPHTHERIA"
@@ -4638,12 +4219,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC4B-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -4666,16 +4241,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4B-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_5744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:17:08+00:00",
-                "issued": "2010-12-10T09:17:08.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:17:08",
+                "issued": "2010-12-10T09:17:08",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Refusal: POLIO"
@@ -4690,12 +4265,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC4C-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -4718,16 +4287,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4B-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_5744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:17:08+00:00",
-                "issued": "2010-12-10T09:17:08.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:17:08",
+                "issued": "2010-12-10T09:17:08",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Consent: INFLUENZA"
@@ -4742,12 +4311,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC5F-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -4760,16 +4323,16 @@
                     "text": "Almevax Reinforcing. Almevax 1st Scheduled Booster"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4B-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_5744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:17:08+00:00",
-                "issued": "2010-12-10T09:17:08.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:17:08",
+                "issued": "2010-12-10T09:17:08",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Reason: Routine Measure\nBatch No: hh\nDosage: 0.5 ml"
@@ -4784,27 +4347,21 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC60-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "text": "HNIG 1"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4B-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_5744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:17:08+00:00",
-                "issued": "2010-12-10T09:17:08.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:17:08",
+                "issued": "2010-12-10T09:17:08",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Reason: Routine Measure\nMethod: Intramuscularly\nSite: Left deltoid\nBatch No: hh\nDosage: 0.5 ml\nNotes: hhhhh"
@@ -4819,12 +4376,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC61-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -4837,16 +4388,16 @@
                     "text": "Agrippal S1 1"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4B-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_5744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:17:08+00:00",
-                "issued": "2010-12-10T09:17:08.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:17:08",
+                "issued": "2010-12-10T09:17:08",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Reason: Routine Measure\nBatch No: hhh\nDosage: 0.5 ml"
@@ -4861,12 +4412,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC4D-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -4889,16 +4434,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4C-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_4644170000000000"
                 },
-                "effectiveDateTime": "2010-12-16T12:38:53+00:00",
-                "issued": "2010-12-16T12:38:53.000+00:00",
+                "effectiveDateTime": "2010-12-16T12:38:53",
+                "issued": "2010-12-16T12:38:53",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Consent: BCG"
@@ -4913,12 +4458,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC4E-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -4941,16 +4480,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4C-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_4644170000000000"
                 },
-                "effectiveDateTime": "2010-12-16T12:38:53+00:00",
-                "issued": "2010-12-16T12:38:53.000+00:00",
+                "effectiveDateTime": "2010-12-16T12:38:53",
+                "issued": "2010-12-16T12:38:53",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Consent: H1N1 Swine Flu"
@@ -4965,12 +4504,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC62-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -4983,16 +4516,16 @@
                     "text": "Agrippal S1 1"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4F-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_5e44170000000000"
                 },
-                "effectiveDateTime": "2011-02-16T11:30:40+00:00",
-                "issued": "2011-02-16T11:30:40.000+00:00",
+                "effectiveDateTime": "2011-02-16T11:30:40",
+                "issued": "2011-02-16T11:30:40",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Reason: Routine Measure\nBatch No: hhh\nDosage: 0.5 ml"
@@ -5007,12 +4540,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC63-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -5035,16 +4562,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B51-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_9e44170000000000"
                 },
-                "effectiveDateTime": "2011-02-16T11:37:00+00:00",
-                "issued": "2011-02-16T11:37:00.000+00:00",
+                "effectiveDateTime": "2011-02-16T11:37:00",
+                "issued": "2011-02-16T11:37:00",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Reason: Routine Measure\nBatch No: aaa\nDosage: 0.5 ml"
@@ -5059,12 +4586,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC64-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -5087,16 +4608,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B51-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_9e44170000000000"
                 },
-                "effectiveDateTime": "2011-02-16T11:37:00+00:00",
-                "issued": "2011-02-16T11:37:00.000+00:00",
+                "effectiveDateTime": "2011-02-16T11:37:00",
+                "issued": "2011-02-16T11:37:00",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Reason: Routine Measure\nBatch No: aaa\nDosage: 0.5 ml"
@@ -5111,12 +4632,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC65-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -5129,16 +4644,16 @@
                     "text": "DTP 1st Booster. DTP 1st Scheduled Booster"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B51-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_9e44170000000000"
                 },
-                "effectiveDateTime": "2011-02-16T11:37:00+00:00",
-                "issued": "2011-02-16T11:37:00.000+00:00",
+                "effectiveDateTime": "2011-02-16T11:37:00",
+                "issued": "2011-02-16T11:37:00",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Reason: Routine Measure\nBatch No: aaa\nDosage: 0.5 ml"
@@ -5153,12 +4668,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC66-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -5171,16 +4680,16 @@
                     "text": "DTP 2nd Booster. DTP 2nd Scheduled Booster"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B51-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_9e44170000000000"
                 },
-                "effectiveDateTime": "2011-02-16T11:37:00+00:00",
-                "issued": "2011-02-16T11:37:00.000+00:00",
+                "effectiveDateTime": "2011-02-16T11:37:00",
+                "issued": "2011-02-16T11:37:00",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Reason: Routine Measure\nBatch No: aaa\nDosage: 0.5 ml"
@@ -5195,12 +4704,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC67-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -5213,16 +4716,16 @@
                     "text": "DTP Reinforcing Vacc. DTP Booster"
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B51-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_9e44170000000000"
                 },
-                "effectiveDateTime": "2011-02-16T11:37:00+00:00",
-                "issued": "2011-02-16T11:37:00.000+00:00",
+                "effectiveDateTime": "2011-02-16T11:37:00",
+                "issued": "2011-02-16T11:37:00",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Reason: Routine Measure\nBatch No: aaa\nDosage: 0.5 ml"
@@ -5237,12 +4740,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC68-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -5265,16 +4762,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B51-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_9e44170000000000"
                 },
-                "effectiveDateTime": "2011-02-16T11:37:00+00:00",
-                "issued": "2011-02-16T11:37:00.000+00:00",
+                "effectiveDateTime": "2011-02-16T11:37:00",
+                "issued": "2011-02-16T11:37:00",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Reason: Routine Measure\nBatch No: aaa\nDosage: 0.5 ml"
@@ -5289,12 +4786,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC7A-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -5317,16 +4808,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
                     "reference": "Encounter/6BE15B52-B2B1-11ED-808B-AC162D1F16F0"
                 },
-                "effectiveDateTime": "2011-06-15T11:20:34+00:00",
-                "issued": "2011-06-15T11:20:34.000+00:00",
+                "effectiveDateTime": "2011-06-15T11:20:34",
+                "issued": "2011-06-15T11:20:34",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "(Summary type: Minor). This is a read coded consent refusal"
@@ -5341,12 +4832,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC7B-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -5369,16 +4854,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
                     "reference": "Encounter/6BE15B52-B2B1-11ED-808B-AC162D1F16F0"
                 },
-                "effectiveDateTime": "2011-06-15T11:20:34+00:00",
-                "issued": "2011-06-15T11:20:34.000+00:00",
+                "effectiveDateTime": "2011-06-15T11:20:34",
+                "issued": "2011-06-15T11:20:34",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "(Summary type: Minor). This is the consent as a Read code"
@@ -5393,12 +4878,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC7D-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -5421,16 +4900,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
                     "reference": "Encounter/6BE15B53-B2B1-11ED-808B-AC162D1F16F0"
                 },
-                "effectiveDateTime": "2011-06-15T11:53:20+00:00",
-                "issued": "2011-06-15T11:53:20.000+00:00",
+                "effectiveDateTime": "2011-06-15T11:53:20",
+                "issued": "2011-06-15T11:53:20",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "(Summary type: Minor)"
@@ -5445,12 +4924,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC4F-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -5473,19 +4946,19 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B55-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_a544170000000000"
                 },
                 "effectivePeriod": {
                     "start": "2012-01-27T11:24:41+00:00",
                     "end": "2012-01-27T11:24:41+00:00"
                 },
-                "issued": "2012-01-27T11:24:41.000+00:00",
+                "issued": "2012-01-27T11:24:41",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "Ended Refusal: ANTHRAX. hhhh"
@@ -5493,531 +4966,13 @@
         },
         {
             "resource": {
-                "resourceType": "Immunization",
-                "id": "6BE3CC50-B2B1-11ED-808B-AC162D1F16F0",
-                "meta": {
-                    "profile": [
-                        "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
-                    ]
-                },
-                "extension": [
-                    {
-                        "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
-                        "valueExtension": {
-                            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                            "valueCodeableConcept": {
-                                "coding": [
-                                    {
-                                        "extension": [
-                                            {
-                                                "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                                                "extension": [
-                                                    {
-                                                        "url": "descriptionId",
-                                                        "valueId": "70542015"
-                                                    }
-                                                ]
-                                            }
-                                        ],
-                                        "system": "http://snomed.info/sct",
-                                        "code": "42284007",
-                                        "display": "BCG vaccination"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    {
-                        "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
-                        "valueString": "20110216112650"
-                    }
-                ],
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC50-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
-                "status": "completed",
-                "notGiven": false,
-                "patient": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
-                },
-                "encounter": {
-                    "reference": "Encounter/6BE15B44-B2B1-11ED-808B-AC162D1F16F0"
-                },
-                "primarySource": false,
-                "practitioner": [
-                    {
-                        "actor": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
-                        }
-                    }
-                ],
-                "note": [
-                    {
-                        "text": "Reason: Epidemic\nArea: South America\nMethod: Intradermal\nSite: Left deltoid\nBatch No: hhhh\nDosage: 5 ml\nExpiry date: 18 Feb 2011\nNature of risk: Risky business\nNotes: These are the notes on the undated immunisation with everyth"
-                    }
-                ]
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Immunization",
-                "id": "6BE3CC52-B2B1-11ED-808B-AC162D1F16F0",
-                "meta": {
-                    "profile": [
-                        "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
-                    ]
-                },
-                "extension": [
-                    {
-                        "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
-                        "valueExtension": {
-                            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                            "valueCodeableConcept": {
-                                "coding": [
-                                    {
-                                        "extension": [
-                                            {
-                                                "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                                                "extension": [
-                                                    {
-                                                        "url": "descriptionId",
-                                                        "valueId": "3956034019"
-                                                    }
-                                                ]
-                                            }
-                                        ],
-                                        "system": "http://snomed.info/sct",
-                                        "code": "170311007",
-                                        "display": "Administration of first dose of cholera vaccine"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    {
-                        "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
-                        "valueString": "20110216113443"
-                    }
-                ],
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC52-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
-                "status": "completed",
-                "notGiven": false,
-                "patient": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
-                },
-                "encounter": {
-                    "reference": "Encounter/6BE15B46-B2B1-11ED-808B-AC162D1F16F0"
-                },
-                "date": "2008",
-                "primarySource": false,
-                "practitioner": [
-                    {
-                        "actor": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
-                        }
-                    }
-                ],
-                "note": [
-                    {
-                        "text": "Reason: Routine Measure\nBatch No: jhkhj\nDosage: 0.5 ml"
-                    }
-                ]
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Immunization",
-                "id": "6BE3CC53-B2B1-11ED-808B-AC162D1F16F0",
-                "meta": {
-                    "profile": [
-                        "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
-                    ]
-                },
-                "extension": [
-                    {
-                        "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
-                        "valueExtension": {
-                            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                            "valueCodeableConcept": {
-                                "coding": [
-                                    {
-                                        "extension": [
-                                            {
-                                                "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                                                "extension": [
-                                                    {
-                                                        "url": "descriptionId",
-                                                        "valueId": "3974280014"
-                                                    },
-                                                    {
-                                                        "url": "descriptionDisplay",
-                                                        "valueString": "Administration of first dose of paediatric hepatitis A vaccine"
-                                                    }
-                                                ]
-                                            }
-                                        ],
-                                        "system": "http://snomed.info/sct",
-                                        "code": "170378007",
-                                        "display": "First hepatitis A vaccination"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    {
-                        "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
-                        "valueString": "20110216113136"
-                    }
-                ],
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC53-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
-                "status": "completed",
-                "notGiven": false,
-                "patient": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
-                },
-                "encounter": {
-                    "reference": "Encounter/6BE15B47-B2B1-11ED-808B-AC162D1F16F0"
-                },
-                "date": "2009-04",
-                "primarySource": false,
-                "practitioner": [
-                    {
-                        "actor": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
-                        }
-                    }
-                ],
-                "note": [
-                    {
-                        "text": "Reason: Routine Measure\nBatch No: hhh\nDosage: 0.5 ml"
-                    }
-                ]
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Immunization",
-                "id": "6BE3CC54-B2B1-11ED-808B-AC162D1F16F0",
-                "meta": {
-                    "profile": [
-                        "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
-                    ]
-                },
-                "extension": [
-                    {
-                        "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
-                        "valueExtension": {
-                            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                            "valueCodeableConcept": {
-                                "coding": [
-                                    {
-                                        "extension": [
-                                            {
-                                                "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                                                "extension": [
-                                                    {
-                                                        "url": "descriptionId",
-                                                        "valueId": "3974280014"
-                                                    },
-                                                    {
-                                                        "url": "descriptionDisplay",
-                                                        "valueString": "Administration of first dose of paediatric hepatitis A vaccine"
-                                                    }
-                                                ]
-                                            }
-                                        ],
-                                        "system": "http://snomed.info/sct",
-                                        "code": "170378007",
-                                        "display": "First hepatitis A vaccination"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    {
-                        "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
-                        "valueString": "20101210090120"
-                    }
-                ],
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC54-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
-                "status": "completed",
-                "notGiven": false,
-                "patient": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
-                },
-                "encounter": {
-                    "reference": "Encounter/6BE15B49-B2B1-11ED-808B-AC162D1F16F0"
-                },
-                "date": "2010-12-10T09:01:20+00:00",
-                "primarySource": false,
-                "practitioner": [
-                    {
-                        "actor": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
-                        }
-                    }
-                ],
-                "note": [
-                    {
-                        "text": "Batch No: HepBeGone88\nDosage: 0.5 ml\nExpiry date: 12 Apr 1981\nNotes: This imm has a blank reason and everything else as vague"
-                    }
-                ]
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Immunization",
-                "id": "6BE3CC5B-B2B1-11ED-808B-AC162D1F16F0",
-                "meta": {
-                    "profile": [
-                        "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
-                    ]
-                },
-                "extension": [
-                    {
-                        "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
-                        "valueExtension": {
-                            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                            "valueCodeableConcept": {
-                                "coding": [
-                                    {
-                                        "extension": [
-                                            {
-                                                "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                                                "extension": [
-                                                    {
-                                                        "url": "descriptionId",
-                                                        "valueId": "3976905014"
-                                                    },
-                                                    {
-                                                        "url": "descriptionDisplay",
-                                                        "valueString": "Administration of pre-school booster dose of measles and mumps and rubella vaccine"
-                                                    }
-                                                ]
-                                            }
-                                        ],
-                                        "system": "http://snomed.info/sct",
-                                        "code": "170432003",
-                                        "display": "MMR pre-school booster vaccination"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    {
-                        "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
-                        "valueString": "20101210090718"
-                    }
-                ],
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC5B-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
-                "status": "completed",
-                "notGiven": false,
-                "patient": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
-                },
-                "encounter": {
-                    "reference": "Encounter/6BE15B4A-B2B1-11ED-808B-AC162D1F16F0"
-                },
-                "date": "2010-12-10T09:07:18+00:00",
-                "primarySource": false,
-                "practitioner": [
-                    {
-                        "actor": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
-                        }
-                    }
-                ],
-                "note": [
-                    {
-                        "text": "Area: United States\nBatch No: booster1\nDosage: 0.5 ml\nExpiry date: 24 Mar 2011\nNature of risk: booster nature of risk notes\nNotes: booster general notes"
-                    }
-                ]
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Immunization",
-                "id": "6BE3CC5D-B2B1-11ED-808B-AC162D1F16F0",
-                "meta": {
-                    "profile": [
-                        "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
-                    ]
-                },
-                "extension": [
-                    {
-                        "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
-                        "valueExtension": {
-                            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                            "valueCodeableConcept": {
-                                "coding": [
-                                    {
-                                        "extension": [
-                                            {
-                                                "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                                                "extension": [
-                                                    {
-                                                        "url": "descriptionId",
-                                                        "valueId": "3976905014"
-                                                    },
-                                                    {
-                                                        "url": "descriptionDisplay",
-                                                        "valueString": "Administration of pre-school booster dose of measles and mumps and rubella vaccine"
-                                                    }
-                                                ]
-                                            }
-                                        ],
-                                        "system": "http://snomed.info/sct",
-                                        "code": "170432003",
-                                        "display": "MMR pre-school booster vaccination"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    {
-                        "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
-                        "valueString": "20101210090718"
-                    }
-                ],
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC5D-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
-                "status": "completed",
-                "notGiven": false,
-                "patient": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
-                },
-                "encounter": {
-                    "reference": "Encounter/6BE15B4A-B2B1-11ED-808B-AC162D1F16F0"
-                },
-                "date": "2010-12-10T09:07:18+00:00",
-                "primarySource": false,
-                "practitioner": [
-                    {
-                        "actor": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
-                        }
-                    }
-                ],
-                "note": [
-                    {
-                        "text": "Reason: Special Risk Group\nArea: Other\nMethod: Intramuscularly\nSite: Left anterior forearm\nBatch No: 45654\nDosage: 0.5 ml\nExpiry date: 06 Dec 2010\nNature of risk: child\nNotes: MMR part 1 notes"
-                    }
-                ]
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Immunization",
-                "id": "6BE3CC7C-B2B1-11ED-808B-AC162D1F16F0",
-                "meta": {
-                    "profile": [
-                        "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Immunization-1"
-                    ]
-                },
-                "extension": [
-                    {
-                        "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1",
-                        "valueExtension": {
-                            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                            "valueCodeableConcept": {
-                                "coding": [
-                                    {
-                                        "extension": [
-                                            {
-                                                "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-coding-sctdescid",
-                                                "extension": [
-                                                    {
-                                                        "url": "descriptionId",
-                                                        "valueId": "70542015"
-                                                    }
-                                                ]
-                                            }
-                                        ],
-                                        "system": "http://snomed.info/sct",
-                                        "code": "42284007",
-                                        "display": "BCG vaccination"
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    {
-                        "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1",
-                        "valueString": "20110615122034"
-                    }
-                ],
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC7C-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
-                "status": "completed",
-                "notGiven": false,
-                "patient": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
-                },
-                "encounter": {
-                    "reference": "Encounter/6BE15B52-B2B1-11ED-808B-AC162D1F16F0"
-                },
-                "date": "2011-06-15T11:20:34+00:00",
-                "primarySource": false,
-                "practitioner": [
-                    {
-                        "actor": {
-                            "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
-                        }
-                    }
-                ],
-                "note": [
-                    {
-                        "text": "This is a Read coded imunisation rather than a non read codes"
-                    }
-                ]
-            }
-        },
-        {
-            "resource": {
                 "resourceType": "Observation",
-                "id": "6BE15B59-B2B1-11ED-808B-AC162D1F16F0",
+                "id": "9300000000000000_e52e640000000000",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE15B59-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -6029,16 +4984,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B47-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_6e44170000000000"
                 },
                 "effectiveDateTime": "2009-04",
-                "issued": "2011-02-16T11:31:36.000+00:00",
+                "issued": "2011-02-16T11:31:36",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "This imms is month and year dated only"
@@ -6047,18 +5002,12 @@
         {
             "resource": {
                 "resourceType": "Observation",
-                "id": "6BE15B5A-B2B1-11ED-808B-AC162D1F16F0",
+                "id": "9300000000000000_0e1e640000000000",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE15B5A-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -6070,16 +5019,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4B-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_5744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:17:08+00:00",
-                "issued": "2010-12-10T09:17:08.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:17:08",
+                "issued": "2010-12-10T09:17:08",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "another refusal note without tickboxes this time"
@@ -6088,18 +5037,12 @@
         {
             "resource": {
                 "resourceType": "Observation",
-                "id": "6BE15B5B-B2B1-11ED-808B-AC162D1F16F0",
+                "id": "9300000000000000_fd1e640000000000",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE15B5B-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -6111,16 +5054,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4B-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_5744170000000000"
                 },
-                "effectiveDateTime": "2010-12-10T09:17:08+00:00",
-                "issued": "2010-12-10T09:17:08.000+00:00",
+                "effectiveDateTime": "2010-12-10T09:17:08",
+                "issued": "2010-12-10T09:17:08",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "This is a refusal note"
@@ -6129,18 +5072,12 @@
         {
             "resource": {
                 "resourceType": "Observation",
-                "id": "6BE15B5D-B2B1-11ED-808B-AC162D1F16F0",
+                "id": "4000000000000000_5e44170000000000_T_d52e640000000000_Cat_H_Nar",
                 "meta": {
                     "profile": [
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE15B5D-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -6152,16 +5089,16 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
-                    "reference": "Encounter/6BE15B4F-B2B1-11ED-808B-AC162D1F16F0"
+                    "reference": "Encounter/4000000000000000_5e44170000000000"
                 },
-                "effectiveDateTime": "2011-02-16T11:30:40+00:00",
-                "issued": "2011-02-16T11:30:40.000+00:00",
+                "effectiveDateTime": "2011-02-16T11:30:40",
+                "issued": "2011-02-16T11:30:40",
                 "performer": [
                     {
-                        "reference": "Practitioner/6BE15B45-B2B1-11ED-808B-AC162D1F16F0"
+                        "reference": "Practitioner/26f1000000000000"
                     }
                 ],
                 "comment": "This a vaccination in the intervention section"
@@ -6176,12 +5113,6 @@
                         "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Observation-1"
                     ]
                 },
-                "identifier": [
-                    {
-                        "system": "https://PSSAdaptor/2167888433",
-                        "value": "6BE3CC82-B2B1-11ED-808B-AC162D1F16F0"
-                    }
-                ],
                 "status": "final",
                 "code": {
                     "coding": [
@@ -6193,13 +5124,13 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/7eb64762-86ee-4a43-b4cf-3d4d230f116d"
+                    "reference": "Patient/d8ac400000000000"
                 },
                 "context": {
                     "reference": "Encounter/6BE3CC81-B2B1-11ED-808B-AC162D1F16F0"
                 },
                 "effectiveDateTime": "2010-12-09",
-                "issued": "2010-12-09T00:00:00.000+00:00",
+                "issued": "2010-12-09T00:00:00",
                 "performer": [
                     {
                         "reference": "Practitioner/e3afe98d-57ef-431a-aefd-1295bc44013d"

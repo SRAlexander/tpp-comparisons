@@ -1,0 +1,34 @@
+  Types on Encounters are missing in TPP - Code field in <code code="25671000000102" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Surgery Consultation Note"/> on B56FB55D-A0C2-11ED-808B-AC162D1F16F0 
+
+RESOLVED: Types were being ignored by the comparison tool. _____________  Procedure Request: Should we default all to unknown as all requests come in as completed?   _______________  
+PLACEHOLDER - AuthoredOnDate in incorrect, looking at an import issue from EMIS to TPP not retaining dates in data.  Martin: Bug in data location should be pulling from AvaliabilityTime, confirm mappings on excel spereadhseet. 
+
+ACTION: Confirms he above behaviour and create a ticket.
+
+"url": "authorisationExpiryDate",
+Confirm where the date is coming from and confirm that it should be there. 
+
+ACTION: same again.
+ Enddate with midnight end is being translated one hour earlier into the previous date - confirm with emis data format. 
+
+
+B57B9C39-A0C2-11ED-808B-AC162D1F16F0 - Value has a decimal place where it should 6 ACTION: Correct Decimal place.
+_____
+ 
+Date asserted incorrect date Include dosageinstrctions in the statement as a note.
+
+ACTION: DosageInstructions is missing as a note. 
+
+Allergy Intolerance: AssertedDate 
+ TPP if Drug code is found, check to see if value exists (Raise with Chit)
+
+Diagnostic Reports = when are tPP delivering the diagnostic reports 
+______________
+
+Conditions   Salmonella shamba - Additional observation (XML is correct but it does not correlate to TPP)
+
+
+On B572267C-A0C2-11ED-808B-AC162D1F16F0
+ two MedicationReferences are missing the order identified by classCode="SBADM" moodCode="ORD"
+ Links directly  However the plan will need referencing via the statement classCode="SBADM" moodCode="INT" which can be acquired by the child ehrSupplyAuthorise
+

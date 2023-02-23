@@ -923,19 +923,13 @@ NEW: Property asserter is not present in the EMIS data (PS Value : [object Objec
 EMIS AllergyIntolerance Entry 4
 MISSING Entry: EMIS entry with ID b000000000000000_5e81000000000000 has not been found in the PS enties 
     -Potential AllergyIntolerance match F0CA9EEA-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CA9EEC-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CA9EEE-A0BC-11ED-808B-AC162D1F16F0
 
 EMIS AllergyIntolerance Entry 5
 MISSING Entry: EMIS entry with ID b000000000000000_6e81000000000000 has not been found in the PS enties 
-    -Potential AllergyIntolerance match F0CA9EEA-A0BC-11ED-808B-AC162D1F16F0
     -Potential AllergyIntolerance match F0CA9EEC-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CA9EEE-A0BC-11ED-808B-AC162D1F16F0
 
 EMIS AllergyIntolerance Entry 6
 MISSING Entry: EMIS entry with ID b000000000000000_ee81000000000000 has not been found in the PS enties 
-    -Potential AllergyIntolerance match F0CA9EEA-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CA9EEC-A0BC-11ED-808B-AC162D1F16F0
     -Potential AllergyIntolerance match F0CA9EEE-A0BC-11ED-808B-AC162D1F16F0
 
 EMIS AllergyIntolerance Entry 7
@@ -975,39 +969,34 @@ NEW: Property asserter is not present in the EMIS data (PS Value : [object Objec
 EMIS AllergyIntolerance Entry 9
 MISSING Entry: EMIS entry with ID 5000000000000000_95daf31000000000 has not been found in the PS enties 
     -Potential AllergyIntolerance match F0CD0FE0-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FE2-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FE4-A0BC-11ED-808B-AC162D1F16F0
 
 EMIS AllergyIntolerance Entry 10
 MISSING Entry: EMIS entry with ID 5000000000000000_85daf31000000000 has not been found in the PS enties 
-    -Potential AllergyIntolerance match F0CD0FE0-A0BC-11ED-808B-AC162D1F16F0
     -Potential AllergyIntolerance match F0CD0FE2-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FE4-A0BC-11ED-808B-AC162D1F16F0
+
 
 EMIS AllergyIntolerance Entry 11
 MISSING Entry: EMIS entry with ID 5000000000000000_75daf31000000000 has not been found in the PS enties 
-    -Potential AllergyIntolerance match F0CD0FE0-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FE2-A0BC-11ED-808B-AC162D1F16F0
     -Potential AllergyIntolerance match F0CD0FE4-A0BC-11ED-808B-AC162D1F16F0
 
 EMIS AllergyIntolerance Entry 12
 MISSING Entry: EMIS entry with ID 5000000000000000_65daf31000000000 has not been found in the PS enties 
     -Potential AllergyIntolerance match F0CD0FE6-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FE9-A0BC-11ED-808B-AC162D1F16F0
 
 EMIS AllergyIntolerance Entry 13
 MISSING Entry: EMIS entry with ID 5000000000000000_45daf31000000000 has not been found in the PS enties 
-    -Potential AllergyIntolerance match F0CD0FE6-A0BC-11ED-808B-AC162D1F16F0
     -Potential AllergyIntolerance match F0CD0FE9-A0BC-11ED-808B-AC162D1F16F0
+
+
+_______
+
 
 EMIS AllergyIntolerance Entry 14
 MISSING Entry: EMIS entry with ID 5000000000000000_35daf31000000000 has not been found in the PS enties 
     -Potential AllergyIntolerance match F0CD0FEB-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FED-A0BC-11ED-808B-AC162D1F16F0
 
 EMIS AllergyIntolerance Entry 15
 MISSING Entry: EMIS entry with ID 5000000000000000_25daf31000000000 has not been found in the PS enties 
-    -Potential AllergyIntolerance match F0CD0FEB-A0BC-11ED-808B-AC162D1F16F0
     -Potential AllergyIntolerance match F0CD0FED-A0BC-11ED-808B-AC162D1F16F0
 
 EMIS AllergyIntolerance Entry 16
@@ -1050,123 +1039,47 @@ NEW: Property asserter is not present in the EMIS data (PS Value : [object Objec
 EMIS AllergyIntolerance Entry 19
 MISSING Entry: EMIS entry with ID 5000000000000000_e4daf31000000000 has not been found in the PS enties 
     -Potential AllergyIntolerance match F0CD0FF5-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FF7-A0BC-11ED-808B-AC162D1F16F0
 
 EMIS AllergyIntolerance Entry 20
 MISSING Entry: EMIS entry with ID 5000000000000000_d4daf31000000000 has not been found in the PS enties 
-    -Potential AllergyIntolerance match F0CD0FF5-A0BC-11ED-808B-AC162D1F16F0
     -Potential AllergyIntolerance match F0CD0FF7-A0BC-11ED-808B-AC162D1F16F0
 
 EMIS AllergyIntolerance Entry 21
 MISSING Entry: EMIS entry with ID 5000000000000000_64daf31000000000 has not been found in the PS enties 
-    -Potential AllergyIntolerance match F0CD1005-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD1007-A0BC-11ED-808B-AC162D1F16F0
     -Potential AllergyIntolerance match F0CD0FF9-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FFB-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FFD-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FFF-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD1003-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD1001-A0BC-11ED-808B-AC162D1F16F0
 
 EMIS AllergyIntolerance Entry 22
 MISSING Entry: EMIS entry with ID 5000000000000000_54daf31000000000 has not been found in the PS enties 
-    -Potential AllergyIntolerance match F0CD1005-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD1007-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FF9-A0BC-11ED-808B-AC162D1F16F0
     -Potential AllergyIntolerance match F0CD0FFB-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FFD-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FFF-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD1003-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD1001-A0BC-11ED-808B-AC162D1F16F0
 
 EMIS AllergyIntolerance Entry 23
 MISSING Entry: EMIS entry with ID 5000000000000000_84daf31000000000 has not been found in the PS enties 
-    -Potential AllergyIntolerance match F0CD1005-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD1007-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FF9-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FFB-A0BC-11ED-808B-AC162D1F16F0
     -Potential AllergyIntolerance match F0CD0FFD-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FFF-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD1003-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD1001-A0BC-11ED-808B-AC162D1F16F0
+
 
 EMIS AllergyIntolerance Entry 24
 MISSING Entry: EMIS entry with ID 5000000000000000_74daf31000000000 has not been found in the PS enties 
-    -Potential AllergyIntolerance match F0CD1005-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD1007-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FF9-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FFB-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FFD-A0BC-11ED-808B-AC162D1F16F0
     -Potential AllergyIntolerance match F0CD0FFF-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD1003-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD1001-A0BC-11ED-808B-AC162D1F16F0
+
 
 EMIS AllergyIntolerance Entry 25
 MISSING Entry: EMIS entry with ID 5000000000000000_b4daf31000000000 has not been found in the PS enties 
-    -Potential AllergyIntolerance match F0CD1005-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD1007-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FF9-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FFB-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FFD-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FFF-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD1003-A0BC-11ED-808B-AC162D1F16F0
     -Potential AllergyIntolerance match F0CD1001-A0BC-11ED-808B-AC162D1F16F0
 
 EMIS AllergyIntolerance Entry 26
 MISSING Entry: EMIS entry with ID 5000000000000000_c4daf31000000000 has not been found in the PS enties 
-    -Potential AllergyIntolerance match F0CD1005-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD1007-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FF9-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FFB-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FFD-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FFF-A0BC-11ED-808B-AC162D1F16F0
     -Potential AllergyIntolerance match F0CD1003-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD1001-A0BC-11ED-808B-AC162D1F16F0
+
 
 EMIS AllergyIntolerance Entry 27
 MISSING Entry: EMIS entry with ID 5000000000000000_a4daf31000000000 has not been found in the PS enties 
     -Potential AllergyIntolerance match F0CD1005-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD1007-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FF9-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FFB-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FFD-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FFF-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD1003-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD1001-A0BC-11ED-808B-AC162D1F16F0
 
 EMIS AllergyIntolerance Entry 28
 MISSING Entry: EMIS entry with ID 5000000000000000_94daf31000000000 has not been found in the PS enties 
-    -Potential AllergyIntolerance match F0CD1005-A0BC-11ED-808B-AC162D1F16F0
     -Potential AllergyIntolerance match F0CD1007-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FF9-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FFB-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FFD-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FFF-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD1003-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD1001-A0BC-11ED-808B-AC162D1F16F0
+
 
 EMIS AllergyIntolerance Entry 29
 MISSING Entry: EMIS entry with ID 5000000000000000_55daf31000000000 has not been found in the PS enties 
-    -Potential AllergyIntolerance match F0CD0FE6-A0BC-11ED-808B-AC162D1F16F0
-    -Potential AllergyIntolerance match F0CD0FE9-A0BC-11ED-808B-AC162D1F16F0
-
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID F0CD0FE0-A0BC-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID F0CD0FE2-A0BC-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID F0CD0FE4-A0BC-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID F0CD0FE6-A0BC-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID F0CD0FE9-A0BC-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID F0CA9EEA-A0BC-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID F0CA9EEC-A0BC-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID F0CA9EEE-A0BC-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID F0CD0FEB-A0BC-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID F0CD0FED-A0BC-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID F0CD0FF5-A0BC-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID F0CD0FF7-A0BC-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID F0CD1005-A0BC-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID F0CD1007-A0BC-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID F0CD0FF9-A0BC-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID F0CD0FFB-A0BC-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID F0CD0FFD-A0BC-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID F0CD0FFF-A0BC-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID F0CD1003-A0BC-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID F0CD1001-A0BC-11ED-808B-AC162D1F16F0
+    - Investigate this is observation F0CD0FE8-A0BC-11ED-808B-AC162D1F16F0

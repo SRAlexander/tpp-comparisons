@@ -62,27 +62,18 @@ Matches will be found via the following fields: period.start,type.[0].text,id
 
 EMIS Encounter Entry 1
 MISSING Entry: EMIS entry with ID 4000000000000000_58662a0000000000 has not been found in the PS enties 
-    -Potential Encounter match E69ECDAF-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Encounter match E69ECDB0-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Encounter match E69ECDB1-A0C2-11ED-808B-AC162D1F16F0
     -Potential Encounter match E69ECDB2-A0C2-11ED-808B-AC162D1F16F0
 
 EMIS Encounter Entry 2
 MISSING Entry: EMIS entry with ID 4000000000000000_87662a0000000000 has not been found in the PS enties 
     -Potential Encounter match E69ECDA4-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Encounter match E69ECDA7-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Encounter match E69ECDA9-A0C2-11ED-808B-AC162D1F16F0
 
 EMIS Encounter Entry 3
 MISSING Entry: EMIS entry with ID 4000000000000000_97662a0000000000 has not been found in the PS enties 
-    -Potential Encounter match E69ECDA4-A0C2-11ED-808B-AC162D1F16F0
     -Potential Encounter match E69ECDA7-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Encounter match E69ECDA9-A0C2-11ED-808B-AC162D1F16F0
 
 EMIS Encounter Entry 4
 MISSING Entry: EMIS entry with ID 4000000000000000_38662a0000000000 has not been found in the PS enties 
-    -Potential Encounter match E69ECDA4-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Encounter match E69ECDA7-A0C2-11ED-808B-AC162D1F16F0
     -Potential Encounter match E69ECDA9-A0C2-11ED-808B-AC162D1F16F0
 
 EMIS Encounter Entry 5
@@ -96,45 +87,40 @@ NEW: Property reference is not present in the EMIS data (PS Value : Practitioner
 MISSING: Property display is missing in PS Entry (Emis Value : GP2GP Import - Hampshire Community, COMHAMPSHIRE) 
 NEW: Property reference is not present in the EMIS data (PS Value : Location/17F5D407-E228-452A-AB12-8DE2BDA7EB87) 
 
-EMIS Encounter Entry 6
+!EMIS Encounter Entry 6
 MISSING Entry: EMIS entry with ID 4000000000000000_28662a0000000000 has not been found in the PS enties 
 
-EMIS Encounter Entry 7
+!EMIS Encounter Entry 7
 MISSING Entry: EMIS entry with ID 4000000000000000_08662a0000000000 has not been found in the PS enties 
 
-EMIS Encounter Entry 8
+!EMIS Encounter Entry 8
 MISSING Entry: EMIS entry with ID 4000000000000000_18662a0000000000 has not been found in the PS enties 
 
 EMIS Encounter Entry 9
 MISSING Entry: EMIS entry with ID 4000000000000000_a7662a0000000000 has not been found in the PS enties 
     -Potential Encounter match E69ECDAF-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Encounter match E69ECDB0-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Encounter match E69ECDB1-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Encounter match E69ECDB2-A0C2-11ED-808B-AC162D1F16F0
 
 EMIS Encounter Entry 10
 MISSING Entry: EMIS entry with ID 4000000000000000_67662a0000000000 has not been found in the PS enties 
-    -Potential Encounter match E69ECDAF-A0C2-11ED-808B-AC162D1F16F0
     -Potential Encounter match E69ECDB0-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Encounter match E69ECDB1-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Encounter match E69ECDB2-A0C2-11ED-808B-AC162D1F16F0
+
 
 EMIS Encounter Entry 11
 MISSING Entry: EMIS entry with ID 4000000000000000_77662a0000000000 has not been found in the PS enties 
-    -Potential Encounter match E69ECDAF-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Encounter match E69ECDB0-A0C2-11ED-808B-AC162D1F16F0
     -Potential Encounter match E69ECDB1-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Encounter match E69ECDB2-A0C2-11ED-808B-AC162D1F16F0
+
+// LOOKS LIKE MATCHES ABOVE FOR THE 3
 
 EMIS Encounter Entry 12
 MISSING Entry: EMIS entry with ID 4000000000000000_f7662a0000000000 has not been found in the PS enties 
     -Potential Encounter match E69ECDB3-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Encounter match E69ECDB4-A0C2-11ED-808B-AC162D1F16F0
 
 EMIS Encounter Entry 13
 MISSING Entry: EMIS entry with ID 4000000000000000_e7662a0000000000 has not been found in the PS enties 
-    -Potential Encounter match E69ECDB3-A0C2-11ED-808B-AC162D1F16F0
     -Potential Encounter match E69ECDB4-A0C2-11ED-808B-AC162D1F16F0
+
+// LOOKS LIKE THE 2 ABOVE MATCH
+
 
 EMIS Encounter Entry 14
 EMIS Entry 4000000000000000_d7662a0000000000 vs PS Entry 4000000000000000_d7662a0000000000
@@ -146,26 +132,16 @@ NEW: Property reference is not present in the EMIS data (PS Value : Practitioner
 MISSING: Property display is missing in PS Entry (Emis Value : GP2GP Import - Hampshire Community, COMHAMPSHIRE) 
 NEW: Property reference is not present in the EMIS data (PS Value : Location/17F5D407-E228-452A-AB12-8DE2BDA7EB87) 
 
-EMIS Encounter Entry 15
+!EMIS Encounter Entry 15
 MISSING Entry: EMIS entry with ID 4000000000000000_c7662a0000000000 has not been found in the PS enties 
 
-EMIS Encounter Entry 16
+!EMIS Encounter Entry 16
 MISSING Entry: EMIS entry with ID 4000000000000000_b7662a0000000000 has not been found in the PS enties 
 
 EMIS Encounter Entry 17
 MISSING Entry: EMIS entry with ID 4000000000000000_f4562a0000000000 has not been found in the PS enties 
 RESOURCE MISMATCH: Id 4000000000000000_f4562a0000000000 has been found against anohter PS Resource type Encounter
 
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID E69ECDA4-A0C2-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID E69ECDA7-A0C2-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID E69ECDA9-A0C2-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID E69ECDAF-A0C2-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID E69ECDB0-A0C2-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID E69ECDB1-A0C2-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID E69ECDB2-A0C2-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID E69ECDB3-A0C2-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID E69ECDB4-A0C2-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_f4562a0000000000
 
 ---------------------------------------------------------------------------------
 Analysing Entries of type List
@@ -210,7 +186,7 @@ DIFF: Emis Value of resource.date does not match PS Property (2023-01-30T16:17:0
 DIFF: Emis Value of resource.entry.0.item.reference does not match PS Property (Observation/9300000000000000_755a0e0000000000 != Observation/E6A388B6-A0C2-11ED-808B-AC162D1F16F0)
 
 EMIS List Entry 10
-EMIS Entry 4000000000000000_97662a0000000000_Topics vs PS Entry 4000000000000000_f4562a0000000000-CONS
+EMIS Entry 4000000000000000_97662a0000000000_Topics vs PS Entry E69ECDAF-A0C2-11ED-808B-AC162D1F16F0-CONS
 DIFF: Emis Value of resource.id does not match PS Property (4000000000000000_97662a0000000000_Topics != 4000000000000000_f4562a0000000000-CONS)
 DIFF: Emis Value of resource.title does not match PS Property (Clinical - Administration note != Administration Note)
 DIFF: Emis Value of resource.encounter.reference does not match PS Property (Encounter/4000000000000000_97662a0000000000 != Encounter/4000000000000000_f4562a0000000000)
@@ -545,6 +521,7 @@ ADDITIONAL ENTRY: PS Entries have an addition entry with ID 2F85276D-C2CC-441F-A
 Analysing Entries of type Observation
 ---------------------------------------------------------------------------------
 EMIS Entires = 33 vs PS Entries = 30
+27
 ALERT: There is a mismatch in the number of entries of type Observation
 
 Matches will be found via the following fields: code.coding.[0].code,effectiveDateTime,comment
@@ -568,6 +545,7 @@ NEW: Property reference is not present in the EMIS data (PS Value : Practitioner
 
 EMIS Observation Entry 3
 MISSING Entry: EMIS entry with ID 5000000000000000_7afaf31000000000 has not been found in the PS enties 
+ - Annomoly: misisng
 
 EMIS Observation Entry 4
 EMIS Entry 5000000000000000_c9faf31000000000 vs PS Entry 5000000000000000_c9faf31000000000
@@ -588,7 +566,6 @@ NEW: Property reference is not present in the EMIS data (PS Value : Practitioner
 EMIS Observation Entry 6
 MISSING Entry: EMIS entry with ID 5000000000000000_b9faf31000000000 has not been found in the PS enties 
     -Potential Observation match E6A38897-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Observation match 5000000000000000_4afaf31000000000
 
 EMIS Observation Entry 7
 EMIS Entry 5000000000000000_99faf31000000000 vs PS Entry 5000000000000000_99faf31000000000
@@ -733,44 +710,23 @@ NEW: Property reference is not present in the EMIS data (PS Value : Practitioner
 EMIS Observation Entry 24
 MISSING Entry: EMIS entry with ID 9300000000000000_755a0e0000000000 has not been found in the PS enties 
     -Potential Observation match 9300000000000000_755a0e0000000000
-    -Potential Observation match 9300000000000000_855a0e0000000000
-RESOURCE MISMATCH: Id 9300000000000000_755a0e0000000000 has been found against anohter PS Resource type Observation
 
 EMIS Observation Entry 25
 MISSING Entry: EMIS entry with ID 9300000000000000_855a0e0000000000 has not been found in the PS enties 
-    -Potential Observation match 9300000000000000_755a0e0000000000
     -Potential Observation match 9300000000000000_855a0e0000000000
 RESOURCE MISMATCH: Id 9300000000000000_855a0e0000000000 has been found against anohter PS Resource type Observation
 
 EMIS Observation Entry 26
 MISSING Entry: EMIS entry with ID 9300000000000000_505a0e0000000000 has not been found in the PS enties 
-    -Potential Observation match 9300000000000000_755a0e0000000000
-    -Potential Observation match 9300000000000000_855a0e0000000000
-    -Potential Observation match E6A38892-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Observation match 9300000000000000_955a0e0000000000
-    -Potential Observation match 9300000000000000_555a0e0000000000
-    -Potential Observation match 9300000000000000_655a0e0000000000
-    -Potential Observation match E6A388B6-A0C2-11ED-808B-AC162D1F16F0
+- ended note no match
 
 EMIS Observation Entry 27
 MISSING Entry: EMIS entry with ID 9300000000000000_305a0e0000000000 has not been found in the PS enties 
-    -Potential Observation match 9300000000000000_755a0e0000000000
-    -Potential Observation match 9300000000000000_855a0e0000000000
-    -Potential Observation match E6A38892-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Observation match 9300000000000000_955a0e0000000000
-    -Potential Observation match 9300000000000000_555a0e0000000000
-    -Potential Observation match 9300000000000000_655a0e0000000000
-    -Potential Observation match E6A388B6-A0C2-11ED-808B-AC162D1F16F0
+- ended note no match
 
 EMIS Observation Entry 28
 MISSING Entry: EMIS entry with ID 9300000000000000_405a0e0000000000 has not been found in the PS enties 
-    -Potential Observation match 9300000000000000_755a0e0000000000
-    -Potential Observation match 9300000000000000_855a0e0000000000
-    -Potential Observation match E6A38892-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Observation match 9300000000000000_955a0e0000000000
-    -Potential Observation match 9300000000000000_555a0e0000000000
-    -Potential Observation match 9300000000000000_655a0e0000000000
-    -Potential Observation match E6A388B6-A0C2-11ED-808B-AC162D1F16F0
+- ended note no match
 
 EMIS Observation Entry 29
 EMIS Entry 9300000000000000_955a0e0000000000 vs PS Entry 9300000000000000_955a0e0000000000
@@ -781,45 +737,23 @@ NEW: Property reference is not present in the EMIS data (PS Value : Practitioner
 
 EMIS Observation Entry 30
 MISSING Entry: EMIS entry with ID 9300000000000000_555a0e0000000000 has not been found in the PS enties 
-    -Potential Observation match 9300000000000000_955a0e0000000000
     -Potential Observation match 9300000000000000_555a0e0000000000
-    -Potential Observation match 9300000000000000_655a0e0000000000
-RESOURCE MISMATCH: Id 9300000000000000_555a0e0000000000 has been found against anohter PS Resource type Observation
 
 EMIS Observation Entry 31
 MISSING Entry: EMIS entry with ID 9300000000000000_655a0e0000000000 has not been found in the PS enties 
-    -Potential Observation match 9300000000000000_955a0e0000000000
-    -Potential Observation match 9300000000000000_555a0e0000000000
     -Potential Observation match 9300000000000000_655a0e0000000000
 RESOURCE MISMATCH: Id 9300000000000000_655a0e0000000000 has been found against anohter PS Resource type Observation
 
 EMIS Observation Entry 32
 MISSING Entry: EMIS entry with ID 9300000000000000_b55a0e0000000000 has not been found in the PS enties 
-    -Potential Observation match 9300000000000000_755a0e0000000000
-    -Potential Observation match 9300000000000000_855a0e0000000000
-    -Potential Observation match E6A38892-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Observation match 9300000000000000_955a0e0000000000
-    -Potential Observation match 9300000000000000_555a0e0000000000
-    -Potential Observation match 9300000000000000_655a0e0000000000
-    -Potential Observation match E6A388B6-A0C2-11ED-808B-AC162D1F16F0
+- ended note no match
 
 EMIS Observation Entry 33
 MISSING Entry: EMIS entry with ID 9300000000000000_a55a0e0000000000 has not been found in the PS enties 
-    -Potential Observation match 9300000000000000_755a0e0000000000
-    -Potential Observation match 9300000000000000_855a0e0000000000
-    -Potential Observation match E6A38892-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Observation match 9300000000000000_955a0e0000000000
-    -Potential Observation match 9300000000000000_555a0e0000000000
-    -Potential Observation match 9300000000000000_655a0e0000000000
-    -Potential Observation match E6A388B6-A0C2-11ED-808B-AC162D1F16F0
+- ended note no match
 
 ADDITIONAL ENTRY: PS Entries have an addition entry with ID E69ECDBD-A0C2-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID E6A38897-A0C2-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID 9300000000000000_755a0e0000000000
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID 9300000000000000_855a0e0000000000
 ADDITIONAL ENTRY: PS Entries have an addition entry with ID E6A38892-A0C2-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID 9300000000000000_555a0e0000000000
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID 9300000000000000_655a0e0000000000
 ADDITIONAL ENTRY: PS Entries have an addition entry with ID E6A388B6-A0C2-11ED-808B-AC162D1F16F0
 
 ---------------------------------------------------------------------------------

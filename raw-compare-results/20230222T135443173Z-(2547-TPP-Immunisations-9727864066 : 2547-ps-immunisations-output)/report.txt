@@ -1,0 +1,1162 @@
+
+-----------------------------
+Comparing the following files
+./unprocessed-files/2547-TPP-Immunisations-9727864066.json----./unprocessed-files/2547-ps-immunisations-output.json
+
+---------------------------------------------------------------------------------
+Analysing Entries of type Patient
+---------------------------------------------------------------------------------
+EMIS Entires = 1 vs PS Entries = 1
+
+Matches will be found via the following fields: onsetDateTime,coding.code.[0].code
+
+EMIS Patient Entry 1 
+EMIS Entry d8ac400000000000 vs PS Entry d8ac400000000000
+MISSING: Property active is missing in PS Entry (Emis Value : true) 
+
+---------------------------------------------------------------------------------
+Analysing Entries of type Organization
+---------------------------------------------------------------------------------
+EMIS Entires = 1 vs PS Entries = 3
+ALERT: There is a mismatch in the number of entries of type Organization
+
+Matches will be found via the following fields: id
+
+EMIS Organization Entry 1
+MISSING Entry: EMIS entry with ID 0100000000000000_0b00000000000000 has not been found in the PS enties 
+RESOURCE MISMATCH: Id 0100000000000000_0b00000000000000 has been found against anohter PS Resource type Location
+
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 329ae4c3-ea97-4e3e-b412-f432fc82101a
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE15B57-B2B1-11ED-808B-AC162D1F16F0-ORG
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 26f1000000000000-ORG
+NOTE: Given the limited Details in Organisation, there is no automatic way to compare 
+
+---------------------------------------------------------------------------------
+Analysing Entries of type Practitioner
+---------------------------------------------------------------------------------
+EMIS Entires = 1 vs PS Entries = 4
+ALERT: There is a mismatch in the number of entries of type Practitioner
+
+Matches will be found via the following fields: name.[0].family,name.[0].given.[0]
+
+EMIS Practitioner Entry 1
+EMIS Entry 26f1000000000000 vs PS Entry 26f1000000000000
+MISSING: Property lastUpdated is missing in PS Entry (Emis Value : 2023-02-22T11:13:05) 
+
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC7E-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE15B57-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID e3afe98d-57ef-431a-aefd-1295bc44013d
+
+---------------------------------------------------------------------------------
+Analysing Entries of type Encounter
+---------------------------------------------------------------------------------
+EMIS Entires = 12 vs PS Entries = 13
+ALERT: There is a mismatch in the number of entries of type Encounter
+
+Matches will be found via the following fields: period.start,type.[0].text,id
+
+EMIS Encounter Entry 1
+MISSING Entry: EMIS entry with ID 4000000000000000_4e44170000000000 has not been found in the PS enties 
+
+EMIS Encounter Entry 2
+EMIS Entry 4000000000000000_7e44170000000000 vs PS Entry 4000000000000000_7e44170000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+MISSING: Property text is missing in PS Entry (Emis Value : Admin) 
+NEW: Property coding is not present in the EMIS data (PS Value : [object Object]) 
+DIFF: Array Property resource.participant does not have equal length with PS property resource.participant (1 != 2)
+ADDITIONAL: The PS array resource.[object Object] has an additional 1 reosurces 
+DIFF: Array Property resource.location does not have equal length with PS property resource.location (2 != 1)
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING: Property serviceProvider is missing in PS Entry (Emis Value : [object Object]) 
+
+EMIS Encounter Entry 3
+EMIS Entry 4000000000000000_6e44170000000000 vs PS Entry 4000000000000000_6e44170000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+MISSING: Property text is missing in PS Entry (Emis Value : Admin) 
+NEW: Property coding is not present in the EMIS data (PS Value : [object Object]) 
+DIFF: Array Property resource.participant does not have equal length with PS property resource.participant (1 != 2)
+ADDITIONAL: The PS array resource.[object Object] has an additional 1 reosurces 
+DIFF: Array Property resource.location does not have equal length with PS property resource.location (2 != 1)
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING: Property serviceProvider is missing in PS Entry (Emis Value : [object Object]) 
+
+EMIS Encounter Entry 4
+EMIS Entry 4000000000000000_3744170000000000 vs PS Entry 4000000000000000_3744170000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+MISSING: Property text is missing in PS Entry (Emis Value : Admin) 
+NEW: Property coding is not present in the EMIS data (PS Value : [object Object]) 
+DIFF: Array Property resource.participant does not have equal length with PS property resource.participant (1 != 2)
+ADDITIONAL: The PS array resource.[object Object] has an additional 1 reosurces 
+DIFF: Array Property resource.location does not have equal length with PS property resource.location (2 != 1)
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING: Property serviceProvider is missing in PS Entry (Emis Value : [object Object]) 
+
+EMIS Encounter Entry 5
+EMIS Entry 4000000000000000_4744170000000000 vs PS Entry 4000000000000000_4744170000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+MISSING: Property text is missing in PS Entry (Emis Value : Admin) 
+NEW: Property coding is not present in the EMIS data (PS Value : [object Object]) 
+DIFF: Array Property resource.participant does not have equal length with PS property resource.participant (1 != 2)
+ADDITIONAL: The PS array resource.[object Object] has an additional 1 reosurces 
+DIFF: Array Property resource.location does not have equal length with PS property resource.location (2 != 1)
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING: Property serviceProvider is missing in PS Entry (Emis Value : [object Object]) 
+
+EMIS Encounter Entry 6
+EMIS Entry 4000000000000000_5744170000000000 vs PS Entry 4000000000000000_5744170000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+MISSING: Property text is missing in PS Entry (Emis Value : Admin) 
+NEW: Property coding is not present in the EMIS data (PS Value : [object Object]) 
+DIFF: Array Property resource.participant does not have equal length with PS property resource.participant (1 != 2)
+ADDITIONAL: The PS array resource.[object Object] has an additional 1 reosurces 
+DIFF: Array Property resource.location does not have equal length with PS property resource.location (2 != 1)
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING: Property serviceProvider is missing in PS Entry (Emis Value : [object Object]) 
+
+EMIS Encounter Entry 7
+EMIS Entry 4000000000000000_4644170000000000 vs PS Entry 4000000000000000_4644170000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+MISSING: Property text is missing in PS Entry (Emis Value : Admin) 
+NEW: Property coding is not present in the EMIS data (PS Value : [object Object]) 
+DIFF: Array Property resource.participant does not have equal length with PS property resource.participant (1 != 2)
+ADDITIONAL: The PS array resource.[object Object] has an additional 1 reosurces 
+DIFF: Array Property resource.location does not have equal length with PS property resource.location (2 != 1)
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING: Property serviceProvider is missing in PS Entry (Emis Value : [object Object]) 
+
+EMIS Encounter Entry 8
+EMIS Entry 4000000000000000_5e44170000000000 vs PS Entry 4000000000000000_5e44170000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+MISSING: Property text is missing in PS Entry (Emis Value : Clinical - Face to face) 
+NEW: Property coding is not present in the EMIS data (PS Value : [object Object]) 
+DIFF: Array Property resource.participant does not have equal length with PS property resource.participant (1 != 2)
+ADDITIONAL: The PS array resource.[object Object] has an additional 1 reosurces 
+DIFF: Array Property resource.location does not have equal length with PS property resource.location (2 != 1)
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING: Property serviceProvider is missing in PS Entry (Emis Value : [object Object]) 
+
+EMIS Encounter Entry 9
+EMIS Entry 4000000000000000_9e44170000000000 vs PS Entry 4000000000000000_9e44170000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+MISSING: Property text is missing in PS Entry (Emis Value : Admin) 
+NEW: Property coding is not present in the EMIS data (PS Value : [object Object]) 
+DIFF: Array Property resource.participant does not have equal length with PS property resource.participant (1 != 2)
+ADDITIONAL: The PS array resource.[object Object] has an additional 1 reosurces 
+DIFF: Array Property resource.location does not have equal length with PS property resource.location (2 != 1)
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING: Property serviceProvider is missing in PS Entry (Emis Value : [object Object]) 
+
+EMIS Encounter Entry 10
+MISSING Entry: EMIS entry with ID 4000000000000000_a854170000000000 has not been found in the PS enties 
+
+EMIS Encounter Entry 11
+MISSING Entry: EMIS entry with ID 4000000000000000_b854170000000000 has not been found in the PS enties 
+
+EMIS Encounter Entry 12
+EMIS Entry 4000000000000000_a544170000000000 vs PS Entry 4000000000000000_a544170000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+MISSING: Property text is missing in PS Entry (Emis Value : Admin) 
+NEW: Property coding is not present in the EMIS data (PS Value : [object Object]) 
+DIFF: Array Property resource.participant does not have equal length with PS property resource.participant (1 != 2)
+ADDITIONAL: The PS array resource.[object Object] has an additional 1 reosurces 
+DIFF: Array Property resource.location does not have equal length with PS property resource.location (2 != 1)
+MISSING EMIS has an additional array entry in resource.[object Object]
+MISSING: Property serviceProvider is missing in PS Entry (Emis Value : [object Object]) 
+
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE15B44-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE15B52-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE15B53-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC81-B2B1-11ED-808B-AC162D1F16F0
+
+---------------------------------------------------------------------------------
+Analysing Entries of type List
+---------------------------------------------------------------------------------
+EMIS Entires = 38 vs PS Entries = 26
+ALERT: There is a mismatch in the number of entries of type List
+
+Matches will be found via the following fields: code.coding.[0].code,date,title,id
+
+EMIS List Entry 1
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+EMIS List Entry 2
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+EMIS List Entry 3
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+EMIS List Entry 4
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+EMIS List Entry 5
+MISSING Entry: EMIS entry with ID 4000000000000000_4e44170000000000_Topics has not been found in the PS enties 
+    -Potential List match 6BE15B44-B2B1-11ED-808B-AC162D1F16F0-CONS
+    -Potential List match 4000000000000000_7e44170000000000-CONS
+    -Potential List match 4000000000000000_6e44170000000000-CONS
+    -Potential List match 4000000000000000_3744170000000000-CONS
+    -Potential List match 4000000000000000_4744170000000000-CONS
+    -Potential List match 4000000000000000_5744170000000000-CONS
+    -Potential List match 4000000000000000_4644170000000000-CONS
+    -Potential List match 4000000000000000_5e44170000000000-CONS
+    -Potential List match 4000000000000000_9e44170000000000-CONS
+    -Potential List match 6BE15B52-B2B1-11ED-808B-AC162D1F16F0-CONS
+    -Potential List match 6BE15B53-B2B1-11ED-808B-AC162D1F16F0-CONS
+    -Potential List match 4000000000000000_a544170000000000-CONS
+    -Potential List match 6BE3CC81-B2B1-11ED-808B-AC162D1F16F0-CONS
+
+EMIS List Entry 6
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+EMIS List Entry 7
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+EMIS List Entry 8
+MISSING Entry: EMIS entry with ID 4000000000000000_4e44170000000000_NoTopic has not been found in the PS enties 
+    -Potential List match d5fc6903-e5eb-4e94-85ec-10e773a3945a
+    -Potential List match bbe3f767-cf8c-45d2-99ed-3b44b9cef34b
+    -Potential List match 020120c4-fb50-44e6-b2f6-060a409ba29c
+    -Potential List match 4000000000000000_3744170000000000_NoTopic
+    -Potential List match 4000000000000000_4744170000000000_NoTopic
+    -Potential List match 4000000000000000_5744170000000000_NoTopic
+    -Potential List match 4000000000000000_4644170000000000_NoTopic
+    -Potential List match 4000000000000000_5e44170000000000_T_d52e640000000000
+    -Potential List match 4000000000000000_9e44170000000000_NoTopic
+    -Potential List match e55c74ee-89c5-41fb-b33d-bef7547d7bc6
+    -Potential List match deac1fb4-a578-4d70-b056-5a7c4a680f01
+    -Potential List match 4000000000000000_a544170000000000_NoTopic
+    -Potential List match caa77a84-4d38-4716-b58b-4376d8486df3
+
+EMIS List Entry 9
+MISSING Entry: EMIS entry with ID 4000000000000000_7e44170000000000_Topics has not been found in the PS enties 
+    -Potential List match 6BE15B44-B2B1-11ED-808B-AC162D1F16F0-CONS
+    -Potential List match 4000000000000000_7e44170000000000-CONS
+    -Potential List match 4000000000000000_6e44170000000000-CONS
+    -Potential List match 4000000000000000_3744170000000000-CONS
+    -Potential List match 4000000000000000_4744170000000000-CONS
+    -Potential List match 4000000000000000_5744170000000000-CONS
+    -Potential List match 4000000000000000_4644170000000000-CONS
+    -Potential List match 4000000000000000_5e44170000000000-CONS
+    -Potential List match 4000000000000000_9e44170000000000-CONS
+    -Potential List match 6BE15B52-B2B1-11ED-808B-AC162D1F16F0-CONS
+    -Potential List match 6BE15B53-B2B1-11ED-808B-AC162D1F16F0-CONS
+    -Potential List match 4000000000000000_a544170000000000-CONS
+    -Potential List match 6BE3CC81-B2B1-11ED-808B-AC162D1F16F0-CONS
+
+EMIS List Entry 10
+MISSING Entry: EMIS entry with ID 4000000000000000_7e44170000000000_NoTopic has not been found in the PS enties 
+    -Potential List match d5fc6903-e5eb-4e94-85ec-10e773a3945a
+    -Potential List match bbe3f767-cf8c-45d2-99ed-3b44b9cef34b
+    -Potential List match 020120c4-fb50-44e6-b2f6-060a409ba29c
+    -Potential List match 4000000000000000_3744170000000000_NoTopic
+    -Potential List match 4000000000000000_4744170000000000_NoTopic
+    -Potential List match 4000000000000000_5744170000000000_NoTopic
+    -Potential List match 4000000000000000_4644170000000000_NoTopic
+    -Potential List match 4000000000000000_5e44170000000000_T_d52e640000000000
+    -Potential List match 4000000000000000_9e44170000000000_NoTopic
+    -Potential List match e55c74ee-89c5-41fb-b33d-bef7547d7bc6
+    -Potential List match deac1fb4-a578-4d70-b056-5a7c4a680f01
+    -Potential List match 4000000000000000_a544170000000000_NoTopic
+    -Potential List match caa77a84-4d38-4716-b58b-4376d8486df3
+
+EMIS List Entry 11
+MISSING Entry: EMIS entry with ID 4000000000000000_6e44170000000000_Topics has not been found in the PS enties 
+    -Potential List match 6BE15B44-B2B1-11ED-808B-AC162D1F16F0-CONS
+    -Potential List match 4000000000000000_7e44170000000000-CONS
+    -Potential List match 4000000000000000_6e44170000000000-CONS
+    -Potential List match 4000000000000000_3744170000000000-CONS
+    -Potential List match 4000000000000000_4744170000000000-CONS
+    -Potential List match 4000000000000000_5744170000000000-CONS
+    -Potential List match 4000000000000000_4644170000000000-CONS
+    -Potential List match 4000000000000000_5e44170000000000-CONS
+    -Potential List match 4000000000000000_9e44170000000000-CONS
+    -Potential List match 6BE15B52-B2B1-11ED-808B-AC162D1F16F0-CONS
+    -Potential List match 6BE15B53-B2B1-11ED-808B-AC162D1F16F0-CONS
+    -Potential List match 4000000000000000_a544170000000000-CONS
+    -Potential List match 6BE3CC81-B2B1-11ED-808B-AC162D1F16F0-CONS
+
+EMIS List Entry 12
+MISSING Entry: EMIS entry with ID 4000000000000000_6e44170000000000_NoTopic has not been found in the PS enties 
+    -Potential List match d5fc6903-e5eb-4e94-85ec-10e773a3945a
+    -Potential List match bbe3f767-cf8c-45d2-99ed-3b44b9cef34b
+    -Potential List match 020120c4-fb50-44e6-b2f6-060a409ba29c
+    -Potential List match 4000000000000000_3744170000000000_NoTopic
+    -Potential List match 4000000000000000_4744170000000000_NoTopic
+    -Potential List match 4000000000000000_5744170000000000_NoTopic
+    -Potential List match 4000000000000000_4644170000000000_NoTopic
+    -Potential List match 4000000000000000_5e44170000000000_T_d52e640000000000
+    -Potential List match 4000000000000000_9e44170000000000_NoTopic
+    -Potential List match e55c74ee-89c5-41fb-b33d-bef7547d7bc6
+    -Potential List match deac1fb4-a578-4d70-b056-5a7c4a680f01
+    -Potential List match 4000000000000000_a544170000000000_NoTopic
+    -Potential List match caa77a84-4d38-4716-b58b-4376d8486df3
+
+EMIS List Entry 13
+MISSING Entry: EMIS entry with ID 4000000000000000_3744170000000000_Topics has not been found in the PS enties 
+    -Potential List match 4000000000000000_3744170000000000-CONS
+    -Potential List match 4000000000000000_3744170000000000-CONS
+
+EMIS List Entry 14
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+EMIS List Entry 15
+MISSING Entry: EMIS entry with ID 4000000000000000_3744170000000000_NoTopic has not been found in the PS enties 
+    -Potential List match 4000000000000000_3744170000000000_NoTopic
+    -Potential List match 4000000000000000_3744170000000000_NoTopic
+RESOURCE MISMATCH: Id 4000000000000000_3744170000000000_NoTopic has been found against anohter PS Resource type List
+
+EMIS List Entry 16
+MISSING Entry: EMIS entry with ID 4000000000000000_4744170000000000_Topics has not been found in the PS enties 
+    -Potential List match 4000000000000000_4744170000000000-CONS
+    -Potential List match 4000000000000000_4744170000000000-CONS
+
+EMIS List Entry 17
+MISSING Entry: EMIS entry with ID 4000000000000000_4744170000000000_NoTopic has not been found in the PS enties 
+    -Potential List match 4000000000000000_4744170000000000_NoTopic
+    -Potential List match 4000000000000000_4744170000000000_NoTopic
+RESOURCE MISMATCH: Id 4000000000000000_4744170000000000_NoTopic has been found against anohter PS Resource type List
+
+EMIS List Entry 18
+MISSING Entry: EMIS entry with ID 4000000000000000_5744170000000000_Topics has not been found in the PS enties 
+    -Potential List match 4000000000000000_5744170000000000-CONS
+    -Potential List match 4000000000000000_5744170000000000-CONS
+
+EMIS List Entry 19
+MISSING Entry: EMIS entry with ID 4000000000000000_5744170000000000_NoTopic has not been found in the PS enties 
+    -Potential List match 4000000000000000_5744170000000000_NoTopic
+    -Potential List match 4000000000000000_5744170000000000_NoTopic
+RESOURCE MISMATCH: Id 4000000000000000_5744170000000000_NoTopic has been found against anohter PS Resource type List
+
+EMIS List Entry 20
+MISSING Entry: EMIS entry with ID 4000000000000000_4644170000000000_Topics has not been found in the PS enties 
+    -Potential List match 4000000000000000_4644170000000000-CONS
+    -Potential List match 4000000000000000_4644170000000000-CONS
+
+EMIS List Entry 21
+MISSING Entry: EMIS entry with ID 4000000000000000_4644170000000000_NoTopic has not been found in the PS enties 
+    -Potential List match 4000000000000000_4644170000000000_NoTopic
+    -Potential List match 4000000000000000_4644170000000000_NoTopic
+RESOURCE MISMATCH: Id 4000000000000000_4644170000000000_NoTopic has been found against anohter PS Resource type List
+
+EMIS List Entry 22
+MISSING Entry: EMIS entry with ID 4000000000000000_5e44170000000000_Topics has not been found in the PS enties 
+    -Potential List match 4000000000000000_5e44170000000000-CONS
+    -Potential List match 4000000000000000_5e44170000000000-CONS
+
+EMIS List Entry 23
+MISSING Entry: EMIS entry with ID 4000000000000000_5e44170000000000_T_d52e640000000000 has not been found in the PS enties 
+    -Potential List match 4000000000000000_5e44170000000000_T_d52e640000000000
+    -Potential List match 4000000000000000_5e44170000000000_T_d52e640000000000
+RESOURCE MISMATCH: Id 4000000000000000_5e44170000000000_T_d52e640000000000 has been found against anohter PS Resource type List
+
+EMIS List Entry 24
+MISSING Entry: EMIS entry with ID 4000000000000000_5e44170000000000_T_d52e640000000000_Cat_H has not been found in the PS enties 
+
+EMIS List Entry 25
+MISSING Entry: EMIS entry with ID 4000000000000000_5e44170000000000_T_d52e640000000000_Cat_I has not been found in the PS enties 
+
+EMIS List Entry 26
+MISSING Entry: EMIS entry with ID 4000000000000000_9e44170000000000_Topics has not been found in the PS enties 
+    -Potential List match 4000000000000000_9e44170000000000-CONS
+    -Potential List match 4000000000000000_9e44170000000000-CONS
+
+EMIS List Entry 27
+MISSING Entry: EMIS entry with ID 4000000000000000_9e44170000000000_NoTopic has not been found in the PS enties 
+    -Potential List match 4000000000000000_9e44170000000000_NoTopic
+    -Potential List match 4000000000000000_9e44170000000000_NoTopic
+RESOURCE MISMATCH: Id 4000000000000000_9e44170000000000_NoTopic has been found against anohter PS Resource type List
+
+EMIS List Entry 28
+MISSING Entry: EMIS entry with ID 4000000000000000_a854170000000000_Topics has not been found in the PS enties 
+    -Potential List match 6BE15B44-B2B1-11ED-808B-AC162D1F16F0-CONS
+    -Potential List match 4000000000000000_7e44170000000000-CONS
+    -Potential List match 4000000000000000_6e44170000000000-CONS
+    -Potential List match 4000000000000000_3744170000000000-CONS
+    -Potential List match 4000000000000000_4744170000000000-CONS
+    -Potential List match 4000000000000000_5744170000000000-CONS
+    -Potential List match 4000000000000000_4644170000000000-CONS
+    -Potential List match 4000000000000000_5e44170000000000-CONS
+    -Potential List match 4000000000000000_9e44170000000000-CONS
+    -Potential List match 6BE15B52-B2B1-11ED-808B-AC162D1F16F0-CONS
+    -Potential List match 6BE15B53-B2B1-11ED-808B-AC162D1F16F0-CONS
+    -Potential List match 4000000000000000_a544170000000000-CONS
+    -Potential List match 6BE3CC81-B2B1-11ED-808B-AC162D1F16F0-CONS
+
+EMIS List Entry 29
+MISSING Entry: EMIS entry with ID 4000000000000000_a854170000000000_NoTopic has not been found in the PS enties 
+    -Potential List match d5fc6903-e5eb-4e94-85ec-10e773a3945a
+    -Potential List match bbe3f767-cf8c-45d2-99ed-3b44b9cef34b
+    -Potential List match 020120c4-fb50-44e6-b2f6-060a409ba29c
+    -Potential List match 4000000000000000_3744170000000000_NoTopic
+    -Potential List match 4000000000000000_4744170000000000_NoTopic
+    -Potential List match 4000000000000000_5744170000000000_NoTopic
+    -Potential List match 4000000000000000_4644170000000000_NoTopic
+    -Potential List match 4000000000000000_5e44170000000000_T_d52e640000000000
+    -Potential List match 4000000000000000_9e44170000000000_NoTopic
+    -Potential List match e55c74ee-89c5-41fb-b33d-bef7547d7bc6
+    -Potential List match deac1fb4-a578-4d70-b056-5a7c4a680f01
+    -Potential List match 4000000000000000_a544170000000000_NoTopic
+    -Potential List match caa77a84-4d38-4716-b58b-4376d8486df3
+
+EMIS List Entry 30
+MISSING Entry: EMIS entry with ID 4000000000000000_b854170000000000_Topics has not been found in the PS enties 
+    -Potential List match 6BE15B44-B2B1-11ED-808B-AC162D1F16F0-CONS
+    -Potential List match 4000000000000000_7e44170000000000-CONS
+    -Potential List match 4000000000000000_6e44170000000000-CONS
+    -Potential List match 4000000000000000_3744170000000000-CONS
+    -Potential List match 4000000000000000_4744170000000000-CONS
+    -Potential List match 4000000000000000_5744170000000000-CONS
+    -Potential List match 4000000000000000_4644170000000000-CONS
+    -Potential List match 4000000000000000_5e44170000000000-CONS
+    -Potential List match 4000000000000000_9e44170000000000-CONS
+    -Potential List match 6BE15B52-B2B1-11ED-808B-AC162D1F16F0-CONS
+    -Potential List match 6BE15B53-B2B1-11ED-808B-AC162D1F16F0-CONS
+    -Potential List match 4000000000000000_a544170000000000-CONS
+    -Potential List match 6BE3CC81-B2B1-11ED-808B-AC162D1F16F0-CONS
+
+EMIS List Entry 31
+MISSING Entry: EMIS entry with ID 4000000000000000_b854170000000000_NoTopic has not been found in the PS enties 
+    -Potential List match d5fc6903-e5eb-4e94-85ec-10e773a3945a
+    -Potential List match bbe3f767-cf8c-45d2-99ed-3b44b9cef34b
+    -Potential List match 020120c4-fb50-44e6-b2f6-060a409ba29c
+    -Potential List match 4000000000000000_3744170000000000_NoTopic
+    -Potential List match 4000000000000000_4744170000000000_NoTopic
+    -Potential List match 4000000000000000_5744170000000000_NoTopic
+    -Potential List match 4000000000000000_4644170000000000_NoTopic
+    -Potential List match 4000000000000000_5e44170000000000_T_d52e640000000000
+    -Potential List match 4000000000000000_9e44170000000000_NoTopic
+    -Potential List match e55c74ee-89c5-41fb-b33d-bef7547d7bc6
+    -Potential List match deac1fb4-a578-4d70-b056-5a7c4a680f01
+    -Potential List match 4000000000000000_a544170000000000_NoTopic
+    -Potential List match caa77a84-4d38-4716-b58b-4376d8486df3
+
+EMIS List Entry 32
+MISSING Entry: EMIS entry with ID 4000000000000000_a544170000000000_Topics has not been found in the PS enties 
+    -Potential List match 4000000000000000_a544170000000000-CONS
+    -Potential List match 4000000000000000_a544170000000000-CONS
+
+EMIS List Entry 33
+MISSING Entry: EMIS entry with ID 4000000000000000_a544170000000000_NoTopic has not been found in the PS enties 
+    -Potential List match 4000000000000000_a544170000000000_NoTopic
+    -Potential List match 4000000000000000_a544170000000000_NoTopic
+RESOURCE MISMATCH: Id 4000000000000000_a544170000000000_NoTopic has been found against anohter PS Resource type List
+
+EMIS List Entry 34
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+EMIS List Entry 35
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+EMIS List Entry 36
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+EMIS List Entry 37
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+EMIS List Entry 38
+MISSING Entry: EMIS entry with ID null has not been found in the PS enties 
+
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE15B44-B2B1-11ED-808B-AC162D1F16F0-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_7e44170000000000-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_6e44170000000000-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_3744170000000000-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_4744170000000000-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_5744170000000000-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_4644170000000000-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_5e44170000000000-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_9e44170000000000-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE15B52-B2B1-11ED-808B-AC162D1F16F0-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE15B53-B2B1-11ED-808B-AC162D1F16F0-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_a544170000000000-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC81-B2B1-11ED-808B-AC162D1F16F0-CONS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID d5fc6903-e5eb-4e94-85ec-10e773a3945a
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID bbe3f767-cf8c-45d2-99ed-3b44b9cef34b
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 020120c4-fb50-44e6-b2f6-060a409ba29c
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_3744170000000000_NoTopic
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_4744170000000000_NoTopic
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_5744170000000000_NoTopic
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_4644170000000000_NoTopic
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_5e44170000000000_T_d52e640000000000
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_9e44170000000000_NoTopic
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID e55c74ee-89c5-41fb-b33d-bef7547d7bc6
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID deac1fb4-a578-4d70-b056-5a7c4a680f01
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 4000000000000000_a544170000000000_NoTopic
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID caa77a84-4d38-4716-b58b-4376d8486df3
+
+---------------------------------------------------------------------------------
+Analysing Entries of type Location
+---------------------------------------------------------------------------------
+EMIS Entires = 1 vs PS Entries = 1
+
+Matches will be found via the following fields: name
+
+EMIS Location Entry 1
+EMIS Entry 0100000000000000_0b00000000000000 vs PS Entry 0100000000000000_0b00000000000000
+MISSING: Property lastUpdated is missing in PS Entry (Emis Value : 2023-02-22T11:13:05) 
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+
+
+---------------------------------------------------------------------------------
+Analysing Entries of type Medication
+---------------------------------------------------------------------------------
+EMIS Entires = 3 vs PS Entries = 3
+
+Matches will be found via the following fields: code.coding.[0].display
+
+EMIS Medication Entry 1
+EMIS Entry 1015769_0 vs PS Entry 1015769_0
+
+EMIS Medication Entry 2
+EMIS Entry 1001363_0 vs PS Entry 1001363_0
+
+EMIS Medication Entry 3
+MISSING Entry: EMIS entry with ID 1007356_0 has not been found in the PS enties 
+
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID d82f02d0-bb58-4a98-b8d8-0d54d925cfbd
+
+---------------------------------------------------------------------------------
+Analysing Entries of type MedicationRequest
+---------------------------------------------------------------------------------
+EMIS Entires = 6 vs PS Entries = 6
+
+Matches will be found via the following fields: dispenseRequest.validityPeriod.start,intent,dosageInstruction.[0].text
+
+EMIS MedicationRequest Entry 1
+EMIS Entry 1000000000000000_2d55c40000000000_plan vs PS Entry 1000000000000000_2d55c40000000000_plan
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+MISSING: Property end is missing in PS Entry (Emis Value : 2010-12-11) 
+NEW: Property quantity is not present in the EMIS data (PS Value : [object Object]) 
+NEW: Property requester is not present in the EMIS data (PS Value : [object Object]) 
+
+EMIS MedicationRequest Entry 2
+EMIS Entry 1000000000000000_2d55c40000000000_order vs PS Entry 1000000000000000_2d55c40000000000_order
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+MISSING: Property end is missing in PS Entry (Emis Value : 2010-12-11) 
+NEW: Property quantity is not present in the EMIS data (PS Value : [object Object]) 
+NEW: Property requester is not present in the EMIS data (PS Value : [object Object]) 
+
+EMIS MedicationRequest Entry 3
+MISSING Entry: EMIS entry with ID 1000000000000000_1d55c40000000000_plan has not been found in the PS enties 
+    -Potential MedicationRequest match 6BE3CC6A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential MedicationRequest match 6BE3CC70-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS MedicationRequest Entry 4
+MISSING Entry: EMIS entry with ID 1000000000000000_1d55c40000000000_order has not been found in the PS enties 
+    -Potential MedicationRequest match 6BE3CC6B-B2B1-11ED-808B-AC162D1F16F0
+    -Potential MedicationRequest match 6BE3CC71-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS MedicationRequest Entry 5
+MISSING Entry: EMIS entry with ID 1000000000000000_3d55c40000000000_plan has not been found in the PS enties 
+    -Potential MedicationRequest match 6BE3CC6A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential MedicationRequest match 6BE3CC70-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS MedicationRequest Entry 6
+MISSING Entry: EMIS entry with ID 1000000000000000_3d55c40000000000_order has not been found in the PS enties 
+    -Potential MedicationRequest match 6BE3CC6B-B2B1-11ED-808B-AC162D1F16F0
+    -Potential MedicationRequest match 6BE3CC71-B2B1-11ED-808B-AC162D1F16F0
+
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC6B-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC6A-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC71-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC70-B2B1-11ED-808B-AC162D1F16F0
+
+---------------------------------------------------------------------------------
+Analysing Entries of type MedicationStatement
+---------------------------------------------------------------------------------
+EMIS Entires = 3 vs PS Entries = 3
+
+Matches will be found via the following fields: effectivePeriod.start,dosage.[0].text
+
+EMIS MedicationStatement Entry 1
+EMIS Entry 1000000000000000_2d55c40000000000 vs PS Entry 1000000000000000_2d55c40000000000_plan-MS
+DIFF: Emis Value of resource.id does not match PS Property (1000000000000000_2d55c40000000000 != 1000000000000000_2d55c40000000000_plan-MS)
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+MISSING: Property end is missing in PS Entry (Emis Value : 2010-12-11) 
+DIFF: Emis Value of resource.extension.0.url does not match PS Property (https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationStatementLastIssueDate-1 != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescribingAgency-1)
+MISSING: Property valueDateTime is missing in PS Entry (Emis Value : 2010-12-10) 
+NEW: Property valueCodeableConcept is not present in the EMIS data (PS Value : [object Object]) 
+DIFF: Emis Value of resource.extension.1.url does not match PS Property (https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescribingAgency-1 != https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationStatementLastIssueDate-1)
+MISSING: Property valueCodeableConcept is missing in PS Entry (Emis Value : [object Object]) 
+NEW: Property valueDateTime is not present in the EMIS data (PS Value : 2010-12-10) 
+
+EMIS MedicationStatement Entry 2
+MISSING Entry: EMIS entry with ID 1000000000000000_1d55c40000000000 has not been found in the PS enties 
+    -Potential MedicationStatement match 6BE3CC6A-B2B1-11ED-808B-AC162D1F16F0-MS
+    -Potential MedicationStatement match 6BE3CC70-B2B1-11ED-808B-AC162D1F16F0-MS
+
+EMIS MedicationStatement Entry 3
+MISSING Entry: EMIS entry with ID 1000000000000000_3d55c40000000000 has not been found in the PS enties 
+    -Potential MedicationStatement match 6BE3CC6A-B2B1-11ED-808B-AC162D1F16F0-MS
+    -Potential MedicationStatement match 6BE3CC70-B2B1-11ED-808B-AC162D1F16F0-MS
+
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC6A-B2B1-11ED-808B-AC162D1F16F0-MS
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC70-B2B1-11ED-808B-AC162D1F16F0-MS
+
+---------------------------------------------------------------------------------
+Analysing Entries of type Observation
+---------------------------------------------------------------------------------
+EMIS Entires = 32 vs PS Entries = 51
+ALERT: There is a mismatch in the number of entries of type Observation
+
+Matches will be found via the following fields: code.coding.[0].code,effectiveDateTime,comment
+
+EMIS Observation Entry 1
+MISSING Entry: EMIS entry with ID 5000000000000000_45fb070000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC72-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC55-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC56-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC57-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC73-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC74-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC75-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC76-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC59-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5E-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC77-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC78-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC79-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5F-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC61-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC62-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC65-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC66-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC67-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 2
+MISSING Entry: EMIS entry with ID 5000000000000000_52eb070000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC55-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC56-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC57-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC73-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC74-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC75-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC76-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 3
+MISSING Entry: EMIS entry with ID 5000000000000000_42eb070000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC55-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC56-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC57-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC73-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC74-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC75-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC76-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 4
+MISSING Entry: EMIS entry with ID 5000000000000000_22eb070000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC55-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC56-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC57-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC73-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC74-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC75-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC76-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 5
+MISSING Entry: EMIS entry with ID 5000000000000000_32eb070000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC55-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC56-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC57-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC73-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC74-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC75-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC76-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 6
+MISSING Entry: EMIS entry with ID 5000000000000000_82eb070000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC59-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5E-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC77-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC78-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC79-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 7
+MISSING Entry: EMIS entry with ID 5000000000000000_62eb070000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC59-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5E-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC77-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC78-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC79-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 8
+MISSING Entry: EMIS entry with ID 5000000000000000_72eb070000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC59-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5E-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC77-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC78-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC79-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 9
+MISSING Entry: EMIS entry with ID 5000000000000000_18fb070000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC49-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC4A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC4B-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC7A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC4F-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 10
+MISSING Entry: EMIS entry with ID 5000000000000000_08fb070000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC40-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC41-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC42-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC43-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC44-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC45-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC46-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC47-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC48-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC4C-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC4D-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC4E-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC7B-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 11
+MISSING Entry: EMIS entry with ID 5000000000000000_f7fb070000000000 has not been found in the PS enties 
+
+EMIS Observation Entry 12
+MISSING Entry: EMIS entry with ID 5000000000000000_28fb070000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC5C-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC7D-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 13
+EMIS Entry 9300000000000000_e52e640000000000 vs PS Entry 9300000000000000_e52e640000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Array Property resource.performer does not have equal length with PS property resource.performer (2 != 1)
+MISSING EMIS has an additional array entry in resource.[object Object]
+
+EMIS Observation Entry 14
+MISSING Entry: EMIS entry with ID 5d00000000000000_0cd9000000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC72-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC55-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC56-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC57-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC73-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC74-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC75-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC76-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC59-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5E-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC77-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC78-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC79-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5F-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC61-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC62-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC65-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC66-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC67-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 15
+MISSING Entry: EMIS entry with ID 5d00000000000000_1cd9000000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC72-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC55-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC56-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC57-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC73-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC74-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC75-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC76-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC59-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5E-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC77-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC78-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC79-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5F-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC61-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC62-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC65-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC66-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC67-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 16
+MISSING Entry: EMIS entry with ID 5d00000000000000_3cd9000000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC72-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC55-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC56-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC57-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC73-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC74-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC75-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC76-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC59-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5E-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC77-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC78-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC79-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5F-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC61-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC62-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC65-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC66-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC67-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 17
+MISSING Entry: EMIS entry with ID 5d00000000000000_5cd9000000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC72-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC55-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC56-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC57-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC73-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC74-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC75-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC76-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC59-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5E-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC77-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC78-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC79-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5F-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC61-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC62-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC65-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC66-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC67-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 18
+MISSING Entry: EMIS entry with ID 5d00000000000000_4cd9000000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC72-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC55-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC56-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC57-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC73-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC74-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC75-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC76-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC59-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5E-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC77-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC78-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC79-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5F-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC61-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC62-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC65-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC66-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC67-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 19
+MISSING Entry: EMIS entry with ID 5d00000000000000_2cd9000000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC72-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC55-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC56-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC57-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC73-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC74-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC75-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC76-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC59-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5E-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC77-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC78-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC79-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5F-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC61-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC62-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC65-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC66-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC67-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 20
+EMIS Entry 9300000000000000_0e1e640000000000 vs PS Entry 9300000000000000_0e1e640000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Array Property resource.performer does not have equal length with PS property resource.performer (2 != 1)
+MISSING EMIS has an additional array entry in resource.[object Object]
+
+EMIS Observation Entry 21
+EMIS Entry 9300000000000000_fd1e640000000000 vs PS Entry 9300000000000000_fd1e640000000000
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Array Property resource.performer does not have equal length with PS property resource.performer (2 != 1)
+MISSING EMIS has an additional array entry in resource.[object Object]
+
+EMIS Observation Entry 22
+MISSING Entry: EMIS entry with ID 5d00000000000000_9cd9000000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC72-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC55-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC56-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC57-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC73-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC74-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC75-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC76-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC59-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5E-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC77-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC78-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC79-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5F-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC61-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC62-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC65-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC66-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC67-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 23
+MISSING Entry: EMIS entry with ID 5d00000000000000_8cd9000000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC72-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC55-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC56-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC57-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC73-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC74-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC75-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC76-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC59-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5E-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC77-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC78-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC79-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5F-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC61-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC62-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC65-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC66-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC67-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 24
+MISSING Entry: EMIS entry with ID 5d00000000000000_acd9000000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC72-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC55-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC56-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC57-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC73-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC74-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC75-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC76-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC59-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5E-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC77-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC78-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC79-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5F-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC61-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC62-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC65-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC66-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC67-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 25
+MISSING Entry: EMIS entry with ID 5d00000000000000_ccd9000000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC72-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC55-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC56-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC57-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC73-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC74-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC75-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC76-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC59-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5E-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC77-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC78-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC79-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5F-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC61-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC62-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC65-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC66-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC67-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 26
+MISSING Entry: EMIS entry with ID 5d00000000000000_bcd9000000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC72-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC55-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC56-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC57-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC73-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC74-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC75-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC76-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC59-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5E-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC77-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC78-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC79-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5F-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC61-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC62-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC65-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC66-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC67-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 27
+MISSING Entry: EMIS entry with ID 5d00000000000000_6cd9000000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC72-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC55-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC56-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC57-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC73-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC74-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC75-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC76-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC59-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5E-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC77-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC78-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC79-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5F-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC61-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC62-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC65-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC66-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC67-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 28
+MISSING Entry: EMIS entry with ID 5d00000000000000_7cd9000000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC72-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC55-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC56-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC57-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC73-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC74-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC75-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC76-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC59-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5E-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC77-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC78-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC79-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5F-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC61-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC62-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC65-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC66-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC67-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 29
+MISSING Entry: EMIS entry with ID 5d00000000000000_ebd9000000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC72-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC55-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC56-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC57-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC73-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC74-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC75-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC76-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC59-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5E-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC77-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC78-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC79-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5F-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC61-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC62-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC65-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC66-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC67-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 30
+MISSING Entry: EMIS entry with ID 5d00000000000000_fbd9000000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC72-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC55-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC56-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC57-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC73-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC74-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC75-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC76-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC59-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5E-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC77-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC78-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC79-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5F-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC61-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC62-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC65-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC66-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC67-B2B1-11ED-808B-AC162D1F16F0
+
+EMIS Observation Entry 31
+EMIS Entry 4000000000000000_5e44170000000000_T_d52e640000000000_Cat_H_Nar vs PS Entry 4000000000000000_5e44170000000000_T_d52e640000000000_Cat_H_Nar
+MISSING: Property identifier is missing in PS Entry (Emis Value : [object Object]) 
+DIFF: Array Property resource.performer does not have equal length with PS property resource.performer (2 != 1)
+MISSING EMIS has an additional array entry in resource.[object Object]
+
+EMIS Observation Entry 32
+MISSING Entry: EMIS entry with ID 5d00000000000000_dcd9000000000000 has not been found in the PS enties 
+    -Potential Observation match 6BE3CC72-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC55-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC56-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC57-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC73-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC74-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC75-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC76-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC59-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5A-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5E-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC77-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC78-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC79-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC5F-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC61-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC62-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC65-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC66-B2B1-11ED-808B-AC162D1F16F0
+    -Potential Observation match 6BE3CC67-B2B1-11ED-808B-AC162D1F16F0
+
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC51-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC72-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC40-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC41-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC55-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC56-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC57-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC58-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC73-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC74-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC75-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC76-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC42-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC43-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC44-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC45-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC59-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC5A-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC5C-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC5E-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC77-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC78-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC79-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC46-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC47-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC48-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC49-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC4A-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC4B-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC4C-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC5F-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC60-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC61-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC4D-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC4E-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC62-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC63-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC64-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC65-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC66-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC67-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC68-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC7A-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC7B-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC7D-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC4F-B2B1-11ED-808B-AC162D1F16F0
+ADDITIONAL ENTRY: PS Entries have an addition entry with ID 6BE3CC82-B2B1-11ED-808B-AC162D1F16F0

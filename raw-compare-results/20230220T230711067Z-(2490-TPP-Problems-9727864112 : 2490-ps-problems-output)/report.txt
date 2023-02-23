@@ -2806,7 +2806,7 @@ NEW: Property valueReference is not present in the EMIS data (PS Value : [object
 EMIS Condition Entry 8
 MISSING Entry: EMIS entry with ID f200000000000000_efd3000000000000 has not been found in the PS enties 
     -Potential Condition match f200000000000000_20e3000000000000
-    -Potential Condition match B5722682-A0C2-11ED-808B-AC162D1F16F0
+    -Potential Condition match B5722682-A0C2-11ED-808B-AC162D1F16F0 - This one
     -Potential Condition match f200000000000000_70e3000000000000
     -Potential Condition match f200000000000000_40e3000000000000
     -Potential Condition match B5722688-A0C2-11ED-808B-AC162D1F16F0
@@ -2856,22 +2856,15 @@ NEW: Property valueReference is not present in the EMIS data (PS Value : [object
 
 EMIS Condition Entry 11
 MISSING Entry: EMIS entry with ID f200000000000000_00e3000000000000 has not been found in the PS enties 
-    -Potential Condition match f200000000000000_20e3000000000000
-    -Potential Condition match B5722682-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Condition match f200000000000000_70e3000000000000
-    -Potential Condition match f200000000000000_40e3000000000000
-    -Potential Condition match B5722688-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Condition match B572268A-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Condition match B572268C-A0C2-11ED-808B-AC162D1F16F0
+    B5722688-A0C2-11ED-808B-AC162D1F16F0
 
 EMIS Condition Entry 12
 MISSING Entry: EMIS entry with ID f200000000000000_9fd3000000000000 has not been found in the PS enties 
     -Potential Condition match B572268A-A0C2-11ED-808B-AC162D1F16F0
-    -Potential Condition match B572268C-A0C2-11ED-808B-AC162D1F16F0
+
 
 EMIS Condition Entry 13
 MISSING Entry: EMIS entry with ID f200000000000000_cfd3000000000000 has not been found in the PS enties 
-    -Potential Condition match B572268A-A0C2-11ED-808B-AC162D1F16F0
     -Potential Condition match B572268C-A0C2-11ED-808B-AC162D1F16F0
 
 EMIS Condition Entry 14
@@ -2900,6 +2893,9 @@ DIFF: Emis Value of resource.extension.6.valueReference.reference does not match
 MISSING EMIS has an additional array entry in resource.[object Object]
 MISSING EMIS has an additional array entry in resource.[object Object]
 MISSING EMIS has an additional array entry in resource.[object Object]
+
+____
+
 
 EMIS Condition Entry 15
 EMIS Entry f200000000000000_3fd3000000000000 vs PS Entry f200000000000000_3fd3000000000000
@@ -3019,10 +3015,8 @@ DIFF: Emis Value of resource.extension.1.url does not match PS Property (https:/
 MISSING: Property valueCode is missing in PS Entry (Emis Value : minor) 
 NEW: Property valueReference is not present in the EMIS data (PS Value : [object Object]) 
 
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID B5722682-A0C2-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID B5722688-A0C2-11ED-808B-AC162D1F16F0
+
 ADDITIONAL ENTRY: PS Entries have an addition entry with ID B572268A-A0C2-11ED-808B-AC162D1F16F0
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID B572268C-A0C2-11ED-808B-AC162D1F16F0
 ADDITIONAL ENTRY: PS Entries have an addition entry with ID B572269C-A0C2-11ED-808B-AC162D1F16F0
 
 ---------------------------------------------------------------------------------
