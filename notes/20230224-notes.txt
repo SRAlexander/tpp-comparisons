@@ -1,0 +1,77 @@
+No Alergies is showing as an observation, it should be an allergy.. why? <ObservationStatement classCode="OBS" moodCode="EVN">
+                                        <id root="F0CD0FE8-A0BC-11ED-808B-AC162D1F16F0"/>
+                                        <code code="1151." codeSystem="2.16.840.1.113883.2.1.3.2.4.14" displayName="No known allergies">
+                                            <originalText>No known allergies</originalText>
+                                            <translation code="716186003" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="No known allergy"/>
+                                            <translation code="1151.00" codeSystem="2.16.840.1.113883.2.1.6.2" displayName="No known allergies"/>
+                                                                                    2.16.840.1.113883.2.1.6.2
+                                        </code>
+                                        <statusCode code="COMPLETE"/>
+                                        <effectiveTime>
+                                            <center nullFlavor="NI"/>
+                                        </effectiveTime>
+                                        <availabilityTime value="200701"/>
+                                        <pertinentInformation typeCode="PERT">
+                                            <sequenceNumber value="+1"/>
+                                            <pertinentAnnotation classCode="OBS" moodCode="EVN">
+                                                <text>This is a comment about no known allergies</text>
+                                            </pertinentAnnotation>
+                                        </pertinentInformation>
+                                    </ObservationStatement>
+- Discuss with Neil
+- May be because of a missing parent category
+- Ended Refusal: Anthrax
+- Ended Consent: YELLOW FEVER.
+
+
+Sharing 
+ObservationE6A38894-A0C2-11ED-808B-AC162D1F16F0
+- Original Text is not being preserved on import
+
+Also on:- 
+Aspirin-sensitive asthma with nasal polyps
+O/E - weight
+
++ Medication Statement - E6A388A5-A0C2-11ED-808B-AC162D1F16F0
+imunizationsDupplicate Orgs + unknown ODS instance
+
+Missing original term again on coded data
+PrimarySource should default to true
+
+"vaccineCode": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v3/NullFlavor ",
+              "code": "UNK"
+            }
+          ],
+
+
+Missing Immunisation codes…<translation code="170402006" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Third diphtheria, pertussis and tetanus triple and polio vaccination"/>
+
+<translation code="170400003" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="First diphtheria, pertussis and tetanus triple and polio vaccination"/>
+
+<translation code="170397007" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="Third diphtheria, pertussis and tetanus triple vaccination"/>
+                                            
+RISKTerminology - need a full list of immunisation codes reviewed
+
+Reference: 966ECED8-A0C1-11ED-808B-AC162D1F16F0
+ = Peter 
+
+MEDICATIONS
+
+96713FD1-A0C1-11ED-808B-AC162D1F16F0 (Placeholder)
+- Remove authorisationExpiryDate
+- 
+
+
+
+Ignore for now
+
+GPConnect: TPP Observation 5000000000000000_7afaf31000000000 missing in XML
+
+Issue on lists using AuthorTime as date?
+
+Immunisation is being created as a degrade via gp2gp id: "b100000000000000_5c752a0000000000",
+"id": "b100000000000000_4c752a0000000000",
+
