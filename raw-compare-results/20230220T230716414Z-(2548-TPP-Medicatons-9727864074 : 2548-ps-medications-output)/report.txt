@@ -1757,7 +1757,7 @@ EMIS Entires = 34 vs PS Entries = 34
 
 Matches will be found via the following fields: code.coding.[0].display
 
-EMIS Medication Entry 1
+EMIS Medication Entry 1 (Checked)
 EMIS Entry 5011115_0 vs PS Entry 5011115_0
 
 EMIS Medication Entry 2
@@ -1903,23 +1903,17 @@ EMIS Entires = 99 vs PS Entries = 99
 
 Matches will be found via the following fields: dispenseRequest.validityPeriod.start,intent,dosageInstruction.[0].text
 
-EMIS MedicationRequest Entry 1
+EMIS MedicationRequest Entry 1 (Checked)
 MISSING Entry: EMIS entry with ID 9000000000000000_2ebf000000000000_plan has not been found in the PS enties 
     -Potential MedicationRequest match 96713FD1-A0C1-11ED-808B-AC162D1F16F0
-    -Potential MedicationRequest match 9673B0D4-A0C1-11ED-808B-AC162D1F16F0
-    -Potential MedicationRequest match 9673B0DB-A0C1-11ED-808B-AC162D1F16F0
-    -Potential MedicationRequest match 96713FD8-A0C1-11ED-808B-AC162D1F16F0
 
-EMIS MedicationRequest Entry 2
+
+EMIS MedicationRequest Entry 2 (Checked)
 MISSING Entry: EMIS entry with ID 1000000000000000_b654280000000000_order has not been found in the PS enties 
     -Potential MedicationRequest match 96713FFA-A0C1-11ED-808B-AC162D1F16F0
-    -Potential MedicationRequest match 9673B0D5-A0C1-11ED-808B-AC162D1F16F0
-    -Potential MedicationRequest match 9673B0DC-A0C1-11ED-808B-AC162D1F16F0
 
-EMIS MedicationRequest Entry 3
+EMIS MedicationRequest Entry 3 (CHECKED)
 MISSING Entry: EMIS entry with ID 1000000000000000_a554280000000000_order has not been found in the PS enties 
-    -Potential MedicationRequest match 9673B0F3-A0C1-11ED-808B-AC162D1F16F0
-    -Potential MedicationRequest match 9673B0F9-A0C1-11ED-808B-AC162D1F16F0
     -Potential MedicationRequest match 9673B0F7-A0C1-11ED-808B-AC162D1F16F0
 
 EMIS MedicationRequest Entry 4
@@ -3225,9 +3219,7 @@ Matches will be found via the following fields: effectivePeriod.start,dosage.[0]
 EMIS MedicationStatement Entry 1
 MISSING Entry: EMIS entry with ID 9000000000000000_2ebf000000000000 has not been found in the PS enties 
     -Potential MedicationStatement match 96713FD1-A0C1-11ED-808B-AC162D1F16F0-MS
-    -Potential MedicationStatement match 9673B0D4-A0C1-11ED-808B-AC162D1F16F0-MS
-    -Potential MedicationStatement match 9673B0DB-A0C1-11ED-808B-AC162D1F16F0-MS
-    -Potential MedicationStatement match 96713FD8-A0C1-11ED-808B-AC162D1F16F0-MS
+
 
 EMIS MedicationStatement Entry 2
 EMIS Entry 9000000000000000_5ebf000000000000 vs PS Entry 9000000000000000_5ebf000000000000_plan-MS
@@ -3244,6 +3236,9 @@ DIFF: Emis Value of resource.extension.1.url does not match PS Property (https:/
 MISSING: Property valueCodeableConcept is missing in PS Entry (Emis Value : [object Object]) 
 NEW: Property valueDateTime is not present in the EMIS data (PS Value : 2011-05-03) 
 
+
+____ UP TO HERE ____
+ 
 EMIS MedicationStatement Entry 3
 EMIS Entry 9000000000000000_7ebf000000000000 vs PS Entry 9000000000000000_7ebf000000000000_plan-MS
 DIFF: Emis Value of resource.id does not match PS Property (9000000000000000_7ebf000000000000 != 9000000000000000_7ebf000000000000_plan-MS)
@@ -3261,7 +3256,6 @@ NEW: Property valueDateTime is not present in the EMIS data (PS Value : 2010-12-
 
 EMIS MedicationStatement Entry 4
 MISSING Entry: EMIS entry with ID 9000000000000000_aebf000000000000 has not been found in the PS enties 
-    -Potential MedicationStatement match 96713FD1-A0C1-11ED-808B-AC162D1F16F0-MS
     -Potential MedicationStatement match 9673B0D4-A0C1-11ED-808B-AC162D1F16F0-MS
     -Potential MedicationStatement match 9673B0DB-A0C1-11ED-808B-AC162D1F16F0-MS
     -Potential MedicationStatement match 96713FD8-A0C1-11ED-808B-AC162D1F16F0-MS
@@ -3508,14 +3502,12 @@ NEW: Property valueDateTime is not present in the EMIS data (PS Value : 2011-02-
 
 EMIS MedicationStatement Entry 22
 MISSING Entry: EMIS entry with ID 1000000000000000_9654280000000000 has not been found in the PS enties 
-    -Potential MedicationStatement match 96713FD1-A0C1-11ED-808B-AC162D1F16F0-MS
     -Potential MedicationStatement match 9673B0D4-A0C1-11ED-808B-AC162D1F16F0-MS
     -Potential MedicationStatement match 9673B0DB-A0C1-11ED-808B-AC162D1F16F0-MS
     -Potential MedicationStatement match 96713FD8-A0C1-11ED-808B-AC162D1F16F0-MS
 
 EMIS MedicationStatement Entry 23
 MISSING Entry: EMIS entry with ID 1000000000000000_2654280000000000 has not been found in the PS enties 
-    -Potential MedicationStatement match 96713FD1-A0C1-11ED-808B-AC162D1F16F0-MS
     -Potential MedicationStatement match 9673B0D4-A0C1-11ED-808B-AC162D1F16F0-MS
     -Potential MedicationStatement match 9673B0DB-A0C1-11ED-808B-AC162D1F16F0-MS
     -Potential MedicationStatement match 96713FD8-A0C1-11ED-808B-AC162D1F16F0-MS
@@ -3720,7 +3712,7 @@ DIFF: Emis Value of resource.extension.1.url does not match PS Property (https:/
 MISSING: Property valueCodeableConcept is missing in PS Entry (Emis Value : [object Object]) 
 NEW: Property valueDateTime is not present in the EMIS data (PS Value : 2011-09-02) 
 
-ADDITIONAL ENTRY: PS Entries have an addition entry with ID 96713FD1-A0C1-11ED-808B-AC162D1F16F0-MS
+
 ADDITIONAL ENTRY: PS Entries have an addition entry with ID 9673B0D4-A0C1-11ED-808B-AC162D1F16F0-MS
 ADDITIONAL ENTRY: PS Entries have an addition entry with ID 9673B0DB-A0C1-11ED-808B-AC162D1F16F0-MS
 ADDITIONAL ENTRY: PS Entries have an addition entry with ID 96713FD8-A0C1-11ED-808B-AC162D1F16F0-MS
