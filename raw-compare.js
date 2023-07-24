@@ -669,7 +669,7 @@ function compareJsonEntry(emisEntry, psEntry, parentId) {
 			}
 
 			if(emisSortedArray.length < psSortedArray.length){
-				compareResponse = compareResponse + "ADDITIONAL: The PS array "+ parentId + "." + emisPropertyValueArrayEntry + " has an additional " + (psSortedArray.length - emisSortedArray.length) + " reosurces \n";
+				compareResponse = compareResponse + "ADDITIONAL: The PS array "+ parentId + "." + emisPropertyValueArrayEntry + " has an additional " + (psSortedArray.length - emisSortedArray.length) + " resources \n";
 			}
 
 			continue;
