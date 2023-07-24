@@ -187,10 +187,19 @@ function preProcessFiles(providerFile, psFile) {
 }
 
 function preProccessIdMismatches(providerFile, psFile) {
+	let matchedIds = [];
+	let numberOfIDsMatched = 0;
+	let psFileWithIdsReplaced = psFile;
 
-	let psIdReplacedJson = scanForIdsAndReplace(providerFile, psFile);
-	return psIdReplacedJson;
+	// If any of the entry matchers (config section 4) are fields which reference other entries by their ID,
+	//    then they won't be matched until after that referenced ID has been matched.
+	// Therefore we perform the matching process over multiple iterations, until the number of IDs matched stabalises.
+	do {
+		numberOfIDsMatched = matchedIds.length;
+		[psFileWithIdsReplaced, matchedIds] = scanForIdsAndReplace(providerFile, psFileWithIdsReplaced);
+	} while(matchedIds.length > numberOfIDsMatched)
 
+	return psFileWithIdsReplaced;
 }
 
 function preProcessFile(jsonObject) {
@@ -948,7 +957,7 @@ function scanForIdsAndReplace(emisOutputFileJson, psOutputFileJson) {
 		responsePsOutputFile = responsePsOutputFile.replace(regexSearch, idsToReplace[idReplaceIndex].emisEntryId)
 	}
 
-	return JSON.parse(responsePsOutputFile);
+	return [JSON.parse(responsePsOutputFile), idsToReplace];
 }
 
 function findIdsToReplace(resourceType, resourceTypeIndex, matchFields, emisEntries, psEntries) {
