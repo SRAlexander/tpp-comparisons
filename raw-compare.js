@@ -193,19 +193,6 @@ function preProccessIdMismatches(providerFile, psFile) {
 
 }
 
-function scanFilesAndCompareOnMatches(providerFile, providerFileName, psFile, psFileName) {
-
-	let outputReport = "\n";
-	outputReport = outputReport + "-----------------------------\n";
-	outputReport = outputReport + "Comparing the following files\n";
-	outputReport = outputReport +  providerFileName + "----" + psFileName + "\n";
-
-	outputReport = outputReport + compareFiles(providerFile, psFile);
-
-	return outputReport;
-}
-
-
 function preProcessFile(jsonObject) {
 
 	if ('id' in jsonObject) {
