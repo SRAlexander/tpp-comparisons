@@ -668,8 +668,7 @@ function compareJsonEntry(emisEntry, psEntry, parentId) {
 					if (psPropertyValueArrayEntry !== null && typeof psPropertyValueArrayEntry !== 'undefined') {
 						compareResponse = compareResponse + compareJsonEntry(emisPropertyValueArrayEntry, psPropertyValueArrayEntry, parentId + "." + emisProperty + "." + y)
 					} else {
-						// TODO display emis entry better 
-						compareResponse = compareResponse + "MISSING EMIS has an additional array entry in " + parentId + "." + emisPropertyValueArrayEntry + "\n";
+						compareResponse = compareResponse + "MISSING EMIS has an additional array entry in " + parentId + "." + emisProperty + "." + y + "\n";
 					}
 
 				} else {
