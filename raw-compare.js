@@ -94,15 +94,16 @@ const organizationMatchFields = ["id"];
 const allergyIntoleranceMatchFields = ["onsetDateTime", "coding.code.[0].code"];
 const practionerMatchFields = ["name.[0].family", "name.[0].given.[0]"];
 const encounterMatchFields = ["period.start", "type.[0].text", "id"];
-const listMatchFields = ["code.coding.[0].code", "date", "title", "id"]
-const locationMatchFields = ["name"]
-const conditionMatchFields = ["onsetDateTime", "assertedDate", "code.coding.[0].code"]
-const procedureRequestMatchFields = ["id"]
+const listMatchFields = ["code.coding.[0].code", "date", "title", "id"];
+const locationMatchFields = ["name"];
+const conditionMatchFields = ["onsetDateTime", "assertedDate", "code.coding.[0].code"];
+const procedureRequestMatchFields = ["id"];
+const specimenMatchFields = ["id", "accessionIdentifier"];
 const medicationMatchFields = ["code.coding.[0].display"];
 const medicationRequestMatchFields = ["dispenseRequest.validityPeriod.start", "intent", "dosageInstruction.[0].text"];
-const medicationStatementMatchFields = ["effectivePeriod.start", "dosage.[0].text"]
-const observationMatchFields = ["code.coding.[0].code", "effectiveDateTime", "comment"]
-const diagnosticReportMatchFields = ["id"]
+const medicationStatementMatchFields = ["effectivePeriod.start", "dosage.[0].text"];
+const observationMatchFields = ["code.coding.[0].code", "effectiveDateTime", "comment"];
+const diagnosticReportMatchFields = ["id"];
 
 // # Config section 5 
 // array sorters manage matching on nested arrays, for example paticiant array fields will be 
@@ -409,6 +410,10 @@ function compareFiles(emisOutputFile, psOutputFile) {
 				outputReport = outputReport + resourceTypeCompareBuilder(resourceType, resourceTypeIndex, procedureRequestMatchFields, entriesByResource.emisEntries, entriesByResource.psEntries, allPsEntires)
 				break;
 			}
+			case "Specimen": {
+		                outputReport = outputReport + resourceTypeCompareBuilder(resourceType, resourceTypeIndex, specimenMatchFields, entriesByResource.emisEntries, entriesByResource.psEntries, allPsEntires)
+		        	break;
+		        }
 			case "List": {
 				outputReport = outputReport + resourceTypeCompareBuilder(resourceType, resourceTypeIndex, listMatchFields, entriesByResource.emisEntries, entriesByResource.psEntries, allPsEntires)
 				break;
