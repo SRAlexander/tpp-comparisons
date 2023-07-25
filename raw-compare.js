@@ -317,11 +317,8 @@ function recursiveIdScan(resource, ignoreParams, ignoreParents, parentId, entryI
 			|| properties[i].toLowerCase().indexOf("authoredon") !== -1
 			|| properties[i].toLowerCase().indexOf("issued") !== -1) {
 
-			if (resource[properties[i]].length >= 25) {
-				responseObject[properties[i]] = resource[properties[i]].substring(0, 19);
-			} else {
-				responseObject[properties[i]] = resource[properties[i]];
-			}
+			const time = new Date(resource[properties[i]]);
+			responseObject[properties[i]] = time.toISOString();
 		} else {
 			responseObject[properties[i]] = resource[properties[i]];
 		}
