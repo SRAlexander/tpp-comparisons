@@ -329,6 +329,7 @@ function recursiveIdScan(resource, ignoreParams, ignoreParents, parentId, entryI
 
 	return responseObject;
 }
+exports.recursiveIdScan = recursiveIdScan;
 
 function scanFilesAndCompareOnMatches(providerFile, providerFileName, psFile, psFileName) {
 
