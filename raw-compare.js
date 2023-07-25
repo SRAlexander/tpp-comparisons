@@ -123,7 +123,9 @@ const unsupportedResourceTypes = [];
 
 
 // MAIN ENTRY POINT
-setTimeout(() => { processApplication() }, 1000)
+if(require.main === module) {
+	setTimeout(() => { processApplication() }, 1000)
+}
 
 function processApplication() {
 	
