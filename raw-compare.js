@@ -23,7 +23,7 @@ const observationFieldsToIgnore = [];
 const practitionerFieldsToIgnore = ["resource.meta.versionId", "resource.gender"];
 const procedureRequestFieldsToIgnore = [];
 const diagnosticReportFieldsToIgnore = [];
-const specimenFieldsToIgnore = [];
+const specimenFieldsToIgnore = ["resource.status", "resource.receivedTime", "resource.identifier", "resource.collection"];
 
 // # Config section 3
 // object removers remove the whole of a parent object if a condition occurs 
