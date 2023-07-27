@@ -23,6 +23,7 @@ const observationFieldsToIgnore = [];
 const practitionerFieldsToIgnore = ["resource.meta.versionId", "resource.gender"];
 const procedureRequestFieldsToIgnore = [];
 const diagnosticReportFieldsToIgnore = [];
+const specimenFieldsToIgnore = [];
 
 // # Config section 3
 // object removers remove the whole of a parent object if a condition occurs 
@@ -85,6 +86,10 @@ const diagnosticReportObjectRemover = [
 	{ "parentName": "resource.identifier", "field": "system", "checkType": "contains", "checkValues": ["https://EMISWeb", "https://PSSAdaptor"] },
 ]
 
+const specimenObjectRemover = [
+	{ "parentName": "resource.identifier", "field": "system", "checkType": "contains", "checkValues": ["https://EMISWeb", "https://PSSAdaptor"] },
+]
+
 // # Config section 4
 // Matchers - these arrays define how to identify one item with another across files
 // a first past the post method is used, if more than 1 item exists after the final check or 
@@ -94,15 +99,16 @@ const organizationMatchFields = ["id"];
 const allergyIntoleranceMatchFields = ["onsetDateTime", "coding.code.[0].code"];
 const practionerMatchFields = ["name.[0].family", "name.[0].given.[0]"];
 const encounterMatchFields = ["period.start", "type.[0].text", "id"];
-const listMatchFields = ["code.coding.[0].code", "date", "title", "id"]
-const locationMatchFields = ["name"]
-const conditionMatchFields = ["onsetDateTime", "assertedDate", "code.coding.[0].code"]
-const procedureRequestMatchFields = ["id"]
+const listMatchFields = ["code.coding.[0].code", "date", "title", "id"];
+const locationMatchFields = ["name"];
+const conditionMatchFields = ["onsetDateTime", "assertedDate", "code.coding.[0].code"];
+const procedureRequestMatchFields = ["id"];
+const specimenMatchFields = ["accessionIdentifier.value", "type.text"];
 const medicationMatchFields = ["code.coding.[0].display"];
 const medicationRequestMatchFields = ["dispenseRequest.validityPeriod.start", "intent", "dosageInstruction.[0].text"];
-const medicationStatementMatchFields = ["effectivePeriod.start", "dosage.[0].text"]
-const observationMatchFields = ["code.coding.[0].code", "effectiveDateTime", "comment"]
-const diagnosticReportMatchFields = ["id"]
+const medicationStatementMatchFields = ["effectivePeriod.start", "dosage.[0].text"];
+const observationMatchFields = ["code.coding.[0].code", "effectiveDateTime", "comment"];
+const diagnosticReportMatchFields = ["id"];
 
 // # Config section 5 
 // array sorters manage matching on nested arrays, for example paticiant array fields will be 
@@ -228,6 +234,7 @@ function preProcessFile(jsonObject) {
 			case "Practitioner": newEntryArray.push(recursiveIdScan(entry, practitionerFieldsToIgnore, null, "", entry.resource.id)); break;
 			case "ProcedureRequest": newEntryArray.push(recursiveIdScan(entry, procedureRequestFieldsToIgnore, procedureRequestObjectRemover, "", entry.resource.id)); break;
 			case "DiagnosticReport": newEntryArray.push(recursiveIdScan(entry, diagnosticReportFieldsToIgnore, diagnosticReportObjectRemover, "", entry.resource.id)); break;
+			case "Specimen": newEntryArray.push(recursiveIdScan(entry, specimenFieldsToIgnore, specimenObjectRemover, "", entry.resource.id)); break;
 			default: processUnsupportedResourceType(entry.resource.resourceType);
 		}
 	}
@@ -409,6 +416,10 @@ function compareFiles(emisOutputFile, psOutputFile) {
 				outputReport = outputReport + resourceTypeCompareBuilder(resourceType, resourceTypeIndex, procedureRequestMatchFields, entriesByResource.emisEntries, entriesByResource.psEntries, allPsEntires)
 				break;
 			}
+			case "Specimen": {
+		                outputReport = outputReport + resourceTypeCompareBuilder(resourceType, resourceTypeIndex, specimenMatchFields, entriesByResource.emisEntries, entriesByResource.psEntries, allPsEntires)
+		                break;
+		        }	
 			case "List": {
 				outputReport = outputReport + resourceTypeCompareBuilder(resourceType, resourceTypeIndex, listMatchFields, entriesByResource.emisEntries, entriesByResource.psEntries, allPsEntires)
 				break;
@@ -944,6 +955,10 @@ function scanForIdsAndReplace(emisOutputFileJson, psOutputFileJson) {
 			}
 			case "DiagnosticReport": {
 				idsToReplace = idsToReplace.concat(findIdsToReplace(resourceType, resourceTypeIndex, diagnosticReportMatchFields, entriesByResource.emisEntries, entriesByResource.psEntries));
+				break;
+			}
+			case "Specimen": {
+				idsToReplace = idsToReplace.concat(findIdsToReplace(resourceType, resourceTypeIndex, specimenMatchFields, entriesByResource.emisEntries, entriesByResource.psEntries));
 				break;
 			}
 		}
